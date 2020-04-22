@@ -1,5 +1,7 @@
 .recuadro-imagenes{
  background-color: wheat;
- border: 5px;
  
+ }
+body {
+  background-color: black;
 }

@@ -40,14 +40,14 @@
                   <p>Add the "fade" class to the modal container if you want the modal to fade in on open and fade out on close.</p> --> 
 
                 <!-- Button to Open the Modal -->
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" data-toggle="modal" data-target="#myModal">
+                <div class="col" data-toggle="modal" data-target="#myModal">
                     <img src="material-rob/img/publicacion1/Untitled-3.png" width="350" height="250"
                         alt="imagen de acantilado">
                 </div>
 
                 <!-- The Modal -->
 
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="col">
                     <div class="modal fade" id="myModal">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -60,7 +60,9 @@
 
                                 <!-- Modal body -->
                                 <div class="modal-body">
-                                    <img src="material-rob/img/publicacion1/Untitled-3.png" width="480" height="222"
+                                <div class="row">
+                                <div class="col-xs-2 col-sm-2 col-md-12 col-lg-12">
+                                   <img src="material-rob/img/publicacion1/Untitled-3.png" width="350" height="220"
                                         alt="imagen de acantilado">
                                     <p>Incluye:
                                         - Pasaje aéreo de ida y vuelta en clase económica con restricciones de Air
@@ -79,6 +81,8 @@
                                         Aires/Belgrado y durante todo el recorrido terrestre (no incluye acompañamiento
                                         en los vuelos de regreso).
                                     </p>
+                                </div>
+                                </div>
                                 </div>
 
 
@@ -105,7 +109,7 @@
                 <!-- Button to Open the Modal -->
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" data-toggle="modal" data-target="#myModal1">
-                    <img src="material-rob/img/publicacion1/Untitled-2.png" width="350" height="250"
+                    <img src="material-rob/img/publicacion1/Untitled-2.png" width="350" height="220"
                         alt="imagen de acantilado">
                 </div>
 
@@ -124,7 +128,7 @@
 
                                 <!-- Modal body -->
                                 <div class="modal-body">
-                                    <img src="material-rob/img/publicacion1/Untitled-2.png" width="480" height="222"
+                                    <img src="material-rob/img/publicacion1/Untitled-2.png" width="350" height="220"
                                         alt="imagen de acantilado">
                                 </div>
 
@@ -167,7 +171,7 @@
                                 </div>
                                 <!-- Modal body -->
                                 <div class="modal-body">
-                                    <img src="material-rob/img/publicacion1/Untitled-4.png" width="480" height="222"
+                                    <img src="material-rob/img/publicacion1/Untitled-4.png" width="350" height="220"
                                         alt="imagen de acantilado">
                                 </div>
                                 <!-- Modal footer -->

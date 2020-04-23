@@ -98,7 +98,7 @@
 
                                     <!-- Modal Header -->
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Imagen 1</h4>
+                                        <h4 class="modal-title">Imagen 2</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
 
@@ -142,7 +142,7 @@
                                 <div class="modal-content">
                                     <!-- Modal Header -->
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Imagen 1</h4>
+                                        <h4 class="modal-title">Imagen 3</h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
                                     <!-- Modal body -->

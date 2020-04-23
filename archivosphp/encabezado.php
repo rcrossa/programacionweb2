@@ -5,12 +5,12 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav nav-pills">
                 <li class="nav-brand active">
-                    <a href="index.html"> <img src="images/logo_cabecera.png" alt="Logo" class="logomenu" width="74" height="90">
+                    <a href="index.html" class="logomenu"> <img src="images/logo_cabecera.png"  width="80" height="70" alt="Logo">
                     </a></li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./index.php">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery/gallery.html">Paquetes</a>

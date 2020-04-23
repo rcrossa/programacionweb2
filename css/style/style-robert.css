@@ -57,3 +57,6 @@ footer {
     width: 2.1875em;
     margin-top: 2.8875em;
 }
+.button .btn-danger{
+    padding-right: 10px;
+}

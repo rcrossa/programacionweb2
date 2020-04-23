@@ -31,13 +31,13 @@ include('./productos.php')
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery/gallery.html">Paquetes</a>
+                        <a class="nav-link" href="gallery.html">Paquetes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto/contacto.html">Contacto</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item dropdown">
                     </li>
@@ -78,10 +78,10 @@ include('./productos.php')
         </div>
 
 
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid px-5">
+            <div class="row justify-content-center">
 
-                <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="col-sm-12 col-md-12 col-lg-3">
                     <div class="filter-wrap py-4">
                         <h3>Filtro</h3>
                         <div class="filter-border p-4 border border-secondary">
@@ -89,22 +89,24 @@ include('./productos.php')
                                 <div class="row">
                                     <div class="col-12">
                                         <select class="custom-select custom-select-lg mb-3">
-                                            <option selected>Lugar</option>
-                                            <option value="1">Interior</option>
-                                            <option value="2">Exterior</option>
+                                            <option selected>Interior</option>
+                                            <?php foreach ($interior as $key => $value) : ?>
+                                                <option value="<?php echo $key ?>"><?php echo $interior[$key]["nombre"]; ?></option>
+                                            <?php endforeach ?>
                                         </select>
                                     </div>
                                     <div class="col-12">
                                         <select class="custom-select custom-select-lg mb-3">
-                                            <option selected>Tipo de viaje</option>
-                                            <option value="1">Premium</option>
-                                            <option value="2">Economico</option>
+                                            <option selected>Exterior</option>
+                                            <?php foreach ($exterior as $key => $value) : ?>
+                                                <option value="<?php echo $key ?>"><?php echo $exterior[$key]["nombre"]; ?></option>
+                                            <?php endforeach ?>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                             <div class="button">
-                                <button class="btn btn-danger btn-lg px-5 btn-block">RESET</button>
+                                <button class="btn btn-danger btn-lg px-5 btn-block">Buscar</button>
                             </div>
                         </div>
                     </div>
@@ -113,15 +115,38 @@ include('./productos.php')
                 <div class="col-sm-12 col-md-12 col-lg-8">
                     <div class="row">
 
-                        <?php foreach ($productos as $key => $value) : ?>
+                        <?php foreach ($interior as $key => $value) : ?>
 
-                            <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
                                 <div class="card">
-                                    <img src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+
+                                    <?php echo '<img src="' .  $interior[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
+
                                     <div class="card-body">
-                                        <h5 class="card-title1"><?php echo $productos[$key]["nombre"]; ?></h5>
-                                        <p class="card-text"><?php echo $productos[$key]["descripcion"]; ?></p>
-                                        <p class="card-text text-center"><?php echo $productos[$key]["precio"]; ?></p>
+                                        <h5 class="card-title1"><?php echo $interior[$key]["nombre"]; ?></h5>
+                                        <p class="card-text"><?php echo $interior[$key]["descripcion"]; ?></p>
+                                        <p class="card-text text-center"><?php echo $interior[$key]["precio"]; ?></p>
+                                        <div class="container d-flex justify-content-around">
+                                            <a href="#" class="btn btn-success">Comprar</a>
+                                            <a href="#" class="btn btn-outline-success">Reservar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <?php endforeach ?>
+
+                        <?php foreach ($exterior as $key => $value) : ?>
+
+                            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
+                                <div class="card">
+
+                                    <?php echo '<img src="' .  $exterior[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
+
+                                    <div class="card-body">
+                                        <h5 class="card-title1"><?php echo $exterior[$key]["nombre"]; ?></h5>
+                                        <p class="card-text"><?php echo $exterior[$key]["descripcion"]; ?></p>
+                                        <p class="card-text text-center"><?php echo $exterior[$key]["precio"]; ?></p>
                                         <div class="container d-flex justify-content-around">
                                             <a href="#" class="btn btn-success">Comprar</a>
                                             <a href="#" class="btn btn-outline-success">Reservar</a>
@@ -150,7 +175,7 @@ include('./productos.php')
 
         <div class="container-fluid" id="tab-content">
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="tab-0"><a class="text-light" href="https://www.argentina.gob.ar/turismo" target="_blank">Secretaria de turismo de la nación</a></div>
                 </div>
@@ -163,7 +188,7 @@ include('./productos.php')
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                     <div class="tab-4"><a class="text-light" href="https://www.horlogeparlante.com/reloj-mundial.html?sort=country" target="_blank">Horario Mundial</a></div>
                 </div>
@@ -181,16 +206,16 @@ include('./productos.php')
 
         <div class="container-fluid" id="tab-content-1">
 
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-0a"><a class="text-light" href="somos/somos.html">Quienes Somos</a></div>
+                    <div class="tab-0a"><a class="text-light" href="somos.html">Quienes Somos</a></div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-1a"><a class="text-light" href="formadepago/formadepago.html">Forma De Pago</a>
+                    <div class="tab-1a"><a class="text-light" href="formadepago.html">Forma De Pago</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-2a"><a class="text-light" href="protecciondatos/protecciondatos.html">Protección
+                    <div class="tab-2a"><a class="text-light" href="protecciondatos.html">Protección
                             Datos Personales</a></div>
                 </div>
             </div>
@@ -201,10 +226,10 @@ include('./productos.php')
 
 
     <footer>
-        <div class="container-fluid">
+        <div class="container">
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 ">
                     <div>
                         <img src="images/logo_delfos.png" id="logo" alt="logo delfos" width="72" height="84">
                     </div>
@@ -242,9 +267,9 @@ include('./productos.php')
 
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
                     <div>Mapa del sitio</div>
-                    <div><a href="index.html">Home</a></div>
-                    <div><a href="gallery/gallery.html">Paquetes</a></div>
-                    <div><a href="contacto/contacto.html">Contacto</a></div>
+                    <div><a href="index.php">Home</a></div>
+                    <div><a href="gallery.html">Paquetes</a></div>
+                    <div><a href="contacto.html">Contacto</a></div>
                 </div>
             </div>
 

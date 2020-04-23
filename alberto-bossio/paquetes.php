@@ -75,7 +75,7 @@
             </div>
         </div>
         <!-- cuadros de texto-->
-        <div class="container-fluid">
+        <div class="container">
 
             <div class="row" class="col-12">
 
@@ -83,15 +83,41 @@
                     <h3>Puerto Madryn, Chubut, Argentina</h3>
                     <h4>$45000</h4>
                     <h4>Un lugar perfecto para nadar, disfrutá tu país, disfrutá Chubut</h4>
-                    <a href="https://cdn.cienradios.com/wp-content/uploads/sites/4/2020/03/PUERTO-MADRYN-.jpg" target="_blank"><img src="imagenes/puertomadryn.png" alt="imagen de puerto madryn"></a>
+                    <a href="https://cdn.cienradios.com/wp-content/uploads/sites/4/2020/03/PUERTO-MADRYN-.jpg" target="_blank"><img src="imagenes/puertomadryn.png" class="rounded" alt="imagen de puerto madryn"></a>
                 </div>
 
                 <div class="col-6">
                     <h3>Cerro Castor, Usuahia, Argentina</h3>
                     <h4>$50000</h4>
                     <h4>Un lugar perfecto para esquiar, disfrutá tu país, disfrutá Usuahia</h4>
-                    <a href="http://www.sur54.com/data/upload/news/06f323833d7e81354c9625f7a9c8a777-1000cerrocastor_pistas_aerea.jpg" target="_blank"><img src="imagenes/cerrocastor.png" alt="imagen de cerro castor"></a>
+                    <a href="http://www.sur54.com/data/upload/news/06f323833d7e81354c9625f7a9c8a777-1000cerrocastor_pistas_aerea.jpg" target="_blank"><img src="imagenes/cerrocastor.png" class="rounded" alt="imagen de cerro castor"></a>
                 </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="col-5">
+                <h2>Puerto Madryn, Chubut, Argentina</h2>
+                    <div class="card" style="fluid">
+                        <img class="card-img-top" src="imagenes/puertomadryn.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">$45000</h4>
+                            <p class="card-text">Un lugar perfecto para nadar, disfrutá tu país, disfrutá Chubut</p>
+                            <a href="#" class="btn btn-primary">Ver Oferta</a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-5">
+                <h2>Puerto Madryn, Chubut, Argentina</h2>
+                    <div class="card" style="fluid">
+                        <img class="card-img-top" src="imagenes/puertomadryn.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">$45000</h4>
+                            <p class="card-text">Un lugar perfecto para nadar, disfrutá tu país, disfrutá Chubut</p>
+                            <a href="#" class="btn btn-primary">Ver Oferta</a>
+                        </div>
+                    </div>
             </div>
         </div>
 

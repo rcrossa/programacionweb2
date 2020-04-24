@@ -5,20 +5,23 @@
 }
 
 .navbar-brand {
-    font-size: 1.875em;
+    font-size: 2.875em;
 }
 
 .nav-link {
     font-family: 'Raleway', sans-serif;
     font-size: 1.875em;
-    color: black;
-
+    color: white;
+}
+.nav-item{
+    font-family: 'Raleway', sans-serif;
+    
 }
 
-.logomenu {
-    height: 45px;
-    width: 45px;
-}
+/* .logomenu {
+    height: 3px;
+    width: 3px;
+} */
 
 .paquete {
     font-family: 'Raleway', sans-serif;
@@ -221,10 +224,10 @@ footer {
 
 /* somos */
 
-.logomenu {
-    height: 2.8125em;
-    width: 2.8125em;
-}
+/* .logomenu {
+    /* height: 2.8125em;
+    width: 2.8125em; *
+} */
 
 .somosletra {
     font-family: 'ubuntu', sans-serif;
@@ -274,3 +277,107 @@ footer {
     margin-right: 2em;
 
 }
+/* producto portada */
+
+.imagen1{
+    float: left;
+}
+.imagen2{
+   float: left;
+   padding-right: 15px;
+}
+.imagen3{
+    align-items: left;
+}
+.descripcion{
+    float: inline-start;
+    margin-top: 10px;
+}
+.descripcion .row{
+    background-color: bisque;
+    border-width: 5px;
+}
+
+/* footer */
+
+/* footer*/
+
+footer {
+    margin-top: 0.9375em;
+    margin-bottom: 1.5625em;
+    background-color: wheat;
+}
+
+#logo {
+    height: 3.2875em;
+    width: 3.2975em;
+    margin-top: 1.2875em;
+}
+
+.legajo {
+    margin-top: 1.2875em;
+
+}
+
+.ubicacion {
+    height: 2.1875em;
+    width: 2.1875em;
+    margin-top: 1.2875em;
+
+
+}
+
+.phoneicon {
+    height: 2.1875em;
+    width: 2.1875em;
+    margin-top: 2.875em;
+}
+
+.emailicon {
+    height: 2.1875em;
+    width: 2.1875em;
+    margin-top: 2.8875em;
+}
+.button .btn-danger{
+    padding-right: 10px;
+}
+
+/* comienza el codigo cs para las estrellas */
+#form1 {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form1 p {
+    text-align: center;
+  }
+  
+  #form1 label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+
+/*  */

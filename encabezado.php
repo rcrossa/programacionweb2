@@ -6,14 +6,14 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-pills">
-                <li class="nav-brand active">
-                    <a href="index.html" class="logomenu"> <img src="images/logo_cabecera.png"  width="80" height="70" alt="Logo">
+                <li class="nav-brand active mr-4">
+                    <a href="index.php" class="logomenu"> <img src="images/logo_cabecera.png"  width="80" height="70" alt="Logo">
                     </a></li>
                 <li class="nav-item active">
                     <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Paquetes</a>
+                    <a class="nav-link" href="productos.php">Paquetes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contacto.php">Contacto</a>

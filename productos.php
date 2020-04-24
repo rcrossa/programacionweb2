@@ -31,7 +31,7 @@
     </div>
 
     <section>
-        <div class="container shadow-lg justify-content-around p-4">
+        <div class="container shadow justify-content-around p-4">
             <div class="row justify-content-center text-center">
 
                 <div class="col-md-12 col-lg-4">

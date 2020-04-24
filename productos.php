@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style/style-robert.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext"
-        rel="stylesheet">
-    <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/style/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
 
@@ -34,7 +35,7 @@
                     <!-- Button to Open the Modal -->
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-toggle="modal" data-target="#myModal">
-                            <img src="../images/Untitled-3.png" width="350" height="250"
+                            <img src="images/Untitled-3.png" width="350" height="250"
                                 alt="imagen de acantilado">
                         </div>
                     </div>
@@ -55,7 +56,7 @@
                                     <div class="modal-body">
                                         <div class="">
                                             <div class="">
-                                                <img src="../images/Untitled-3.png" width="350"
+                                                <img src="images/Untitled-3.png" width="350"
                                                     height="220" alt="imagen de acantilado">
 
                                                 </p>
@@ -87,7 +88,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-toggle="modal"
                             data-target="#myModal1">
-                            <img src="../images/Untitled-2.png" width="350" height="250"
+                            <img src="images/Untitled-2.png" width="350" height="250"
                                 alt="imagen de acantilado">
                         </div>
                     </div>
@@ -107,7 +108,7 @@
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                        <img src="../images/Untitled-2.png" width="350" height="220"
+                                        <img src="images/Untitled-2.png" width="350" height="220"
                                             alt="imagen de acantilado">
                                     </div>
 
@@ -134,7 +135,7 @@
 
                     <!-- Button to Open the Modal -->
                     <div class="" data-toggle="modal" data-target="#myModal2">
-                        <img src="../images/Untitled-4.png" width="350" height="250"
+                        <img src="images/Untitled-4.png" width="350" height="250"
                             alt="imagen de acantilado">
                     </div>
                     <!-- The Modal -->
@@ -152,7 +153,7 @@
                                     <div class="modal-body">
                                         <div class="row">
                                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                                <img src="../images/Untitled-4.png" width="350"
+                                                <img src="images/Untitled-4.png" width="350"
                                                     height="220" alt="imagen de acantilado">
                                             </div>
                                         </div>
@@ -212,13 +213,13 @@
         </svg>
     </div>
  <?php
-    require_once "archivosphp/footer.php";
-    ?>
+ require_once "footer.php";
+ ?>
  
- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="../js/bootstrap/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-
+     <!-- Scripts -->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
 
 </body>
 

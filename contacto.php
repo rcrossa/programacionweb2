@@ -11,12 +11,9 @@
 
         <!-- Styles -->
         <link href="css/style/style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 
     </head>
@@ -24,7 +21,7 @@
     <body>
         <?php
         require_once "encabezado.php";
-   ?>
+        ?>
         <section>
             <div class="container">
                 <!--           <fieldset>-->
@@ -82,24 +79,20 @@
                                 Pago</a></div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="tab-2a"><a class="text-light"
-                                href="/..protecciondatos/protecciondatos.html">Protección Datos Personales</a></div>
+                        <div class="tab-2a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección Datos Personales</a></div>
                     </div>
                 </div>
 
             </div>
         </section>
         <?php
-    require_once "footer.php";
-?>
+        require_once "footer.php";
+        ?>
 
         <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
+        <script src="js/jquery/jquery.min.js"></script>
+        <script src="js/popper/popper.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
 
 
     </body>

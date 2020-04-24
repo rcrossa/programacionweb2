@@ -10,14 +10,16 @@
                             <div class="row">
                                 <div class="col-xs-3 col-sm-5 col-md-5 col-lg-5">
                                     <select class="custom-select custom-select-lg mb-3">
-                                        <option selected>Lugar</option>
+                                    <option selected></option>
+                                        <option value="0">Lugar</option>
                                         <option value="1">Interior</option>
                                         <option value="2">Exterior</option>
                                     </select>
                                 </div>
                                 <div class="col-xs-3 col-sm-5 col-md-5 col-lg-5">
                                     <select class="custom-select custom-select-lg mb-3">
-                                        <option selected>Tipo de viaje</option>
+                                    <option selected></option>
+                                        <option value="0">Tipo de viaje</option>
                                         <option value="1">Premium</option>
                                         <option value="2">Economico</option>
                                     </select>

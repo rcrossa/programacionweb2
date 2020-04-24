@@ -28,34 +28,5 @@
                 </a>
             </div>
         </div>
-        <!-- cuadros de texto-->
-        <!-- <div class="container-fluid"> -->
-
-            <!-- <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h1 class="titulopaquete">Paquete Caribe</h1>
-                </div>
-            </div>
-
-            <div>
-                <svg width="100%" height="10">
-                    <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-                </svg>
-            </div> -->
-
-            <!-- button-container-->
-            <!-- <div class="">
-                <div class="slidepaquete">
-                    <img src="images/tp1a.png" class="d-block w-100 img-fluid" height="551" width="980" alt="imagen de paquete promocional"></div>
-                <div class="row justify-content-between">
-                    <div class="col-4">
-
-                    </div>
-                    <div class="col-2">
-                        <a href="gallery/gallery.html" class="btn btn-primary btn-lg btn-ver-mas">Ver mas</a>
-                             <a href="gallery/gallery.html" class="w3-button">Ver mas</a>
-                    </div>
-                </div>
-            </div> -->
-        <!-- </div> -->
+    
         </section>

@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+/* ----- Encabezado ----- */
+
 .navbar {
   background-color: orange;
-  /*text-emphasis-color: white; */
-  font-family: "Releway", sans-serif;
 }
 
 .navbar-brand {
@@ -15,47 +19,17 @@
 }
 
 .nav-link {
-  font-family: "Raleway", sans-serif;
   font-size: 1.875em;
   color: white;
 }
-.nav-item {
-  font-family: "Raleway", sans-serif;
-}
 
-/* .logomenu {
-    height: 3px;
-    width: 3px;
-} */
-
-.paquete {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.875em;
-  padding-left: 12.5em;
-  height: 100%;
-  width: auto;
-}
-
-.imagebg {
-  padding-left: 1.875em;
-}
+/* ----- Carousel -----*/
 
 .img-fluid {
   align-content: center;
 }
 
-.titulopaquete {
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-
-  text-shadow: 0.125em 0.125em 0.1875em orange;
-}
-
-.titulopaquete1 {
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  padding-top: 0.3125em;
-}
+/* ----- Links de Interes ----- */
 
 .herramientas {
   font-family: "Raleway", sans-serif;
@@ -67,54 +41,16 @@
   padding-bottom: 0.5em;
 }
 
-.tab-0 {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9375em;
-  margin-bottom: 0.5em;
-  margin-left: 0.6em;
-  padding-bottom: 0.5em;
-  padding-top: 0.6em;
-}
-
-.tab-1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9375em;
-  margin-left: 0.6em;
-  padding-bottom: 1em;
-  padding-top: 0.6em;
-}
-
-.tab-2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9375em;
-  margin-left: 0.6em;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
-  padding-top: 0.6em;
-}
-
-.tab-3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9375em;
-  margin-left: 0.6em;
-  padding-top: 0.5em;
-  margin-bottom: 0.5em;
-  padding-top: 0.6em;
-}
-
-.tab-4 {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9375em;
-  margin-left: 0.6em;
-  margin-bottom: 0.5em;
-  padding-top: 0.6em;
-}
-
+.tab-0,
+.tab-1,
+.tab-2,
+.tab-3,
+.tab-4,
 .tab-5 {
   font-family: "Raleway", sans-serif;
   font-size: 0.9375em;
-  margin-left: 0.6em;
-  padding-top: 0.5em;
+  padding-bottom: 0.6em;
+  padding-top: 0.6em;
 }
 
 #tab-content-1 {
@@ -122,68 +58,15 @@
   padding-top: 0.6em;
 }
 
-.tab-0a {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9375em;
-  margin-bottom: 0.5em;
-}
-
-.tab-1a {
-  font-family: "Raleway", sans-serif;
-  font-size: 0.9375em;
-  margin-bottom: 0.5em;
-}
-
+.tab-0a,
+.tab-1a,
 .tab-2a {
   font-family: "Raleway", sans-serif;
   font-size: 0.9375em;
   margin-bottom: 0.5em;
-  margin-left: 1em;
 }
 
-/* Tabla */
-.table1 {
-  background-color: paleturquoise;
-  text-align: center;
-}
-
-#tableline1 {
-  border-width: 0.0625em;
-  border-right: solid;
-  border-color: white;
-}
-
-#tableline2 {
-  border-width: 0.0625em;
-  border-right: solid;
-  border-color: white;
-}
-
-#tableline3 {
-  border-width: 0.0625em;
-  border-right: solid;
-  border-color: white;
-}
-
-#tableline4 {
-  border-width: 0.0625em;
-  border-right: solid;
-  border-color: white;
-}
-
-#tableline5 {
-  border-width: 0.0625em;
-  border-right: solid;
-  border-color: white;
-}
-
-#tableline6 {
-  border-width: 0.0625em;
-  border-right: solid;
-  border-color: white;
-}
-
-/* footer*/
+/* ----- Footer ----- */
 
 footer {
   padding-top: 0.9375em;
@@ -223,24 +106,23 @@ footer {
   width: 2.1875em;
 }
 
-/* somos */
-
-/* .logomenu {
-    /* height: 2.8125em;
-    width: 2.8125em; *
-} */
-
 .somosletra {
   font-family: "ubuntu", sans-serif;
   font-size: 1.125em;
 }
 
-/* forma de pago */
+.button .btn-danger {
+  padding-right: 10px;
+}
+
+/* ----- Forma de pago ----- */
+
 .parrafo1 {
   font-family: "ubuntu", sans-serif;
 }
 
-/* formulario de contacto*/
+/* ----- Formulario de contacto ----- */
+
 .formulario {
   background-color: aqua;
 }
@@ -253,7 +135,8 @@ footer {
   background-color: blue;
 }
 
-/*  Egreso de menores */
+/* ----- Egreso de menores ----- */
+
 .Menorinmigra {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.125em;
@@ -286,7 +169,7 @@ footer {
   transform: scale(1.05, 1.05);
 }
 
-/* producto portada */
+/* ----- Producto portada ----- */
 
 .imagen1,
 .imagen2,
@@ -311,41 +194,13 @@ footer {
   float: inline-start;
   margin-top: 10px;
 }
+
 .descripcion .row {
-  /*background-color: bisque;*/
   border-width: 5px;
 }
 
-/* footer */
+/* ----- Comienza el codigo cs para las estrellas ----- */
 
-#logo {
-  height: 3.2875em;
-  width: 3.2975em;
-}
-
-.legajo {
-  margin-top: 1.2875em;
-}
-
-.ubicacion {
-  height: 2.1875em;
-  width: 2.1875em;
-}
-
-.phoneicon {
-  height: 2.1875em;
-  width: 2.1875em;
-}
-
-.emailicon {
-  height: 2.1875em;
-  width: 2.1875em;
-}
-.button .btn-danger {
-  padding-right: 10px;
-}
-
-/* comienza el codigo cs para las estrellas */
 #form1 {
   width: 250px;
   margin: 0 auto;
@@ -381,5 +236,3 @@ label:hover ~ label {
 input[type="radio"]:checked ~ label {
   color: orange;
 }
-
-/*  */

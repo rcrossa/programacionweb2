@@ -17,7 +17,7 @@
 <body>
     <?php
     require_once "archivosphp/funcionesproductoportada.php";
-    //archivos html
+    // archivos html
     require_once "encabezado.php";
     require_once "carousel.php";
     require_once "productoportada.php";

@@ -42,7 +42,7 @@
                     <div>Mapa del sitio</div>
                     <div><a href="index.php">Home</a></div>
                     <div><a href="">Paquetes</a></div>
-                    <div><a href="contacto/contacto.php">Contacto</a></div>
+                    <div><a href="contacto.php">Contacto</a></div>
                 </div>
             </div>
 

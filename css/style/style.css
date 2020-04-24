@@ -341,3 +341,43 @@ footer {
 .button .btn-danger{
     padding-right: 10px;
 }
+
+/* comienza el codigo cs para las estrellas */
+#form1 {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  #form1 p {
+    text-align: center;
+  }
+  
+  #form1 label {
+    font-size: 20px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+
+/*  */

@@ -3,6 +3,9 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-3">
                     <div class="filter-wrap py-4">
+                    <div class="text-center bg-warning">
+        <h2>Productos Destacados</h2>
+    </div>
                         <h3>Filtro</h3>
                         <div class="filter-border p-4 border border-secondary">
                             <div class="filter-inner">

@@ -114,7 +114,7 @@
 
 #tab-content-1 {
     background-color: darkblue;
-    padding-top: 0.6em
+    padding-top: 0.6em;
 }
 
 .tab-0a {
@@ -124,6 +124,7 @@
 
 }
 
+/*
 .tab-1a {
 
     font-family: 'Raleway', sans-serif;
@@ -140,6 +141,7 @@
     margin-left: 1em;
 
 }
+*/
 
 /* Tabla */
 .table1 {
@@ -273,4 +275,12 @@ footer {
     font-size: 1.125em;
     margin-right: 2em;
 
+}
+
+/* alberto */
+body{ 
+    background-image: url(https://cdn.lavoz.com.ar/sites/default/files/styles/width_1072/public/nota_periodistica/737-max-8_1552315835.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

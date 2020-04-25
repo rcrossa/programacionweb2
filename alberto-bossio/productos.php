@@ -20,8 +20,7 @@
     require_once "archivosphp/funcionesproductoportada.php";
     // archivos html
     require_once "encabezado.php";
-    require_once "carousel.php";
-    require_once "soloproductos.php";
+    require_once "productoportada.php";
     require_once "linkinteresesyherramientas.php";
     require_once "footer.php";
     ?>

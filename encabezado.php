@@ -13,6 +13,9 @@
                 <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="productos.php">Productos</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="productos.php">Paquetes</a>
             </li>
             <li class="nav-item">

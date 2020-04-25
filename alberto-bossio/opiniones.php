@@ -18,7 +18,6 @@
 
     <?php
     require_once "encabezado.php";
-    require_once "carousel.php";
     ?>
 
     <div class="container text-center pt-5 pb-4">
@@ -34,6 +33,8 @@
     <section>
         <div class="container shadow justify-content-around p-4">
             <div class="row justify-content-center text-center">
+
+                <!-- Acá va la imagen del producto -->
 
                 <div class="col-4">
                     <div class="imagen1">
@@ -106,25 +107,89 @@
     </div>
 
     <section>
-        
+        <div class="container bg-warning">
+            <!--           <fieldset>-->
+            <div class="text-center">
+                <h4>Opinión del producto</h4>
+            </div>
 
+            <form action="#" method="post">
+                <fieldset>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-6">
+                                <label>Nombre</label>
+                                <input type="text" name="nombre" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label>Email</label>
+                                <input type="text" name="email" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Mensaje</label>
+                            <textarea class="form-control" name="comentario" rows="3"></textarea>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-11">
+                                <div class="form1">
+                                    <p class="clasificacion">
+                                        <input id="radio1" type="radio" name="estrellas" value="5">
+                                        <!--
+                                        --><label for="radio1">★</label>
+                                        <!--
+                                        --><input id="radio2" type="radio" name="estrellas" value="4">
+                                        <!--
+                                        --><label for="radio2">★</label>
+                                        <!--
+                                        --><input id="radio3" type="radio" name="estrellas" value="3">
+                                        <!--
+                                        --><label for="radio3">★</label>
+                                        <!--
+                                        --><input id="radio4" type="radio" name="estrellas" value="2">
+                                        <!--
+                                        --><label for="radio4">★</label>
+                                        <!--
+                                        --><input id="radio5" type="radio" name="estrellas" value="1">
+                                        <!--
+                                        --><label for="radio5">★</label>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-1">
+                                <input type="submit" value="Enviar" name="submit">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <!--            </fieldset>-->
+        </div>
+        
+        <!--  
         <svg width="100%" height="10">
             <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
         </svg>
-
+        -->
 
         <div id="tab-content-1" class="container-fluid">
 
             <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="col-4 text-center">
                     <div class="tab-0a"><a class="text-light" href="../somos/somos.html">Quienes Somos</a></div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-1a"><a class="text-light" href="../formadepago/formadepago.html">Forma De Pago</a></div>
+                <div class="col-4 text-center">
+                    <div class="tab-0a"><a class="text-light" href="../formadepago/formadepago.html">Forma De Pago</a></div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-2a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección
-                            Datos Personales</a></div>
+                <div class="col-4 text-center">
+                    <div class="tab-0a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección Datos Personales</a></div>
                 </div>
             </div>
 

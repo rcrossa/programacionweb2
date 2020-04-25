@@ -97,3 +97,4 @@ $exterior = array(
 // echo "<pre>", print_r($productos, 1), "</pre>";
 // echo "ID 1er producto: " . $productos[0]["id"] . "<br>";
 // echo "nombre 2do producto: " . $productos[1]["nombre"];
+?>

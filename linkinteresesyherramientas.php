@@ -1,4 +1,4 @@
-<section class="container-fluid p-0 pt-3 text-center">
+<section class="container-fluid p-0 pt-4 text-center">
 
 
     <div class="container pb-3">
@@ -19,26 +19,26 @@
     <div class="container-fluid" id="tab-content">
 
         <div class="row ">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-4">
                 <div class="tab-0"><a class="text-light" href="https://www.argentina.gob.ar/turismo" target="_blank">Secretaria de turismo de la nación</a></div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-4">
                 <div class="tab-1">
                     <a class="text-light" href="http://www.migraciones.gov.ar/accesible/templates/tarjeta_migratoria/tarjeta_migratoria_p.htm" target="_blank">Imprima Su Tarjeta Migratoría Aquí</a></div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                 <div class="tab-2"><a class="text-light" href="http://www.migraciones.gov.ar/site_docs/indexDoc.php?arg_requisitos" target="_blank">Migraciones - Ingreso y Egreso Del País</a></div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-4">
                 <div class="tab-4"><a class="text-light" href="https://www.horlogeparlante.com/reloj-mundial.html?sort=country" target="_blank">Horario Mundial</a></div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-6 col-sm-4 col-md-4 col-lg-4">
                 <div class="tab-3"><a class="text-light" href="http://www.aa2000.com.ar/" target="_blank">Arribos y Partidas</a></div>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                 <div class="tab-5"><a class="text-light" href="egresoconmenores.php">Egreso Del País Con Menores</a></div>
             </div>
         </div>

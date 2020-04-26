@@ -8,71 +8,96 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
         <!-- Styles -->
         <link href="css/style/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-
     </head>
 
     <body>
         <?php
         require_once "encabezado.php";
         ?>
-        <section>
-            <div class="container">
+        <section class="formulario-contacto py-5">
+            <div class="container pt-5 pb-3 shadow-sm">
                 <!--           <fieldset>-->
-                <div>
-                    <h1>Formulario De Contacto</h1>
+                <div class="text-center pb-3">
+                    <h2>Formulario De Contacto</h4>
                 </div>
 
-                <form action="#" method="get">
-                    <fieldset>
-                        <div>
-                            <label>Nombre</label>
-                            <input type="text" name="nombre" class="form-control">
-                        </div>
-                        <div>
-                            <label>apellido</label>
-                            <input type="text" name="apellido" class="form-control">
-                        </div>
-                        <div>
-                            <label>email</label>
-                            <input type="text" name="email" class="form-control">
-                        </div>
-                        <div>
-                            <label>telefono</label>
-                            <input type="number" name="phone" class="form-control">
-                        </div>
-                        <div>
-                            <label>Area de la empresa</label>
-                            <input type="text" name="areaempresa" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Mensaje</label>
-                            <textarea class="form-control" name="comentario" rows="3"></textarea>
-                        </div>
-                        <div>
-                            <input type="submit" value="Enviar">
-                        </div>
-                    </fieldset>
-                </form>
+                <div class="pb-3 text-center">
+                    <svg width="20%" height="2">
+                        <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
+                    </svg>
+                </div>
+
+
+                <div class="container">
+                    <form action="#" method="post" class="py-4">
+                        <fieldset>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6 py-2">
+                                            <label>Nombre y Apellido *</label>
+                                            <input type="text" name="nombre" required class="form-control">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 py-2">
+                                            <label for="email">Email *</label>
+                                            <input type="email" id="email" name="email" required class="form-control">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 py-2">
+                                            <label>Área de la empresa</label>
+                                            <input type="text" name="Área de la empresa" class="form-control">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 py-2">
+                                            <label for="phone">Teléfono</label>
+                                            <input type="tel" id="phone" name="phone" placeholder="15-4545-4545" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label>Mensaje *</label>
+                                                <textarea class="form-control" name="comentario" required rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-md-2 p-2 ml-auto">
+                                            <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Enviar" name="submit">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+
                 <!--            </fieldset>-->
             </div>
-
-            <svg width="100%" height="10">
-                <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-            </svg>
-
-
-            
         </section>
-        <?php
-        require_once "footer.php";
-        ?>
+        <section class="py-4">
+            <div class="google-maps">
+                <div class="container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.427909631637!2d-64.23182658431362!3d-31.374762601380407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329928a3f7afe1%3A0x249417de894bdded!2sDelfos%20Tour!5e0!3m2!1sen!2sar!4v1587933716198!5m2!1sen!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <?php require_once "linkinteresesyherramientas.php" ?>
+
+        <?php require_once "footer.php"; ?>
 
         <!-- Scripts -->
         <script src="js/jquery/jquery.min.js"></script>

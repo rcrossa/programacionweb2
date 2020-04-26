@@ -33,14 +33,14 @@ $interior = array(
         'id' => 4,
         'nombre' => 'Misiones',
         'precio' => '$20000',
-        'descripcion' => 'Duración: 4 días / 3 noches Salidas: - A consultar Incluye: Pasaje aéreo Buenos Aires/Puerto Iguazu/Buenos Aires Incluye un equipaje de mano de hasta 8kg Traslados de llegada y salida Alojamiento según régimen seleccionado Coordinador. No incluye: impuesto pais.',
+        'descripcion' => 'Duración: 4 días / 3 noches Salidas: - A consultar Incluye: Pasaje aéreo Buenos Aires/Puerto Iguazu/Buenos Aires Incluye un equipaje de mano de hasta 8kg Traslados de llegada y salida Alojamiento según régimen seleccionado. No incluye: impuesto pais. Menores: Los menores de 2 años viajan sin cargo y sin servicio. Desc. a estudiantes.',
         'url' => '../images/misiones.jpeg'
     ),
     array(
         'id' => 5,
         'nombre' => 'Mendoza',
         'precio' => '$36000',
-        'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Jueves Incluye: Aéreos Buenos Aires/Mendoza/Buenos Aires Un equipaje de mano de hasta 8kg Traslados de llegada y de salida Alojamiento según régimen seleccionado.',
+        'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Jueves Incluye: Aéreos Buenos Aires/Mendoza/Buenos Aires Un equipaje de mano de hasta 8kg Traslados de llegada y de salida Alojamiento según régimen seleccionado.  No incluye: impuesto pais. Menores de 2 años sin cargo.',
         'url' => '../images/mendoza.jpg'
     ),
 );

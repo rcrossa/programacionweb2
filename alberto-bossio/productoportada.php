@@ -22,7 +22,7 @@
                                 <div class="container">
                                     <div class="row justify-content-around pb-2">
                                         <a href="#" class="btn btn-success">Comprar</a>
-                                        <a href="#" class="btn btn-outline-primary">Ver mas</a>
+                                        <a href="opiniones.php" class="btn btn-outline-primary">Ver mas</a>
                                     </div>
                                 </div>
                             </div>

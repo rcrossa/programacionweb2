@@ -107,7 +107,7 @@
     </div>
 
     <section>
-        <div class="container bg-warning">
+        <div class="container bg-ligth">
             <!--           <fieldset>-->
             <div class="text-center">
                 <h4>Opinión del producto</h4>

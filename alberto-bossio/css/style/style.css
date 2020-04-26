@@ -62,9 +62,14 @@
     unicode-bidi: bidi-override;
   }
   
-  input[type="radio"]:checked ~ label {
-    color: orange;
-  }
+  label:hover,
+label:hover ~ label {
+  color: white;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orangered;
+}
 
 /* fondo */
 body{ 

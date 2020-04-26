@@ -120,18 +120,18 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="col-6">
-                                <label>Nombre</label>
-                                <input type="text" name="nombre" class="form-control">
+                                <label>Nombre y Apellido *</label>
+                                <input type="text" name="nombre" required class="form-control">
                             </div>
                             <div class="col-6">
-                                <label>Email</label>
-                                <input type="text" name="email" class="form-control">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required class="form-control">
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label>Mensaje</label>
-                            <textarea class="form-control" name="comentario" rows="3"></textarea>
+                            <label>Mensaje *</label>
+                            <textarea class="form-control" name="comentario" required rows="3"></textarea>
                         </div>
                     </div>
                     

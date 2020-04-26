@@ -108,7 +108,7 @@
         <div class="container">
             <!--           <fieldset>-->
             <div>
-                <h4>Formulario De Contacto</h4>
+                <h4>Dejanos un comentario</h4>
             </div>
 
             <form action="#" method="post">
@@ -157,23 +157,9 @@
         </svg>
 
 
-        <div id="tab-content-1" class="container-fluid">
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-0a"><a class="text-light" href="../somos/somos.html">Quienes Somos</a></div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-1a"><a class="text-light" href="../formadepago/formadepago.html">Forma De
-                            Pago</a></div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-2a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección
-                            Datos Personales</a></div>
-                </div>
-            </div>
-
-        </div>
+       <?php
+        require_once "footer0.php";
+       ?>
     </section>
 
     <?php

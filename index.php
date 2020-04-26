@@ -25,6 +25,7 @@
     require_once "soloproductos.php";
     require_once "newsletter.php";
     require_once "linkinteresesyherramientas.php";
+    require_once "footer0.php";
     require_once "footer.php";
     ?>
 

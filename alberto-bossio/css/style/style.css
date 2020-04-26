@@ -1,115 +1,16 @@
 .navbar {
     background-color: orange;
-    /*text-emphasis-color: white; */
     font-family: 'Releway', sans-serif;
-}
-
-.navbar-brand {
-    font-size: 1.875em;
 }
 
 .nav-link {
     font-family: 'Raleway', sans-serif;
     font-size: 1.875em;
     color: black;
-
-}
-
-.logomenu {
-    height: 45px;
-    width: 45px;
-}
-
-.paquete {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.875em;
-    padding-left: 12.5em;
-    height: 100%;
-    width: auto;
-}
-
-.imagebg {
-    padding-left: 1.875em;
-}
-
-
-.img-fluid {
-    align-content: center;
-}
-
-.titulopaquete {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-
-    text-shadow: 0.125em 0.125em 0.1875em orange;
-
-}
-
-.titulopaquete1 {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding-top: 0.3125em;
-}
-
-.herramientas {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
 }
 
 #tab-content {
     background-color: orange;
-    padding-bottom: 0.5em;
-
-}
-
-.tab-0 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9375em;
-    margin-bottom: 0.5em;
-    margin-left: 0.6em;
-    padding-bottom: 0.5em;
-    padding-top: 0.6em;
-}
-
-.tab-1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9375em;
-    margin-left: 0.6em;
-    padding-bottom: 1em;
-    padding-top: 0.6em;
-}
-
-.tab-2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9375em;
-    margin-left: 0.6em;
-    padding-bottom: 0.5em;
-    margin-bottom: 0.5em;
-    padding-top: 0.6em;
-}
-
-.tab-3 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9375em;
-    margin-left: 0.6em;
-    padding-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-top: 0.6em;
-}
-
-.tab-4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9375em;
-    margin-left: 0.6em;
-    margin-bottom: 0.5em;
-    padding-top: 0.6em;
-}
-
-.tab-5 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9375em;
-    margin-left: 0.6em;
-    padding-top: 0.5em;
 }
 
 #tab-content-1 {
@@ -121,92 +22,19 @@
     font-family: 'Raleway', sans-serif;
     font-size: 0.9375em;
     margin-bottom: 0.5em;
-
-}
-
-/*
-.tab-1a {
-
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9375em;
-    margin-bottom: 0.5em;
-
-}
-
-.tab-2a {
-
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9375em;
-    margin-bottom: 0.5em;
-    margin-left: 1em;
-
-}
-*/
-
-/* Tabla */
-.table1 {
-
-    background-color: paleturquoise;
-    text-align: center;
-}
-
-#tableline1 {
-    border-width: 0.0625em;
-    border-right: solid;
-    border-color: white;
-}
-
-#tableline2 {
-    border-width: 0.0625em;
-    border-right: solid;
-    border-color: white;
-}
-
-#tableline3 {
-    border-width: 0.0625em;
-    border-right: solid;
-    border-color: white;
-}
-
-#tableline4 {
-    border-width: 0.0625em;
-    border-right: solid;
-    border-color: white;
-}
-
-#tableline5 {
-    border-width: 0.0625em;
-    border-right: solid;
-    border-color: white;
-}
-
-#tableline6 {
-    border-width: 0.0625em;
-    border-right: solid;
-    border-color: white;
 }
 
 /* footer*/
-
-footer {
-    margin-top: 0.9375em;
-    margin-bottom: 1.5625em;
-}
 
 #logo {
     height: 3.2875em;
     width: 3.2975em;
 }
 
-.legajo {
-    margin-top: 1.2875em;
-}
-
 .ubicacion {
     height: 2.1875em;
     width: 2.1875em;
     margin-top: 1.2875em;
-
 }
 
 .phoneicon {
@@ -219,62 +47,6 @@ footer {
     height: 2.1875em;
     width: 2.1875em;
     margin-top: 1.2875em;
-}
-
-/* somos */
-
-.logomenu {
-    height: 2.8125em;
-    width: 2.8125em;
-}
-
-.somosletra {
-    font-family: 'ubuntu', sans-serif;
-    font-size: 1.125em;
-}
-
-/* forma de pago */
-.parrafo1 {
-    font-family: 'ubuntu', sans-serif;
-}
-
-/* formulario de contacto*/
-.formulario {
-    background-color: aqua;
-}
-
-.subformulario {
-    padding-left: 3.125em;
-}
-
-.contacto1 {
-    background-color: blue;
-}
-
-/*  Egreso de menores */
-.Menorinmigra {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.125em;
-}
-
-
-.btn-primary {
-    background-color: orange !important;
-    border-color: orange !important;
-}
-
-.btn-primary:hover {
-    background-color: orangered !important;
-    border-color: orangered !important;
-}
-
-.btn-ver-mas {
-    position: relative;
-    top: -100px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.125em;
-    margin-right: 2em;
-
 }
 
 /* ----- Comienza el codigo cs para las estrellas ----- */
@@ -292,10 +64,10 @@ footer {
     color: orange;
   }
 
-/* alberto */
+/* fondo */
 body{ 
     background-image: url(https://cdn.lavoz.com.ar/sites/default/files/styles/width_1072/public/nota_periodistica/737-max-8_1552315835.jpg);
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }

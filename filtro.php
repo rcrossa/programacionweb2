@@ -11,19 +11,27 @@
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <select class="custom-select custom-select-lg">
-                                        <option selected>Interior</option>
-                                        <?php foreach ($interior as $key => $value) : ?>
-                                            <option value="<?php echo $key ?>"><?php echo $interior[$key]["nombre"]; ?></option>
-                                        <?php endforeach ?>
+                                    <option></option>
+                                        <option>Interior</option>
+                                        <!-- Se comenta codigo para muestra en reunion -->
+                                        <!-- <option>Exterior</option> -->
+                                        <!-- <?php foreach ($interior as $key => $value) : ?> -->
+                                            <!-- <option value="<?php echo $key ?>"><?php echo $interior[$key]["nombre"]; ?></option> -->
+                                        <!-- <?php endforeach ?> -->
                                     </select>
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <select class="custom-select custom-select-lg">
-                                        <option selected>Exterior</option>
-                                        <?php foreach ($exterior as $key => $value) : ?>
-                                            <option value="<?php echo $key ?>"><?php echo $exterior[$key]["nombre"]; ?></option>
-                                        <?php endforeach ?>
+                                    <!-- Se comenta codigo para muestra en reunion -->
+                                        <option></option>
+                                        <!-- <?php foreach ($exterior as $key => $value) : ?> -->
+                                            <!-- <option value="<?php echo $key ?>"><?php echo $exterior[$key]["nombre"]; ?></option> -->
+                                        <!-- <?php endforeach ?> -->
+                                            <!-- codigo adicional para implementacion posterior a reunion -->
+                                            <?php foreach ($interior as $key => $value) : ?> -->
+                                            <option value="<?php echo $key ?>"><?php echo $interior[$key]["nombre"]; ?></option>
+                                         <?php endforeach ?>
                                     </select>
                                 </div>
 

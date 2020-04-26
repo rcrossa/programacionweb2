@@ -18,10 +18,10 @@
                                 <div class="col-sm-12 col-md-6 col-lg-4 py-2">
                                     <select class="custom-select custom-select-lg">
 
-                                        <?php if(option[name]===Interior){
+                                        <?php 
                                                             foreach ($interior as $key => $value) : ?>
                                         <option value="<?php echo $key ?>"><?php echo $interior[$key]["nombre"]  
-                                                               ?>}</option>
+                                                               ?></option>
 
 
                                         <?php endforeach ?>

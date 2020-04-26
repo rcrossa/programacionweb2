@@ -23,7 +23,7 @@
 
 <!-- Borrar -->
     <div class="container text-center pt-5 pb-4">
-        <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
+        <h1>Ushuaia</h1>
     </div>
 
     <div class="pb-5 text-center">
@@ -71,31 +71,17 @@
     <section class="descripcion py-5">
         <div class="container py-5 shadow">
             <div class="row justify-content-center">
-                <div class="col-xs-auto col-sm-11 col-md-10 col-lg-10 incluye py-2">
+                <div class="col-sm-11 col-md-10 col-lg-10 incluye py-2">
                     <h5 class="pb-3">
                         Incluye:
                     </h5>
                     <ul>
-                        <li> Pasaje aéreo de ida y vuelta en clase económica con restricciones de
-                            Air France (salida mayo) y Swiss-Lufthansa(salida: septiembre).</li>
-                        <li>
-                            Alojamiento en hoteles categoría 4 estrellas (en Ljubljana, Zagreb y
-                            Varsovia hoteles 5*) ubicados en planta urbana en habitaciones dobles
-                            standard
-                            con baño privado, incluyendo desayuno buffet y comidas donde se indica,
-                            con menú
-                            fijo e idéntico para todos los pasajeros que podrá ser con sistema
-                            buffet o
-                            servido en la mesa.
-                        </li>
-                        <li> Transporte en autocar privado. </li>
-                        <li> Excursiones y visitas con guía de habla hispana; entradas a museos y
-                            monumentos indicadas en el programa.</li>
-                        <li> Propinas obligatorias a maleteros en los hoteles (una maleta por
-                            persona).</li>
-                        <li> Acompañamiento de un representante de la empresa en el tramo aéreo
-                            Buenos Aires/Belgrado y durante todo el recorrido terrestre (no incluye
-                            acompañamiento en los vuelos de regreso).</li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
                     </ul>
                 </div>
             </div>

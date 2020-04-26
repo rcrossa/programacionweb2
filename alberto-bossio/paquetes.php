@@ -18,7 +18,7 @@
 
     <?php
     require_once "encabezado.php";
-    require_once "carousel.php";
+    // require_once "carousel.php";
     ?>
 
     <div class="container text-center pt-5 pb-4">

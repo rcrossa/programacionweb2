@@ -23,7 +23,7 @@
         require_once "encabezado.php";
         ?>
 
-        <section>
+        <section class="formulario-contacto">
             <div class="container bg-warning">
                 <!--           <fieldset>-->
                 <div class="text-center">

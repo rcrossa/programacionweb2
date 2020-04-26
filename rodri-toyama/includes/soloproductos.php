@@ -6,9 +6,9 @@
     </div>
 
     <div class="pb-4 text-center">
-        <svg width="60%" height="2">
-            <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
+      <svg width="60%" height="2">
+        <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
+      </svg>
     </div>
 
     <div class="col-12">

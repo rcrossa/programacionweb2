@@ -1,7 +1,7 @@
 <section class="container-fluid p-0 pt-3 text-center">
 
 
-    <div class="container">
+    <div class="container pb-3">
         <div class="row pb-4">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2 class="herramientas"> Links De Interés y Herramientas Útiles</h2>

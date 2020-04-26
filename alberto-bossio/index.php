@@ -21,7 +21,14 @@
     // archivos html
     require_once "encabezado.php";
     require_once "carousel.php";
-    require_once "soloproductos.php";
+    ?>
+
+    <div class="text-center bg-warning">
+        <h2>Productos Destacados</h2>
+    </div>
+
+    <?php
+    require_once "productoportada.php";
     require_once "linkinteresesyherramientas.php";
     require_once "footer.php";
     ?>

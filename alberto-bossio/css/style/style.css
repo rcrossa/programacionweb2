@@ -1,3 +1,5 @@
+/* encabezado */
+
 .navbar {
     background-color: orange;
     font-family: 'Releway', sans-serif;
@@ -24,7 +26,7 @@
     margin-bottom: 0.5em;
 }
 
-/* footer*/
+/* footer */
 
 #logo {
     height: 3.2875em;
@@ -71,3 +73,43 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* ----- Producto portada ----- */
+
+  .carta {
+    transition: 0.3s ease;
+  }
+  
+  .carta:hover {
+    opacity: 1;
+    transform: scale(1.05, 1.05);
+  }
+  
+  .imagen1,
+  .imagen2,
+  .imagen3 {
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .imagen1:hover,
+  .imagen2:hover,
+  .imagen3:hover {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+  
+  .incluye li {
+    font-size: 1.1em;
+    padding-bottom: 1em;
+  }
+  
+  .descripcion {
+    float: inline-start;
+    margin-top: 10px;
+  }
+  
+  .descripcion .row {
+    border-width: 5px;
+  }
+  

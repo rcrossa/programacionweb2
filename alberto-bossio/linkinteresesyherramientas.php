@@ -45,10 +45,10 @@
                 <div class="tab-0a"><a class="text-light" href="somos.php">Quienes Somos</a></div>
             </div>
             <div class="col-4">
-                <div class="tab-1a"><a class="text-light" href="formadepago.php">Forma De Pago</a></div>
+                <div class="tab-0a"><a class="text-light" href="formadepago.php">Forma De Pago</a></div>
             </div>
             <div class="col-4">
-                <div class="tab-2a"><a class="text-light" href="protecciondatos.php">Protección Datos Personales</a></div>
+                <div class="tab-0a"><a class="text-light" href="protecciondatos.php">Protección Datos Personales</a></div>
             </div>
         </div>
 

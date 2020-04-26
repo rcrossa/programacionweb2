@@ -9,7 +9,7 @@
             <li class="nav-brand mr-4">
                 <a href="index.php" class="logomenu"> <img src="images/logo_cabecera.png" width="80" height="70" alt="Logo">
                 </a></li>
-            <li class="nav-item active px-2">
+            <li class="nav-item px-2">
                 <a class="nav-link" href="index.php">Inicio</a>
             </li>
             <li class="nav-item px-2">

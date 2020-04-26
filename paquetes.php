@@ -18,13 +18,9 @@
 
 <body>
 
-    <?php
-    require_once "encabezado.php";
-    ?>
+    <?php require_once "encabezado.php"; ?>
 
-    <?php 
-    require_once "carousel.php"
-    ?>
+    <?php require_once "carousel.php" ?>
 
     <div class="container text-center pt-5 pb-4">
         <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
@@ -104,87 +100,7 @@
         </div>
     </section>
 
-    <div>
-        <svg width="100%" height="10">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-    </div>
-
-    <section>
-        <div class="container">
-            <!--           <fieldset>-->
-            <div>
-                <h4>Formulario De Contacto</h4>
-            </div>
-
-            <form action="#" method="post">
-                <fieldset>
-                    <div>
-                        <label>email</label>
-                        <input type="text" name="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Mensaje</label>
-                        <textarea class="form-control" name="comentario" rows="3"></textarea>
-                    </div>
-                    <div class="form1">
-                        <p class="clasificacion">
-                            <input id="radio1" type="radio" name="estrellas" value="5">
-                            <!--
-                            --><label for="radio1">★</label>
-                            <!--
-                            --><input id="radio2" type="radio" name="estrellas" value="4">
-                            <!--
-                            --><label for="radio2">★</label>
-                            <!--
-                            --><input id="radio3" type="radio" name="estrellas" value="3">
-                            <!--
-                            --><label for="radio3">★</label>
-                            <!--
-                            --><input id="radio4" type="radio" name="estrellas" value="2">
-                            <!--
-                            --><label for="radio4">★</label>
-                            <!--
-                            --><input id="radio5" type="radio" name="estrellas" value="1">
-                            <!--
-                             --><label for="radio5">★</label>
-                        </p>
-            </form>
-            <div>
-                <input type="submit" value="Enviar" name="submit">
-            </div>
-            </fieldset>
-            </form>
-            <!--            </fieldset>-->
-        </div>
-
-        <svg width="100%" height="10">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-
-
-        <div id="tab-content-1" class="container-fluid">
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-0a"><a class="text-light" href="../somos/somos.html">Quienes Somos</a></div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-1a"><a class="text-light" href="../formadepago/formadepago.html">Forma De
-                            Pago</a></div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-2a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección
-                            Datos Personales</a></div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <?php
-    require_once "footer.php";
-    ?>
+    <?php require_once "footer.php"; ?>
 
     <!-- Scripts -->
     <script src="js/jquery/jquery.min.js"></script>

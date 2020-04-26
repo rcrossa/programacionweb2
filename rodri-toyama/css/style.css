@@ -9,6 +9,10 @@ body {
   background-color: #f6f6f6 !important;
 }
 
+li {
+  list-style: none;
+}
+
 /* ----- Encabezado ----- */
 
 .navbar {
@@ -138,10 +142,6 @@ body {
 
 /* ----- Links de Interes ----- */
 
-.herramientas {
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-}
 
 #tab-content {
   background-color: #F78014;
@@ -154,7 +154,6 @@ body {
 .tab-3,
 .tab-4,
 .tab-5 {
-  font-family: "Raleway", sans-serif;
   font-size: 0.9375em;
   padding-bottom: 0.6em;
   padding-top: 0.6em;
@@ -168,7 +167,6 @@ body {
 .tab-0a,
 .tab-1a,
 .tab-2a {
-  font-family: "Raleway", sans-serif;
   font-size: 0.9375em;
   margin-bottom: 0.5em;
 }
@@ -186,10 +184,6 @@ footer {
   width: 3.2975em;
 }
 
-.legajo {
-  margin-top: 1.2875em;
-}
-
 .ubicacion {
   height: 2.1875em;
   width: 2.1875em;
@@ -197,10 +191,6 @@ footer {
 
 .ubicacion-texto {
   font-size: 0.8em;
-}
-
-.ubicacion-texto li {
-  list-style: none;
 }
 
 .phoneicon {
@@ -211,11 +201,6 @@ footer {
 .emailicon {
   height: 2.1875em;
   width: 2.1875em;
-}
-
-.somosletra {
-  font-family: "ubuntu", sans-serif;
-  font-size: 1.125em;
 }
 
 .button .btn-danger {

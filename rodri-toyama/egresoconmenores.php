@@ -1,47 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Delfos Tour</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <!-- Styles -->
-    <link href="../css/style/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
-
+    <?php require_once "./includes/head.php" ?>
 </head>
 
 <body>
 
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-orangened">
-        <a class="navbar-brand" href="images/iconolog.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-brand active">
-                    <a href="index.php"> <img src="images/logo_cabecera.png" class="logo" alt="logomenu" width="74" height="90">
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="gallery.html">Paquetes</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item dropdown">
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <?php require_once "./includes/encabezado.php"; ?>
 
     <section>
         <div class="container-fluid">
@@ -149,61 +116,8 @@
 
     </section>
 
-    <footer>
-        <div class="container-fluid">
+    <?php require_once "./includes/footer.php"; ?>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                    <div>
-                        <img src="images/logo_delfos.png" id="logo" alt="icono de logo delfos" width="72" height="84">
-                    </div>
-                    <div class="Legajo">
-                        N° Legajo 11486
-                    </div>
-                </div>
+</body>
 
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                    <div>
-                        <img src="images/Phone-icon.png" class="phoneicon" alt="icono de telefono delfos" width="128" height="128">
-                        0810 8103353
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
-                    <div>
-                        <a href="mailto:info@delfos.tur.ar"> <img src="images/email-2-icon.png" class="emailicon" alt="icono de email delfos" width="128" height="128"></a>
-                        info@delfos.tur.ar
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-                    <div class="locationicon">
-                        <a href="https://goo.gl/maps/dif9jy2WHjwzRtiG7" target="_blank"><img src="images/location-icon.png" class="ubicacion" alt="icono de redireccion google maps" width="128" height="128"></a>
-                    </div>
-                    <div> Cnel. Juan Beverina 1988</div>
-                    <div> CP: X5009IOH</div>
-                    <div> Centro de las Rosas Cordoba</div>
-                </div>
-
-
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">
-                    <div>Mapa del sitio</div>
-                    <div><a href="index.php">Home</a></div>
-                    <div><a href="gallery.html">Paquetes</a></div>
-                    <div><a href="contacto.html">Contacto</a></div>
-                </div>
-            </div>
-
-
-
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/jquery/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-</body></html>
+</html>

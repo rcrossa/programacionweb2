@@ -40,8 +40,8 @@
                         <div class="locationicon px-2">
                             <a href="https://goo.gl/maps/dif9jy2WHjwzRtiG7" target="_blank"><img src="images/location-icon.png" class="ubicacion" alt="icono de direccionamiento a google mapas" width="128" height="128"></a>
                         </div>
-                        <div class="ubicacion-texto">
-                            <ul>
+                        <div class="text-center">
+                            <ul style="list-style-type:none;">
                                 <li>Cnel. Juan Beverina 1988</li>
                                 <li>CP: X5009IOH</li>
                                 <li>Centro de las Rosas Cordoba</li>

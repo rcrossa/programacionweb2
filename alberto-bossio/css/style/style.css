@@ -11,13 +11,15 @@
     color: black;
 }
 
+/* footer */
+
 #tab-content {
-    background-color: orange;
+  background-color: orange;
 }
 
 #tab-content-1 {
-    background-color: darkblue;
-    padding-top: 0.6em;
+  background-color: darkblue;
+  padding-top: 0.6em;
 }
 
 .tab-0a {
@@ -25,8 +27,6 @@
     font-size: 0.9375em;
     margin-bottom: 0.5em;
 }
-
-/* footer */
 
 #logo {
     height: 3.2875em;
@@ -53,25 +53,22 @@
 
 /* ----- Comienza el codigo cs para las estrellas ----- */
 
-  input[type="radio"] {
-    display: none;
-  }
+input[type="radio"] {
+  display: none;
+}
   
-  .clasificacion {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-  }
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
   
-  label:hover,
-label:hover ~ label {
-  color: white;
+input[type="radio"]:checked ~ label {
+  color: orange;
 }
 
-input[type="radio"]:checked ~ label {
-  color: orangered;
-}
 
 /* fondo */
+
 body{ 
     background-image: url(https://cdn.lavoz.com.ar/sites/default/files/styles/width_1072/public/nota_periodistica/737-max-8_1552315835.jpg);
     background-attachment: fixed;
@@ -118,3 +115,8 @@ body{
     border-width: 5px;
   }
   
+
+  .formulario-contacto{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }

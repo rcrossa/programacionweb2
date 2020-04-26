@@ -20,6 +20,8 @@
     require_once "encabezado.php";
     ?>
 
+
+<!-- Borrar -->
     <div class="container text-center pt-5 pb-4">
         <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
     </div>
@@ -174,6 +176,8 @@
         </div>
         
     </section>
+<!-- Borrar -->
+
 
     <?php
     require_once "linkinteresesyherramientas.php";

@@ -61,7 +61,7 @@
                         
                         <div class="col-12">
                             <div class="row">
-                                <div class="col-11">
+                                <div class="col-sm-10 col-md-10 col-lg-11">
                                     
                                 </div>
 
@@ -75,31 +75,10 @@
 
                 <!--            </fieldset>-->
             </div>
-
-            <!--
-            <svg width="100%" height="10">
-                <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-            </svg>
-            -->
-
-
-            <div id="tab-content-1" class="container-fluid">
-
-                <div class="row">
-                    <div class="col-4 text-center">
-                        <div class="tab-0a"><a class="text-light" href="../somos/somos.html">Quienes Somos</a></div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="tab-0a"><a class="text-light" href="../formadepago/formadepago.html">Forma De Pago</a></div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="tab-0a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección Datos Personales</a></div>
-                    </div>
-                </div>
-
-            </div>
         </section>
+
         <?php
+        require_once "linkinteresesyherramientas.php";
         require_once "footer.php";
         ?>
 

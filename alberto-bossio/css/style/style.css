@@ -11,13 +11,15 @@
     color: black;
 }
 
+/* footer */
+
 #tab-content {
-    background-color: orange;
+  background-color: orange;
 }
 
 #tab-content-1 {
-    background-color: darkblue;
-    padding-top: 0.6em;
+  background-color: darkblue;
+  padding-top: 0.6em;
 }
 
 .tab-0a {
@@ -25,8 +27,6 @@
     font-size: 0.9375em;
     margin-bottom: 0.5em;
 }
-
-/* footer */
 
 #logo {
     height: 3.2875em;

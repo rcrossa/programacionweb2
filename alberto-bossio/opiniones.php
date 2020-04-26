@@ -136,7 +136,7 @@
                     
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-11">
+                            <div class="col-sm-10 col-md-10 col-lg-11">
                                 <div class="form1">
                                     <p class="clasificacion">
                                         <input id="radio1" type="radio" name="estrellas" value="5">

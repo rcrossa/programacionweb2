@@ -2,8 +2,8 @@
 <html lang="es">
 
 <head>
-    <?php require_once "./includes/head.php"; ?>
-    <title>Forma de Pago</title>
+    <?php require_once "./includes/head.php" ?>
+    <title>Delfos Tour</title>
 </head>
 
 <body>
@@ -47,7 +47,10 @@
 
     </section>
 
-    <?php require_once "./includes/footer.php"; ?>
+    <?php
+    require_once "./includes/footer.php";
+    ?>
+    
 </body>
 
 </html>

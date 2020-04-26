@@ -8,12 +8,12 @@
 
 <body>
     <?php
-    require_once "./functions/funcionesproductoportada.php";
+    require_once "functions/funcionesproductoportada.php";
 
     // archivos html
     require_once "./includes/encabezado.php";
     require_once "./includes/carousel.php";
-    require_once "./includes/soloproductos.php";
+    require_once "./includes/productoportada.php";
     require_once "./includes/newsletter.php";
     require_once "./includes/linkinteresesyherramientas.php";
     require_once "./includes/footer.php";

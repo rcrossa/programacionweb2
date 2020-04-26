@@ -20,8 +20,10 @@
     require_once "encabezado.php";
     ?>
 
+
+<!-- Borrar -->
     <div class="container text-center pt-5 pb-4">
-        <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
+        <h1>Ushuaia</h1>
     </div>
 
     <div class="pb-5 text-center">
@@ -69,31 +71,17 @@
     <section class="descripcion py-5">
         <div class="container py-5 shadow">
             <div class="row justify-content-center">
-                <div class="col-xs-auto col-sm-11 col-md-10 col-lg-10 incluye py-2">
+                <div class="col-sm-11 col-md-10 col-lg-10 incluye py-2">
                     <h5 class="pb-3">
                         Incluye:
                     </h5>
                     <ul>
-                        <li> Pasaje aéreo de ida y vuelta en clase económica con restricciones de
-                            Air France (salida mayo) y Swiss-Lufthansa(salida: septiembre).</li>
-                        <li>
-                            Alojamiento en hoteles categoría 4 estrellas (en Ljubljana, Zagreb y
-                            Varsovia hoteles 5*) ubicados en planta urbana en habitaciones dobles
-                            standard
-                            con baño privado, incluyendo desayuno buffet y comidas donde se indica,
-                            con menú
-                            fijo e idéntico para todos los pasajeros que podrá ser con sistema
-                            buffet o
-                            servido en la mesa.
-                        </li>
-                        <li> Transporte en autocar privado. </li>
-                        <li> Excursiones y visitas con guía de habla hispana; entradas a museos y
-                            monumentos indicadas en el programa.</li>
-                        <li> Propinas obligatorias a maleteros en los hoteles (una maleta por
-                            persona).</li>
-                        <li> Acompañamiento de un representante de la empresa en el tramo aéreo
-                            Buenos Aires/Belgrado y durante todo el recorrido terrestre (no incluye
-                            acompañamiento en los vuelos de regreso).</li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
+                        <li> Acá va la descripción del producto. </li>
                     </ul>
                 </div>
             </div>
@@ -118,25 +106,25 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="col-6">
-                                <label>Nombre</label>
-                                <input type="text" name="nombre" class="form-control">
+                                <label>Nombre y Apellido *</label>
+                                <input type="text" name="nombre" required class="form-control">
                             </div>
                             <div class="col-6">
-                                <label>Email</label>
-                                <input type="text" name="email" class="form-control">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required class="form-control">
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label>Mensaje</label>
-                            <textarea class="form-control" name="comentario" rows="3"></textarea>
+                            <label>Mensaje *</label>
+                            <textarea class="form-control" name="comentario" required rows="3"></textarea>
                         </div>
                     </div>
                     
                     
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-11">
+                            <div class="col-sm-10 col-md-10 col-lg-11">
                                 <div class="form1">
                                     <p class="clasificacion">
                                         <input id="radio1" type="radio" name="estrellas" value="5">
@@ -173,30 +161,12 @@
             <!--            </fieldset>-->
         </div>
         
-        <!--  
-        <svg width="100%" height="10">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-        -->
-
-        <div id="tab-content-1" class="container-fluid">
-
-            <div class="row">
-                <div class="col-4 text-center">
-                    <div class="tab-0a"><a class="text-light" href="../somos/somos.html">Quienes Somos</a></div>
-                </div>
-                <div class="col-4 text-center">
-                    <div class="tab-0a"><a class="text-light" href="../formadepago/formadepago.html">Forma De Pago</a></div>
-                </div>
-                <div class="col-4 text-center">
-                    <div class="tab-0a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección Datos Personales</a></div>
-                </div>
-            </div>
-
-        </div>
     </section>
+<!-- Borrar -->
+
 
     <?php
+    require_once "linkinteresesyherramientas.php";
     require_once "footer.php";
     ?>
 

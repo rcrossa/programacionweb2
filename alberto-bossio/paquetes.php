@@ -18,18 +18,20 @@
 
     <?php
     require_once "encabezado.php";
-    require_once "carousel.php";
+    // require_once "carousel.php";
     ?>
 
     <div class="container text-center pt-5 pb-4">
         <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
     </div>
 
+    <!--
     <div class="pb-5 text-center">
         <svg width="60%" height="2">
             <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
         </svg>
     </div>
+    -->
 
     <section>
         <div class="container shadow justify-content-around p-4">
@@ -99,39 +101,8 @@
         </div>
     </section>
 
-    <div>
-        <svg width="100%" height="10">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-    </div>
-
-    <section>
-        
-
-        <svg width="100%" height="10">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-
-
-        <div id="tab-content-1" class="container-fluid">
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-0a"><a class="text-light" href="../somos/somos.html">Quienes Somos</a></div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-1a"><a class="text-light" href="../formadepago/formadepago.html">Forma De Pago</a></div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                    <div class="tab-2a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección
-                            Datos Personales</a></div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
     <?php
+    require_once "linkinteresesyherramientas.php";
     require_once "footer.php";
     ?>
 

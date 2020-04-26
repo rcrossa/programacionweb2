@@ -6,27 +6,134 @@
 
 body {
   font-family: "Raleway", sans-serif !important;
+  background-color: #f6f6f6 !important;
 }
 
 /* ----- Encabezado ----- */
 
 .navbar {
-  background-color: orange;
+  background-color: #F78014;
 }
 
 .navbar-brand {
   font-size: 2.875em;
+  margin-right: 1.5rem;
 }
 
 .nav-link {
-  font-size: 1.875em;
+  font-size: 1.3em;
   color: white;
+  margin-right: 1.5rem;
 }
 
 /* ----- Carousel -----*/
 
-.img-fluid {
-  align-content: center;
+#main-slider {
+  position: relative;
+  text-align: center;
+}
+
+#main-slider .carousel .carousel-content {
+  margin-top: 150px;
+}
+
+#main-slider .carousel .slide-margin {
+  margin-top: 100px;
+}
+
+.titulo-carousel {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 8.5rem;
+}
+
+.subtitulo-carousel {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.carousel-inner {
+  height: 640px;
+}
+
+.imagen {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0 !important;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block !important;
+  height: 640px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.carousel-imagen1 {
+  background-image: url("../../images/carousel-img1.jpeg");
+}
+
+.carousel-imagen2 {
+  background-image: url("../../images/carousel-img2.jpg");
+}
+
+.carousel-imagen3 {
+  background-image: url("../../images/carousel-img3.jpeg");
+}
+
+#main-slider .item.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.btn-slide {
+  padding: 0.5em 1.5em !important;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 25px;
+  display: inline-block;
+  transition: 0.5s;
+  margin: 10px 10px;
+  background-color: #F78014 !important;
+}
+
+.btn-slide:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 19px 43px !important;
+  transform: translate3d(0px, -1px, 0px);
+  color: white;
+}
+
+
+/* ----- Destinos Populares ----- */
+
+.destinos-populares h2 {
+  font-size: 2.5rem !important;
+}
+
+
+/* ----- Newsletter area ----- */
+
+.newsletter-area {
+  background-color: #333c54;
+  padding: 4rem 0;
+  margin: 4rem 0;
+}
+
+.newsletter-input {
+  padding: .5rem .75rem !important;
+  width: 100%;
+}
+
+.newsletter-btn {
+  background-color: #F78014 !important;
 }
 
 /* ----- Links de Interes ----- */
@@ -37,7 +144,7 @@ body {
 }
 
 #tab-content {
-  background-color: orange;
+  background-color: #F78014;
   padding-bottom: 0.5em;
 }
 
@@ -54,7 +161,7 @@ body {
 }
 
 #tab-content-1 {
-  background-color: darkblue;
+  background-color: #411f26;
   padding-top: 0.6em;
 }
 
@@ -71,7 +178,7 @@ body {
 footer {
   padding-top: 0.9375em;
   padding-bottom: 1.5em;
-  background-color: wheat;
+  background-color: rgb(5,5,5);
 }
 
 #logo {
@@ -118,7 +225,7 @@ footer {
 /* ----- Forma de pago ----- */
 
 .parrafo1 {
-  font-family: "ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 /* ----- Formulario de contacto ----- */
@@ -166,7 +273,7 @@ footer {
 
 .carta:hover {
   opacity: 1;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.02, 1.02);
 }
 
 /* ----- Producto portada ----- */
@@ -235,4 +342,131 @@ label:hover ~ label {
 
 input[type="radio"]:checked ~ label {
   color: orange;
+}
+
+/* ----- iframe Google maps -----*/
+
+.google-maps {
+  position: relative;
+  padding-bottom: 25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+/*
+col <576pxs
+col-sm ≥576px
+col-md ≥768px
+col-lg ≥992px
+col-xl ≥1200px
+*/
+
+/* ----- Media query ----- */
+
+@media only screen and (max-width: 576px) {
+
+  .titulo-carousel {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2.5rem;
+  }
+  
+  .subtitulo-carousel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .carousel-inner {
+    height: 420px;
+  }
+
+  .imagen {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0 !important;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block !important;
+    height: 420px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+  }
+
+}
+
+@media only screen and (min-width: 576px) {
+  
+  .titulo-carousel {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 4.5rem;
+  }
+  
+  .subtitulo-carousel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .titulo-carousel {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 5rem;
+  }
+  
+  .subtitulo-carousel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .titulo-carousel {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 7.5rem;
+  }
+  
+  .subtitulo-carousel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .titulo-carousel {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 9rem;
+  }
+  
+  .subtitulo-carousel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
 }

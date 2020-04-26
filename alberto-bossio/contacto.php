@@ -23,7 +23,7 @@
         require_once "encabezado.php";
         ?>
 
-        <section>
+        <section class="formulario-contacto">
             <div class="container bg-warning">
                 <!--           <fieldset>-->
                 <div class="text-center">
@@ -35,33 +35,39 @@
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-6">
-                                    <label>Nombre y Apellido</label>
-                                    <input type="text" name="nombre" class="form-control">
+                                    <label>Nombre y Apellido *</label>
+                                    <input type="text" name="nombre" required class="form-control">
                                 </div>
                                 <div class="col-6">
-                                    <label>Email</label>
+                                    <!-- <label>Email</label>
                                     <input type="text" name="email" class="form-control">
+                                    <input type="submit" value="Submit"> -->
+                                    
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required class="form-control">
                                 </div>
                                 <div class="col-6">
                                     <label>Área de la empresa</label>
-                                    <input type="text" name="email" class="form-control">
+                                    <input type="text" name="Área de la empresa" class="form-control">
                                 </div>
                                 <div class="col-6">
-                                    <label>Teléfono</label>
-                                    <input type="text" name="email" class="form-control">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="15-4545-4545" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required class="form-control">
+                                    <!-- <small>Format: 123-45-678</small>
+                                    <input type="tel" name="Teléfono" class="form-control"> -->
                                 </div>
                             </div>
                             
                             <div class="form-group">
-                                <label>Mensaje</label>
-                                <textarea class="form-control" name="comentario" rows="3"></textarea>
+                                <label>Mensaje *</label>
+                                <textarea class="form-control" name="comentario" required rows="3"></textarea>
                             </div>
                         </div>
                         
                         
                         <div class="col-12">
                             <div class="row">
-                                <div class="col-11">
+                                <div class="col-sm-10 col-md-10 col-lg-11">
                                     
                                 </div>
 
@@ -75,31 +81,10 @@
 
                 <!--            </fieldset>-->
             </div>
-
-            <!--
-            <svg width="100%" height="10">
-                <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-            </svg>
-            -->
-
-
-            <div id="tab-content-1" class="container-fluid">
-
-                <div class="row">
-                    <div class="col-4 text-center">
-                        <div class="tab-0a"><a class="text-light" href="../somos/somos.html">Quienes Somos</a></div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="tab-0a"><a class="text-light" href="../formadepago/formadepago.html">Forma De Pago</a></div>
-                    </div>
-                    <div class="col-4 text-center">
-                        <div class="tab-0a"><a class="text-light" href="/..protecciondatos/protecciondatos.html">Protección Datos Personales</a></div>
-                    </div>
-                </div>
-
-            </div>
         </section>
+
         <?php
+        require_once "linkinteresesyherramientas.php";
         require_once "footer.php";
         ?>
 

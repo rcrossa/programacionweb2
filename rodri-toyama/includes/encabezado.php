@@ -1,4 +1,4 @@
-<nav class="navbar shadow-sm navbar-expand-md navbar-dark bg-orangened">
+<nav class="navbar shadow-sm navbar-expand-md navbar-dark">
     <a class="navbar-brand" href="../images/iconolog.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,7 +13,7 @@
                 <a class="nav-link" href="index.php">Inicio</a>
             </li>
             <li class="nav-item px-2">
-                <a class="nav-link" href="productos.php">Catalogo</a>
+                <a class="nav-link" href="productos.php">Productos</a>
             </li>
             <li class="nav-item px-2">
                 <a class="nav-link" href="paquetes.php">Paquetes</a>

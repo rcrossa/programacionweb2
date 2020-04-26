@@ -1,3 +1,21 @@
+<div class="container-fluid p-0 text-center">
+    <div class="container-fluid" id="tab-content-1">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="tab-0a"><a class="text-light" href="somos.php">Quienes Somos</a></div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="tab-1a"><a class="text-light" href="formadepago.php">Forma De Pago</a></div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="tab-2a"><a class="text-light" href="protecciondatos.php">Protección Datos Personales</a></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <footer>
     <div class="container-fluid text-white">
 
@@ -55,7 +73,8 @@
                 <div class="row justify-content-center align-items-center flex-column">
                     <div>Mapa del sitio</div>
                     <div><a href="index.php">Home</a></div>
-                    <div><a href="">Paquetes</a></div>
+                    <div><a href="productos.php">Productos</a></div>
+                    <div><a href="paquetes.php">Paquetes</a></div>
                     <div><a href="contacto.php">Contacto</a></div>
                 </div>
             </div>
@@ -65,3 +84,10 @@
 
     </div>
 </footer>
+
+
+<!-- Scripts -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

@@ -39,16 +39,22 @@
                                     <input type="text" name="nombre" class="form-control">
                                 </div>
                                 <div class="col-6">
-                                    <label>Email</label>
+                                    <!-- <label>Email</label>
                                     <input type="text" name="email" class="form-control">
+                                    <input type="submit" value="Submit"> -->
+                                    
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control">
                                 </div>
                                 <div class="col-6">
                                     <label>Área de la empresa</label>
-                                    <input type="text" name="email" class="form-control">
+                                    <input type="text" name="Área de la empresa" class="form-control">
                                 </div>
                                 <div class="col-6">
-                                    <label>Teléfono</label>
-                                    <input type="text" name="email" class="form-control">
+                                    <label for="phone">Teléfono</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="15-4545-4545" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required class="form-control">
+                                    <!-- <small>Format: 123-45-678</small>
+                                    <input type="tel" name="Teléfono" class="form-control"> -->
                                 </div>
                             </div>
                             

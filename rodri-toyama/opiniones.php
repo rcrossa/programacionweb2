@@ -96,7 +96,7 @@
                             <div class="col-10">
                                 <div class="row">
                                     <div class="col-12">
-                                        <label>Nombre y Apellido *</label>
+                                        <label>Nombre*</label>
                                         <input type="text" name="nombre" required class="form-control">
                                     </div>
                                 </div>

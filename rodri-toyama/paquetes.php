@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+    <?php $page = 'paquetes'; ?>
     <?php require_once "./includes/encabezado.php"; ?>
 
     <?php require_once "./includes/carousel.php" ?>

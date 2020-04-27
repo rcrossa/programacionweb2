@@ -2,22 +2,14 @@
 <html lang="es">
 
 <head>
+    <?php require_once "head.php"; ?>
     <title>Delfos Tour</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Styles -->
-    <link href="css/style/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 </head>
 
 <body>
-
+    <?php $page = 'index'; ?>
     <?php require_once "encabezado.php"; ?>
-    
+
     <section>
         <div class="container-fluid">
             <div class="row">
@@ -125,11 +117,6 @@
     </section>
 
     <?php require_once "footer.php"; ?>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="js/popper/popper.min.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
 
 </body>
 

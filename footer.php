@@ -77,7 +77,11 @@
             </div>
         </div>
 
-
-
     </div>
 </footer>
+
+<!-- Scripts -->
+<script src="js/jquery/jquery-3.4.1.slim.min.js"></script>
+<script src="js/popper/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.min.js"></script>

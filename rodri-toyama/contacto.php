@@ -7,6 +7,7 @@
     </head>
 
     <body>
+        <?php $page = 'contacto'; ?>
         <?php require_once "./includes/encabezado.php"; ?>
         <section class="formulario-contacto py-5">
             <div class="container pt-5 pb-3 shadow-sm">

@@ -1,5 +1,5 @@
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=false;">
 
 <!-- Styles -->
 <link rel="stylesheet" href="./css/style.css">
@@ -7,4 +7,4 @@
 <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="./css/jquery.fancybox.min.css" />

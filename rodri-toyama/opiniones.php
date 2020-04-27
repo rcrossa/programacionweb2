@@ -7,7 +7,7 @@
 </head>
 
 <body>
-
+    <?php $page = 'catalogo'; ?>
     <?php require_once "./includes/encabezado.php"; ?>
 
     <div class="container text-center pt-5 pb-4">

@@ -3,6 +3,7 @@
 
 <head>
     <?php require_once "./includes/head.php" ?>
+    
     <title>Delfos Tour</title>
 </head>
 
@@ -11,6 +12,7 @@
     require_once "functions/funcionesproductoportada.php";
 
     // archivos html
+    $page = 'index';
     require_once "./includes/encabezado.php";
     require_once "./includes/carousel.php";
     ?>

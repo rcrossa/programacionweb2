@@ -71,6 +71,7 @@
                 <div class="row justify-content-center align-items-center flex-column">
                     <div>Mapa del sitio</div>
                     <div><a href="index.php">Home</a></div>
+                    <div><a href="catalogo.php">Catálogo</a></div>
                     <div><a href="paquetes.php">Paquetes</a></div>
                     <div><a href="contacto.php">Contacto</a></div>
                 </div>
@@ -83,7 +84,7 @@
 </footer>
 
 <!-- Scripts -->
-<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-3.4.1.slim.min.js"></script>
 <script src="./js/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="./js/jquery.fancybox.min.js"></script>

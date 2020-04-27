@@ -2,21 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Styles -->
-    <link href="css/style/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
+    <?php require_once "head.php"; ?>
     <title>Document</title>
 </head>
 
 <body>
 
     <?php
+    $page = 'catalogo';
     require_once "encabezado.php";
     ?>
 
@@ -89,7 +82,7 @@
 
     <section class="py-5">
         <div class="container">
-            <!--           <fieldset>-->
+
             <div class="text-center pb-3">
                 <h2>Opinión del producto</h4>
             </div>
@@ -162,23 +155,14 @@
                 </form>
             </div>
 
-            <!--            </fieldset>-->
         </div>
 
     </section>
-    <!-- Borrar -->
-
 
     <?php
     require_once "linkinteresesyherramientas.php";
     require_once "footer.php";
     ?>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="js/popper/popper.min.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 

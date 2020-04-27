@@ -33,10 +33,6 @@
     require_once "./includes/linkinteresesyherramientas.php";
     require_once "./includes/footer.php";
     ?>
-    <!-- Se agrega linea para evitar error anterior. Los archivos que son llamados ninguno tiene el script de jquery. Ahi esta el problema -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
 </body>
 
 </html>

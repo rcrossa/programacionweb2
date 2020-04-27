@@ -26,6 +26,20 @@ body {
   margin-right: 1.5rem;
 }
 
+.borde {
+  position: relative;
+}
+
+.borde:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0px;
+  border-bottom: 2px solid white;
+}
+
 /* ----- Carousel -----*/
 
 #main-slider {

@@ -26,7 +26,7 @@
     </div>
 
     <div class="pb-5 text-center">
-        <svg width="60%" height="2">
+        <svg width="20%" height="2">
             <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
         </svg>
     </div>

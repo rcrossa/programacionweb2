@@ -10,38 +10,23 @@
                             <div class="row justify-content-center align-items-center">
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
-                                    <select class="custom-select custom-select-lg">
-                                        <?php
-                                        /*
-                                        Se comenta codigo para muestra en reunion
+                                    <select name="selectedValue" class="custom-select custom-select-lg">
                                         <option></option>
                                         <option>Interior</option>
                                         <option>Exterior</option>
-                                        <?php foreach ($interior as $key => $value) : ?>
-                                            <option value="<?php echo $key ?>"><?php echo $interior[$key]["nombre"]; ?></option>
-                                        <?php endforeach ?>
-                                        */
-                                        ?>
-
                                     </select>
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <select class="custom-select custom-select-lg">
-                                        <?php
-                                        /*
-                                        Se comenta codigo para muestra en reunion
                                         <option></option>
-                                        <?php foreach ($exterior as $key => $value) : ?>
-                                            <option value="<?php echo $key ?>"><?php echo $exterior[$key]["nombre"]; ?></option> -->
+                                        <?php foreach ($productos as $key => $value) : ?>
+                                            <option value="<?php echo $key ?>"><?php echo $productos[$key]["nombre"]; ?></option>
                                         <?php endforeach ?>
-                                        codigo adicional para implementacion posterior a reunion
-                                        <?php foreach ($interior as $key => $value) : ?> -->
-                                            <option value="<?php echo $key ?>"><?php echo $interior[$key]["nombre"]; ?></option>
+
+                                        <?php foreach ($productos as $key => $value) : ?>
+                                            <option value="<?php echo $key ?>"><?php echo $productos[$key]["nombre"]; ?></option>
                                         <?php endforeach ?>
-                                        */
-                                        ?>
-                                        
                                     </select>
                                 </div>
 

@@ -13,7 +13,7 @@
                 <a class="nav-link" href="index.php">Inicio</a>
             </li>
             <li class="nav-item px-2">
-                <a class="nav-link" href="productos.php">Catalogo</a>
+                <a class="nav-link" href="productos.php">Catálogo</a>
             </li>
             <li class="nav-item px-2">
                 <a class="nav-link" href="paquetes.php">Paquetes</a>

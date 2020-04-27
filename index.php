@@ -23,8 +23,14 @@
     require_once "encabezado.php";
     require_once "carousel.php";
     ?>
-    <div class="text-center bg-warning">
-        <h2>Productos Destacados</h2>
+    <div class="container text-center my-5 destinos-populares">
+      <h2>Productos Destacados</h2>
+    </div>
+
+    <div class="pb-4 text-center">
+      <svg width="20%" height="2">
+        <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
+      </svg>
     </div>
     <?php
     require_once "productoportada.php";

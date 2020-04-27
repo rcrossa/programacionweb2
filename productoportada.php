@@ -1,16 +1,6 @@
 <div class="container">
   <div class="row justify-content-center pb-4">
 
-    <div class="container text-center my-5 destinos-populares">
-      <h2>Destinos populares</h2>
-    </div>
-
-    <div class="pb-4 text-center">
-      <svg width="60%" height="2">
-        <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
-      </svg>
-    </div>
-
     <div class="col-12">
       <div class="row">
 

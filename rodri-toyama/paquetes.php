@@ -3,14 +3,14 @@
 
 <head>
     <?php require_once "./includes/head.php" ?>
-    <title>Paquetes</title>
+    <title>Document</title>
 </head>
 
 <body>
 
     <?php require_once "./includes/encabezado.php"; ?>
 
-    <?php require_once "./includes/carousel.php"; ?>
+    <?php require_once "./includes/carousel.php" ?>
 
     <div class="container text-center pt-5 pb-4">
         <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
@@ -37,7 +37,7 @@
                 <div class="col-md-12 col-lg-4">
                     <div class="imagen2 img-fluid">
                         <a href="./images/Untitled-2.png" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="./images/Untitled-2.png" alt="">
+                            <img height="auto" width="100%" src="./images/Untitled-2.png" alt="imagen de acantilado">
                         </a>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                     <div class="imagen3">
                         <div data-toggle="modal" data-target="#myModal2">
                             <a href="./images/Untitled-4.png" data-fancybox="gallery" data-caption="Caption for single image">
-                                <img height="auto" width="100%" src="./images/Untitled-4.png" alt="">
+                                <img height="auto" width="100%" src="./images/Untitled-4.png" alt="imagen de acantilado">
                             </a>
                         </div>
                     </div>
@@ -90,67 +90,8 @@
         </div>
     </section>
 
-    <div>
-        <svg width="100%" height="10">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-    </div>
-
-    <section>
-        <div class="container">
-            <!--           <fieldset>-->
-            <div>
-                <h4>Formulario De Contacto</h4>
-            </div>
-
-            <form action="#" method="post">
-                <fieldset>
-                    <div>
-                        <label>email</label>
-                        <input type="text" name="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Mensaje</label>
-                        <textarea class="form-control" name="comentario" rows="3"></textarea>
-                    </div>
-                    <div class="form1">
-                        <p class="clasificacion">
-                            <input id="radio1" type="radio" name="estrellas" value="5">
-                            <!--
-                            --><label for="radio1">★</label>
-                            <!--
-                            --><input id="radio2" type="radio" name="estrellas" value="4">
-                            <!--
-                            --><label for="radio2">★</label>
-                            <!--
-                            --><input id="radio3" type="radio" name="estrellas" value="3">
-                            <!--
-                            --><label for="radio3">★</label>
-                            <!--
-                            --><input id="radio4" type="radio" name="estrellas" value="2">
-                            <!--
-                            --><label for="radio4">★</label>
-                            <!--
-                            --><input id="radio5" type="radio" name="estrellas" value="1">
-                            <!--
-                             --><label for="radio5">★</label>
-                        </p>
-                        <div>
-                            <input type="submit" value="Enviar" name="submit">
-                        </div>
-                </fieldset>
-            </form>
-            <!--            </fieldset>-->
-        </div>
-
-        <svg width="100%" height="10">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-
-    </section>
-
     <?php require_once "./includes/footer.php"; ?>
-    
+
 </body>
 
 </html>

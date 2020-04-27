@@ -2,24 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Styles -->
-    <link href="css/style/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
+    <?php require_once "./includes/head.php" ?>
     <title>Document</title>
 </head>
 
 <body>
 
-    <?php
-    require_once "encabezado.php";
-    ?>
-
+    <?php require_once "./includes/encabezado.php"; ?>
 
     <div class="container text-center pt-5 pb-4">
         <h1>Tierra del Fuego</h1>
@@ -37,27 +26,27 @@
 
                 <!-- Acá va la imagen del producto -->
 
-                <div class="col-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="imagen1">
-                        <a href="images/Untitled-3.png" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="images/Untitled-3.png" alt="">
+                        <a href="./images/Untitled-3.png" data-fancybox data-fancybox="gallery" data-caption="Caption for single image">
+                            <img height="auto" width="100%" src="./images/Untitled-3.png" alt="">
                         </a>
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="imagen2 img-fluid">
-                        <a href="images/Untitled-2.png" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="images/Untitled-2.png" alt="imagen de acantilado">
+                        <a href="./images/Untitled-2.png" data-fancybox data-fancybox="gallery" data-caption="Caption for single image">
+                            <img height="auto" width="100%" src="./images/Untitled-2.png" alt="imagen de acantilado">
                         </a>
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="imagen3">
                         <div data-toggle="modal" data-target="#myModal2">
-                            <a href="images/Untitled-4.png" data-fancybox="gallery" data-caption="Caption for single image">
-                                <img height="auto" width="100%" src="images/Untitled-4.png" alt="imagen de acantilado">
+                            <a href="./images/Untitled-4.png" data-fancybox data-fancybox="gallery" data-caption="Caption for single image">
+                                <img height="auto" width="100%" src="./images/Untitled-4.png" alt="imagen de acantilado">
                             </a>
                         </div>
                     </div>
@@ -107,7 +96,7 @@
                             <div class="col-10">
                                 <div class="row">
                                     <div class="col-12">
-                                        <label>Nombre y Apellido *</label>
+                                        <label>Nombre*</label>
                                         <input type="text" name="nombre" required class="form-control">
                                     </div>
                                 </div>
@@ -162,24 +151,14 @@
                 </form>
             </div>
 
-            <!--            </fieldset>-->
         </div>
 
     </section>
-    <!-- Borrar -->
-
 
     <?php
-    require_once "linkinteresesyherramientas.php";
-    require_once "footer.php";
+    require_once "./includes/linkinteresesyherramientas.php";
+    require_once "./includes/footer.php";
     ?>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="js/popper/popper.min.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
 </body>
 
 </html>

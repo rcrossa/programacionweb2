@@ -14,14 +14,14 @@
           <div class="col-lg-7">
             <div class="mail-form">
               <div class="row no-gutters">
-                <div class="col-lg-9 col-md-8 pr-2 my-2">
+                <div class="col-lg-9 col-md-8 p-2">
                   <div class="newsletter-campo">
-                    <input type="email" class="form-control newsletter-input" placeholder="Tu email">
+                    <input type="email" class="form-control newsletter-input pr-lg-1" placeholder="Tu email">
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
-                  <div>
-                    <button class="text-white btn btn-md btn-block text-center newsletter-btn my-2 pr-2" type="submit">Subscribite</button>
+                <div class="col-lg-3 col-md-4 p-2">
+                  <div class="">
+                    <button class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit">Subscribite</button>
                   </div>
                 </div>
               </div>

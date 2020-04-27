@@ -12,7 +12,7 @@ body {
 /* ----- Encabezado ----- */
 
 .navbar {
-  background-color: #F78014;
+  background-color: #f78014;
 }
 
 .navbar-brand {
@@ -42,12 +42,12 @@ body {
 }
 
 .titulo-carousel {
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: "Nothing You Could Do", cursive;
   font-size: 8.5rem;
 }
 
 .subtitulo-carousel {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -102,7 +102,7 @@ body {
   display: inline-block;
   transition: 0.5s;
   margin: 10px 10px;
-  background-color: #F78014 !important;
+  background-color: #f78014 !important;
 }
 
 .btn-slide:hover {
@@ -111,13 +111,11 @@ body {
   color: white;
 }
 
-
 /* ----- Destinos Populares ----- */
 
 .destinos-populares h2 {
   font-size: 2.5rem !important;
 }
-
 
 /* ----- Newsletter area ----- */
 
@@ -128,12 +126,12 @@ body {
 }
 
 .newsletter-input {
-  padding: .5rem .75rem !important;
+  padding: 0.5rem 0.75rem !important;
   width: 100%;
 }
 
 .newsletter-btn {
-  background-color: #F78014 !important;
+  background-color: #f78014 !important;
 }
 
 /* ----- Links de Interes ----- */
@@ -144,16 +142,11 @@ body {
 }
 
 #tab-content {
-  background-color: #F78014;
+  background-color: #f78014;
   padding-bottom: 0.5em;
 }
 
-.tab-0,
-.tab-1,
-.tab-2,
-.tab-3,
-.tab-4,
-.tab-5 {
+.tab-0 {
   font-family: "Raleway", sans-serif;
   font-size: 0.9375em;
   padding-bottom: 0.6em;
@@ -165,9 +158,7 @@ body {
   padding-top: 0.6em;
 }
 
-.tab-0a,
-.tab-1a,
-.tab-2a {
+.tab-0a {
   font-family: "Raleway", sans-serif;
   font-size: 0.9375em;
   margin-bottom: 0.5em;
@@ -178,7 +169,7 @@ body {
 footer {
   padding-top: 0.9375em;
   padding-bottom: 1.5em;
-  background-color: rgb(5,5,5);
+  background-color: rgb(5, 5, 5);
 }
 
 #logo {
@@ -190,11 +181,6 @@ footer {
   margin-top: 1.2875em;
 }
 
-.ubicacion {
-  height: 2.1875em;
-  width: 2.1875em;
-}
-
 .ubicacion-texto {
   font-size: 0.8em;
 }
@@ -203,11 +189,8 @@ footer {
   list-style: none;
 }
 
-.phoneicon {
-  height: 2.1875em;
-  width: 2.1875em;
-}
-
+.ubicacion,
+.phoneicon,
 .emailicon {
   height: 2.1875em;
   width: 2.1875em;
@@ -337,7 +320,7 @@ label {
 
 label:hover,
 label:hover ~ label {
-  color: orange;
+  color: white;
 }
 
 input[type="radio"]:checked ~ label {
@@ -361,7 +344,6 @@ input[type="radio"]:checked ~ label {
   height: 100% !important;
 }
 
-
 /*
 col <576pxs
 col-sm ≥576px
@@ -373,14 +355,13 @@ col-xl ≥1200px
 /* ----- Media query ----- */
 
 @media only screen and (max-width: 576px) {
-
   .titulo-carousel {
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: "Nothing You Could Do", cursive;
     font-size: 2.5rem;
   }
-  
+
   .subtitulo-carousel {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 1rem;
     font-weight: bold;
   }
@@ -409,64 +390,56 @@ col-xl ≥1200px
     transform: translateY(-50%);
     bottom: initial;
   }
-
 }
 
 @media only screen and (min-width: 576px) {
-  
   .titulo-carousel {
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: "Nothing You Could Do", cursive;
     font-size: 4.5rem;
   }
-  
+
   .subtitulo-carousel {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  
   .titulo-carousel {
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: "Nothing You Could Do", cursive;
     font-size: 5rem;
   }
-  
+
   .subtitulo-carousel {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
   }
 }
 
 @media only screen and (min-width: 992px) {
-
   .titulo-carousel {
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: "Nothing You Could Do", cursive;
     font-size: 7.5rem;
   }
-  
+
   .subtitulo-carousel {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
   }
-
 }
 
-
 @media only screen and (min-width: 1200px) {
-
   .titulo-carousel {
-    font-family: 'Nothing You Could Do', cursive;
+    font-family: "Nothing You Could Do", cursive;
     font-size: 9rem;
   }
-  
+
   .subtitulo-carousel {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
   }
-
 }

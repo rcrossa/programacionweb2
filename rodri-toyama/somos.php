@@ -2,19 +2,22 @@
 <html lang="es">
 
 <head>
-    <title>Delfos Tour - About</title>
-    <?php require_once "./includes/head.php" ?>
+    <?php require_once "./includes/head.php"; ?>
+    <title>Delfos Tour</title>
 </head>
 
 <body>
 
-    <?php require_once "./includes/encabezado.php"; ?>
+    <?php
+    require_once "./includes/encabezado.php";
+    ?>
 
     <section>
 
         <div class="container-fluid">
             <div>
                 <img src="images/institucional.jpg" class="d-block w-100 img-fluid" alt="foto empleados de delfos" height="750" width="441">
+
             </div>
 
             <div class="row">
@@ -50,7 +53,14 @@
 
     </section>
 
-    <?php require_once "./includes/footer.php"; ?>
+    <?php
+    require_once "./includes/footer.php";
+    ?>
+
+    <!-- Scripts -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
 
 </body>
 

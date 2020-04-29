@@ -6,6 +6,7 @@ $productos = array(
         'nombre' => 'Ushuaia',
         'precio' => '$50000',
         'descripcion' => 'descripcion Ushuaia Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores velit laborum',
+        'url' => '../images/ushuaia.jpg'
     ),
     array(
         'id' => 2,

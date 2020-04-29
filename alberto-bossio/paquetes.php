@@ -2,42 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Styles -->
-    <link href="css/style/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
+    <?php require_once "head.php"; ?>
     <title>Document</title>
 </head>
 
 <body>
 
-    <?php
-    require_once "encabezado.php";
-    // require_once "carousel.php";
+    <?php 
+    $page = 'paquetes';
+    require_once "encabezado.php"; 
+    require_once "carousel.php" 
     ?>
 
     <div class="container text-center pt-5 pb-4">
         <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
     </div>
 
-    <!--
     <div class="pb-5 text-center">
-        <svg width="60%" height="2">
+        <svg width="20%" height="2">
             <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
         </svg>
     </div>
-    -->
 
     <section>
         <div class="container shadow justify-content-around p-4">
             <div class="row justify-content-center text-center">
 
-                <div class="col-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="imagen1">
                         <a href="images/Untitled-3.png" data-fancybox="gallery" data-caption="Caption for single image">
                             <img height="auto" width="100%" src="images/Untitled-3.png" alt="">
@@ -45,7 +36,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="imagen2 img-fluid">
                         <a href="images/Untitled-2.png" data-fancybox="gallery" data-caption="Caption for single image">
                             <img height="auto" width="100%" src="images/Untitled-2.png" alt="imagen de acantilado">
@@ -53,7 +44,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-12 col-lg-4">
                     <div class="imagen3">
                         <div data-toggle="modal" data-target="#myModal2">
                             <a href="images/Untitled-4.png" data-fancybox="gallery" data-caption="Caption for single image">
@@ -101,13 +92,10 @@
         </div>
     </section>
 
-    <?php
-    require_once "linkinteresesyherramientas.php";
-    require_once "footer.php";
-    ?>
+    <?php require_once "footer.php"; ?>
 
     <!-- Scripts -->
-    <script src="js/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

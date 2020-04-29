@@ -2,15 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Styles -->
-    <link href="css/style/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
+    <?php require_once "head.php"; ?>
     <title>Document</title>
 </head>
 
@@ -21,9 +13,8 @@
     ?>
 
 
-<!-- Borrar -->
     <div class="container text-center pt-5 pb-4">
-        <h1>Ushuaia</h1>
+        <h1>Tierra del Fuego</h1>
     </div>
 
     <div class="pb-5 text-center">
@@ -88,90 +79,93 @@
         </div>
     </section>
 
-    <div>
-        <svg width="100%" height="10">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-    </div>
-
-    <section>
-        <div class="container bg-warning">
+    <section class="py-5">
+        <div class="container">
             <!--           <fieldset>-->
-            <div class="text-center">
-                <h4>Opinión del producto</h4>
+            <div class="text-center pb-3">
+                <h2>Opinión del producto</h4>
             </div>
 
-            <form action="#" method="post">
-                <fieldset>
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-6">
-                                <label>Nombre y Apellido *</label>
-                                <input type="text" name="nombre" required class="form-control">
-                            </div>
-                            <div class="col-6">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required class="form-control">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Mensaje *</label>
-                            <textarea class="form-control" name="comentario" required rows="3"></textarea>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-sm-10 col-md-10 col-lg-11">
-                                <div class="form1">
-                                    <p class="clasificacion">
-                                        <input id="radio1" type="radio" name="estrellas" value="5">
-                                        <!--
-                                        --><label for="radio1">★</label>
-                                        <!--
-                                        --><input id="radio2" type="radio" name="estrellas" value="4">
-                                        <!--
-                                        --><label for="radio2">★</label>
-                                        <!--
-                                        --><input id="radio3" type="radio" name="estrellas" value="3">
-                                        <!--
-                                        --><label for="radio3">★</label>
-                                        <!--
-                                        --><input id="radio4" type="radio" name="estrellas" value="2">
-                                        <!--
-                                        --><label for="radio4">★</label>
-                                        <!--
-                                        --><input id="radio5" type="radio" name="estrellas" value="1">
-                                        <!--
-                                        --><label for="radio5">★</label>
-                                    </p>
+            <div class="pb-4 text-center">
+                <svg width="20%" height="2">
+                    <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
+                </svg>
+            </div>
+
+            <div class="container">
+                <form action="#" method="post">
+                    <fieldset>
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <label>Nombre y Apellido *</label>
+                                        <input type="text" name="nombre" required class="form-control">
+                                    </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 form-group">
+                                        <label>Mensaje *</label>
+                                        <textarea class="form-control" name="comentario" required rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form1">
+                                            <p class="clasificacion">
+                                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                                <!--
+                            --><label for="radio1">★</label>
+                                                <!--
+                            --><input id="radio2" type="radio" name="estrellas" value="4">
+                                                <!--
+                            --><label for="radio2">★</label>
+                                                <!--
+                            --><input id="radio3" type="radio" name="estrellas" value="3">
+                                                <!--
+                            --><label for="radio3">★</label>
+                                                <!--
+                            --><input id="radio4" type="radio" name="estrellas" value="2">
+                                                <!--
+                            --><label for="radio4">★</label>
+                                                <!--
+                            --><input id="radio5" type="radio" name="estrellas" value="1">
+                                                <!--
+                            --><label for="radio5">★</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2 col-lg-2 mr-auto">
+                                        <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Enviar" name="submit">
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-1">
-                                <input type="submit" value="Enviar" name="submit">
-                            </div>
                         </div>
-                    </div>
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
+            </div>
 
             <!--            </fieldset>-->
         </div>
-        
+
     </section>
-<!-- Borrar -->
+    <!-- Borrar -->
 
 
     <?php
-    require_once "linkinteresesyherramientas.php";
+    require_once "linkinteres.php";
     require_once "footer.php";
     ?>
 
     <!-- Scripts -->
-    <script src="js/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

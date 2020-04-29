@@ -2,15 +2,8 @@
 <html lang="es">
 
 <head>
+    <?php require_once "head.php"; ?>
     <title>Delfos Tour</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Styles -->
-    <link href="css/style/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-
 </head>
 
 <body>
@@ -21,16 +14,17 @@
 
     <section>
 
-        <div class="container-fluid">
-            <div>
-                <img src="images/institucional.jpg" class="d-block w-100 img-fluid" alt="foto empleados de delfos" height="750" width="441">
+        <div class="container">
+            
 
+            <div class="col-12 text-center pt-5 pb-4">
+                <h1>¿Quienes Somos?</h1>
             </div>
 
-            <div class="row">
-                <div>
-                    <h1 class="col-12">¿Quienes Somos?</h1>
-                </div>
+            <div class="pb-5 text-center">
+                <svg width="20%" height="2">
+                    <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
+                </svg>
             </div>
 
             <div class="row">
@@ -51,7 +45,14 @@
                     </div>
                 </div>
             </div>
+
+            <div>
+                <img src="images/institucional.jpg" class="d-block w-100 img-fluid" alt="foto empleados de delfos" height="750" width="441">
+            </div>
+
         </div>
+
+
         <div>
             <svg width="100%" height="10">
                 <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
@@ -65,7 +66,7 @@
     ?>
 
     <!-- Scripts -->
-    <script src="js/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
 

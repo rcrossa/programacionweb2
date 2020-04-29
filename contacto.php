@@ -1,7 +1,7 @@
     <!DOCTYPE html>
     <html lang="es">
 
-    <head>
+    <head>6
         <?php require_once "head.php"; ?>
         <title>Formulario De Contacto</title>
     </head>

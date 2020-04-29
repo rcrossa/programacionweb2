@@ -15,7 +15,7 @@
             <div class="container pt-5 pb-3 shadow-sm">
                 <!--           <fieldset>-->
                 <div class="text-center pb-3">
-                    <h2>Formulario De Contacto</h4>
+                    <h2>Formulario De Contacto</h2>
                 </div>
 
                 <div class="pb-3 text-center">

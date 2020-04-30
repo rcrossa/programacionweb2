@@ -11,15 +11,16 @@
 
         <div class="col-12">
         
-                <h3>Filtro</h3>
+                <fieldset>
 
-                    <div class="bg-warning">
                         <div id="myBtnContainer">
-                            <button class="btn" onclick="filterSelection('Todo')"> Todo</button>
+                            <legend>Filtro</legend>
+                            <button class="btn active" onclick="filterSelection('Todo')"> Todo</button>
                             <button class="btn" onclick="filterSelection('Interior')"> Interior</button>
                             <button class="btn" onclick="filterSelection('Exterior')"> Exterior</button>
                         </div>
-                    </div>
+                        
+                </fieldset>
         </div>
 
     </div>

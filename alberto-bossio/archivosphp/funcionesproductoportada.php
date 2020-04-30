@@ -1,5 +1,4 @@
 <?php
-
 $productos = array(
     array(
         "id" => 0,

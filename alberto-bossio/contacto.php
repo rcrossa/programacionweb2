@@ -8,6 +8,7 @@
 
     <body>
         <?php
+        $page = 'contacto';
         require_once "encabezado.php";
         ?>
         <section class="formulario-contacto py-5">

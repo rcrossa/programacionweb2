@@ -6,7 +6,7 @@ $productos = array(
         'nombre' => 'Ushuaia',
         'precio' => '$50000',
         'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Consultar Incluye: Aéreos Buenos Aires/Ushuaia/Buenos Aires Traslados de llegada y salida Alojamiento según régimen seleccionado Coordinador. Menores de 2 años viajan sin cargo Equipaje: Incluye un equipaje en bodega',
-        'url' => '../images/ushuaia.jpg'
+        'url' => './images/ushuaia.jpg'
     ),
     array(
         'id' => 1,

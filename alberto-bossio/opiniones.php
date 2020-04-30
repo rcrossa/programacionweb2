@@ -9,6 +9,7 @@
 <body>
 
     <?php
+    $page = 'productos';
     require_once "encabezado.php";
     ?>
 
@@ -63,9 +64,9 @@
         <div class="container py-5 shadow">
             <div class="row justify-content-center">
                 <div class="col-sm-11 col-md-10 col-lg-10 incluye py-2">
-                    <h5 class="pb-3">
+                    <h3 class="pb-3">
                         Incluye:
-                    </h5>
+                    </h3>
                     <ul>
                         <li> Acá va la descripción del producto. </li>
                         <li> Acá va la descripción del producto. </li>
@@ -79,11 +80,47 @@
         </div>
     </section>
 
+
     <section class="py-5">
         <div class="container">
             <!--           <fieldset>-->
             <div class="text-center pb-3">
-                <h2>Opinión del producto</h4>
+                <h2>Opiniones De Los Usuarios</h2>
+            </div>
+
+            <div class="pb-4 text-center">
+                <svg width="20%" height="2">
+                    <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container mt-3">
+        <div class="media border p-3 shadow">
+            <img src="imagenes/cerrocastor.png" alt="imagen de avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+            <div class="media-body">
+            <h4>Bart Simpson <small><i>Posted on April 29, 2020</i></small> ★★★★</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="media border p-3 shadow">
+            <img src="imagenes/puertomadryn.png" alt="imagen de avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+            <div class="media-body">
+            <h4>Homero Simpson <small><i>Posted on April 29, 2020</i></small> ★★★</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <!--           <fieldset>-->
+            <div class="text-center pb-3">
+                <h2>Danos Tu Opinión Del Producto</h2>
             </div>
 
             <div class="pb-4 text-center">

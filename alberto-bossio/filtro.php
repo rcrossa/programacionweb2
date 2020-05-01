@@ -10,17 +10,36 @@
             </svg>
 
         <div class="col-12">
-        
-                <fieldset>
+            <div class="filter-wrap py-4">
+                <legend>Filtro</legend>
+                <div class="filter-border p-4 border border-secondary">
+                    <div class="filter-inner">
+                        <div class="filtrolugar">
+                            <div class="row justify-content-center align-items-center">
 
-                        <div id="myBtnContainer">
-                            <legend>Filtro</legend>
-                            <button class="btn active" onclick="filterSelection('Todo')"> Todo</button>
-                            <button class="btn" onclick="filterSelection('Interior')"> Interior</button>
-                            <button class="btn" onclick="filterSelection('Exterior')"> Exterior</button>
+                                <div class="col-12 col-md-6 col-lg-4 py-2">
+                                    <select class="custom-select custom-select-lg">
+                                        <option id="click" onclick="$productos">Todo</option>
+                                        <option id="click" onclick="$productos.hidde">Interior</option>
+                                        <option id="click">Exterior</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4 py-2">
+                                    <select class="custom-select custom-select-lg">
+                                        
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-12 col-lg-2 py-2">
+                                    <button class="btn btn-danger btn-md btn-block px-4">Buscar</button>
+                                </div>
+
+                            </div>
                         </div>
-                        
-                </fieldset>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

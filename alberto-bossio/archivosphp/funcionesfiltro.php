@@ -43,6 +43,6 @@ function RemoveClass(element, name) {
 
 <script>
 document.getElementById("click").onclick = function(){
-
+  filter_list()
 }
 </script>

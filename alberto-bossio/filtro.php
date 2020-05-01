@@ -20,14 +20,18 @@
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <select class="custom-select custom-select-lg">
                                         <option id="click" onclick="$productos">Todo</option>
-                                        <option id="click" onclick="$productos.hidde">Interior</option>
+                                        <option id="click" onclick="foreach($productos as $zona => $zona_value){echo $zona_value;}">Interior</option>
                                         <option id="click">Exterior</option>
                                     </select>
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <select class="custom-select custom-select-lg">
-                                        
+                                        <option>
+                                            <?php
+                                                foreach($productos as $x => $x_value){echo $x_value;}
+                                            ?>
+                                        </option>
                                     </select>
                                 </div>
 

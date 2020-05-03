@@ -188,6 +188,12 @@ input[type="radio"] {
 .clasificacion {
   direction: rtl;
   unicode-bidi: bidi-override;
+  font-size: 30px;
+}
+
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
+  color: orange;
 }
 
 input[type="radio"]:checked ~ label {

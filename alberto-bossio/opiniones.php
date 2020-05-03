@@ -151,35 +151,33 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-sm-6 col-md-10">
                                         <div class="form1">
                                             <p class="clasificacion">
                                                 <input id="radio1" type="radio" name="estrellas" value="5">
                                                 <!--
-                            --><label for="radio1">★</label>
+                                                --><label for="radio1">★</label>
                                                 <!--
-                            --><input id="radio2" type="radio" name="estrellas" value="4">
+                                                --><input id="radio2" type="radio" name="estrellas" value="4">
                                                 <!--
-                            --><label for="radio2">★</label>
+                                                --><label for="radio2">★</label>
                                                 <!--
-                            --><input id="radio3" type="radio" name="estrellas" value="3">
+                                                --><input id="radio3" type="radio" name="estrellas" value="3">
                                                 <!--
-                            --><label for="radio3">★</label>
+                                                --><label for="radio3">★</label>
                                                 <!--
-                            --><input id="radio4" type="radio" name="estrellas" value="2">
+                                                --><input id="radio4" type="radio" name="estrellas" value="2">
                                                 <!--
-                            --><label for="radio4">★</label>
+                                                --><label for="radio4">★</label>
                                                 <!--
-                            --><input id="radio5" type="radio" name="estrellas" value="1">
+                                                --><input id="radio5" type="radio" name="estrellas" value="1">
                                                 <!--
-                            --><label for="radio5">★</label>
+                                                --><label for="radio5">★</label>
                                             </p>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="col-md-2 col-lg-2 mr-auto">
+                                    <div class="col-sm-6 col-md-2">
                                         <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Enviar" name="submit">
                                     </div>
                                 </div>

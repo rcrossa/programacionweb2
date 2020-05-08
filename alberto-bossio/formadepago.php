@@ -9,27 +9,34 @@
     <!-- Styles -->
     <link href="css/style/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
 </head>
 
 <body>
 
-    <?php
-    require_once "encabezado.php";
+    <?php 
+        $page = '';
+        require_once "encabezado.php"; 
     ?>
 
-    <section class="container-fluid">
+    <section class="container">
 
-        <div class="row">
-            <div>
-                <h1 class="col-12">Forma De Pago</h1>
-            </div>
+        <div class="col-12 text-center pt-5 pb-4">
+        <h1>Formas De Pago</h1>
+        </div>
+
+        <div class="pb-5 text-center">
+            <svg width="20%" height="2">
+                <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
+            </svg>
         </div>
 
         <div class="row">
             <div class="col-12">
-                <div class="parrafo1">
+                <div>
                     <ul>
                         <li>Transferencia Bancaria Inmediata.</li>
                         <li> Tarjeta de crédito en 3 – 6 – 9 - 12 cuotas fijas. Para ciertos programas podrían aplicar las siguientes promociones, por favor no deje de consultarnos al respecto:</li>
@@ -47,6 +54,13 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+        
+            <div class="col-12">
+                <img src="images/Pago2.png" class="d-block w-50 img-fluid shadow" alt="imagen de formas de pago" height="550" width="361">
+            </div>
+        </div>
+    </section>
 
         <div>
             <svg width="100%" height="10">
@@ -54,14 +68,12 @@
             </svg>
         </div>
 
-    </section>
-
     <?php
     require_once "footer.php";
     ?>
 
     <!-- Scripts -->
-    <script src="js/jquery/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
 

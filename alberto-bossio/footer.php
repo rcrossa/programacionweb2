@@ -1,8 +1,24 @@
+<div class="container-fluid" id="tab-content-1">
+
+    <div class="row text-center">
+        <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <div class="tab-0a"><a class="text-light" href="somos.php">Quienes Somos</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <div class="tab-0a"><a class="text-light" href="formadepago.php">Forma De Pago</a></div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="tab-0a"><a class="text-light" href="protecciondatos.php">Protección Datos Personales</a></div>
+        </div>
+    </div>
+
+</div>
+
 <footer>
-    <div class="container-fluid" id="tab-content">
+    <div class="container-fluid text-white">
 
         <div class="row justify-content-center align-items-center">
-            <div class="col-3 py-3">
+            <div class="col-6 col-sm-4 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center">
                     <div class="px-2">
                         <img src="images/logo_delfos.png" id="logo" alt="logo delfos" width="72" height="84">
@@ -15,16 +31,16 @@
                 </div>
             </div>
 
-            <div class="col-3 py-3">
+            <div class="col-6 col-sm-4 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center">
                     <div class="px-2">
-                        <img src="images/Phone-icon.png" class="phoneicon" alt="icono de telefono">
+                        <img src="images/Phone-icon.png" class="phoneicon" alt="icono de telefono" width="128" height="128">
                     </div>
                     0810 8103353
                 </div>
             </div>
 
-            <div class="col-3 py-3">
+            <div class="col-6 col-sm-4 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center">
                     <a href="mailto:info@delfos.tur.ar"> <img src="images/email-2-icon.png" class="emailicon mx-2" alt="icono de correo"></a>
 
@@ -34,14 +50,14 @@
             </div>
 
 
-            <div class="col-3 py-3">
+            <div class="col-sm-6 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 text-center">
                         <div class="locationicon px-2">
                             <a href="https://goo.gl/maps/dif9jy2WHjwzRtiG7" target="_blank"><img src="images/location-icon.png" class="ubicacion" alt="icono de direccionamiento a google mapas" width="128" height="128"></a>
                         </div>
-                        <div class="text-center">
-                            <ul style="list-style-type:none;">
+                        <div class="ubicacion-texto">
+                            <ul>
                                 <li>Cnel. Juan Beverina 1988</li>
                                 <li>CP: X5009IOH</li>
                                 <li>Centro de las Rosas Cordoba</li>
@@ -50,6 +66,18 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-2 py-3">
+                <div class="row justify-content-center align-items-center flex-column">
+                    <div>Mapa del sitio</div>
+                    <div><a href="index.php">Home</a></div>
+                    <div><a href="paquetes.php">Paquetes</a></div>
+                    <div><a href="contacto.php">Contacto</a></div>
+                </div>
+            </div>
+        </div>
+
+
 
     </div>
 </footer>

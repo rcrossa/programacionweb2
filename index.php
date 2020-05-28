@@ -9,6 +9,7 @@
 <body>
   <?php
   require_once "archivosphp/funcionesproductoportada.php";
+  
 
   // archivos html
   $page = 'index';

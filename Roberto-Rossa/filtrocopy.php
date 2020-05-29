@@ -11,16 +11,11 @@
                             <div class="row justify-content-center align-items-center">
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
-                                    <select class="custom-select custom-select-lg">
-
-
+                                    <select class="custom-select custom-select-lg" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                         <!-- Se comenta codigo para muestra en reunion -->
                                         <option></option>
-                                        <option>Interior</option>
-                                        <option>Exterior</option>
-
-
-
+                                        <option value="interior">Interior</option>
+                                        <option value="exterior">Exterior</option>
                                     </select>
                                 </div>
 
@@ -31,40 +26,16 @@
                                         Se comenta codigo para muestra en reunion
                                          -->
                                         <option></option>
-                                        
+                                        <!-- $_SERVER["REQUEST_METHOD"] == "POST") -->
                                         <!-- codigo adicional para implementacion posterior a reunion -->
-                                        <?php foreach ($productosinternacionales as $key => $value) : ?> 
-                                        <option value="<?php echo $key ?>">
-                                            <?php echo $productosinternacionales[$key]["nombre"]; ?>
-                                        </option>
-                                        
-                                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
-                                            <div class="card carta">
-
-                                               <?php if ($key == Rio) {?>
-                                                <?php echo '<img src="' .  $productosinternacionales[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
-                                               <?php }?>
-
-                                                <div class="card-body">
-                                                    <h5 class="card-title1 font-weight-bold">
-                                                        <?php echo $productosinternacionales[$key]["nombre"]; ?></h5>
-                                                    <p class="card-text"><?php echo $productosinternacionales[$key]["descripcion"]; ?>
-                                                    </p>
-                                                    <div class="row justify-content-center pt-1 pb-3">
-                                                        <h5>
-                                                            <span
-                                                                class="card-text text-center badge badge-light"><?php echo $productos[$key]["precio"]; ?></span>
-                                                        </h5>
-                                                    </div>
-                                                    <div class="container d-flex justify-content-around">
-                                                        <a href="#" class="btn btn-success">Comprar</a>
-                                                        <a href="opiniones.php" class="btn btn-outline-primary">Ver
-                                                            mas</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <?php endforeach ?>
+                                       
+                                                <?php foreach ($productosinternacionales as $key => $value) : ?> 
+                                                  <option value="<?php echo $key ?>">
+                                                      <?php echo $productosinternacionales[$key]["nombre"]; ?>
+                                                  </option>
+                                                  <?php endforeach ?>
+                                           
+                                    
                                     </select>
                                 </div>
 
@@ -81,3 +52,4 @@
 
     </div>
 </div>
+<div>

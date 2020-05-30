@@ -1,65 +1,86 @@
-<?php require_once "archivosdemo/funcionesproductoportadainternacional.php";?>
-<form action="prueba.php" method="post">
-<div class="container pt-4 px-5">
-    <div class="row justify-content-center">
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="col-12">
-            <div class="filter-wrap py-4">
-                <h3>Filtro</h3>
-                <div class="filter-border p-4 border border-secondary">
-                    <div class="filter-inner">
-                        <div class="filtrolugar">
-                            <div class="row justify-content-center align-items-center">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/style/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/fancybox/jquery.fancybox.min.css" />
+</head>
 
-                                <div class="col-12 col-md-6 col-lg-4 py-2">
-                                    <select id="status" class="custom-select custom-select-lg" name="status" onChange="mostrar(this.value);">
-                                        <!-- Se comenta codigo para muestra en reunion -->
-                                        <option></option>
-                                        <option  value="interior">Argentina</option>
-                                        <option  value="exterior">Internacional</option>
-                                    </select>
-                                </div>
+<body>
+    <?php
+    require_once "funcionesproductoportadainternacional.php";
+    require_once "funcionesproductoportada.php";
+    ?>
 
-                                <div class="col-12 col-md-6 col-lg-4 py-2">
-                                    <select class="custom-select custom-select-lg">
+    <?php 
+     
+     $x=$productosinternacionales;
+    //  $json_string1=json_decode($productosinternacionales,true);
+    ?>
+    <!-- recorro el array que viene desde el archivo funcionesproductoportainternaciona.php o tambien puede ser el de 
+     un formulario via $_POST -->
+    <!-- <?php foreach ($x as $key => $value) :?>
 
-                                        <!--                                      
-                                        Se comenta codigo para muestra en reunion
-                                         -->
-                                        <option></option>
-                                        <!-- $_SERVER["REQUEST_METHOD"] == "POST") -->
-                                        <!-- codigo adicional para implementacion posterior a reunion -->
-                                       
-                                                <?php foreach ($productosinternacionales as $key => $value) : ?> 
-                                                  <option value="<?php echo $key ?>">
-                                                      <?php echo $productosinternacionales[$key]["nombre"]; ?>
-                                                  </option>
-                                                <?php endforeach ?>
-                                           
-                                    
-                                    </select>
-                                </div>
+    <?php echo $x[$key]["nombre"]." ".$x[$key]["id"]; ?>
 
-                                <div class="col-sm-12 col-lg-2 py-2">
-                                    <button class="btn btn-danger btn-md btn-block px-4">Buscar</button>
-                                </div>
+    <?php endforeach ?> -->
+    <?php 
+        // condifico el array para meterlo en el json 
+         $fp = 'archivo.json';
+         $a=json_encode($x);
+         file_put_contents($fp,$a.PHP_EOL);
+         //abro el archivo json
+         $fp = fopen('archivo.json','r');
+         //leo y asigno a variable
+            $datosjson = fread($fp,filesize('archivo.json'));
+            fclose($fp);
+            //decodifico 
+            $exterior=json_decode($datosjson,true);//con tru se transforma en array asociativo
+        //     foreach ($exterior as $data) {
+        //         echo "\n\n".$data['nombre']."<br>";
+        // }?>
+    <!-- tomo el array y lo imprimo dentro del select -->
+    <!-- <Select> -->
+        <!-- <option></option> -->
+        <!-- <?php foreach ($exterior as $key => $value) : ?> -->
+        <!-- <option id="04" value="<?php echo $key ?>"> -->
+            <!-- <?php echo $exterior[$key]["nombre"]; ?> -->
+        <!-- </option> -->
+        <!-- <?php endforeach ?> -->
+    <!-- </Select> -->
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+
+    <!-- <Select> -->
+        <!-- <option></option> -->
+        <!-- <?php foreach ($exterior as $key => $value) : ?> -->
+        <!-- <option id="04" value="<?php echo $key ?>"> -->
+            <!-- <?php echo $exterior[$key]["nombre"]; ?> -->
+        <!-- </option> -->
+        <!-- <?php endforeach ?> -->
+    <!-- </Select> -->
+
+    <form action="prueba.php" method="post">
+        Estado actual:
+        <select id="status" name="status" onChange="mostrar(this.value);">
+            <option value="interior">Interior</option>
+            <option value="exterior">Exterior</option>
+        </select>
+    </form>
     </div>
-</div>
 
-
-
-
-
-<div id="interior" class="element" style="display: none;">
-        <h2>Destinos Argentina...</h2>
+    <div id="interior" class="element" style="display: none;">
+        <h2>Promociones interior...</h2>
         <div class="container">
             <div class="row justify-content-center pb-4">
 
@@ -98,28 +119,9 @@
 
             </div>
         </div>
-</div>
-<?php 
-$x=$productosinternacionales;
-    foreach ($x as $key => $value) :
-
-    endforeach ;
-        // condifico el array para meterlo en el json 
-         $fp = 'archivosdemo/archivo.json';
-         $a=json_encode($x);
-         file_put_contents($fp,$a.PHP_EOL);
-         //abro el archivo json
-         $fp = fopen('archivosdemo/archivo.json','r');
-         //leo y asigno a variable
-            $datosjson = fread($fp,filesize('archivosdemo/archivo.json'));
-            fclose($fp);
-            //decodifico 
-            $exterior=json_decode($datosjson,true);//con tru se transforma en array asociativo
-        //     foreach ($exterior as $data) {
-        //         echo "\n\n".$data['nombre']."<br>";
-        // }?>
+    </div>
     <div id="exterior" class="element" style="display: none;">
-        <h2>Destinos Internacionales...</h2>
+        <h2>Promociones interior...</h2>
         <div class="container">
             <div class="row justify-content-center pb-4">
 
@@ -159,8 +161,9 @@ $x=$productosinternacionales;
             </div>
         </div>
     </div>
-<script>
- function mostrar(id) {
+
+    <script>
+    function mostrar(id) {
         if (id == "0") {
             $("#interior").show();
             $("#exterior").hide();
@@ -176,4 +179,12 @@ $x=$productosinternacionales;
         }
 
     }
-</script>
+    </script>
+
+    <script type="text/javascript" src="../js/jquery/jquery-3.4.1.slim.min.js"></script>
+    <script src="../js/popper/popper.min.js"></script>
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/fancybox/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

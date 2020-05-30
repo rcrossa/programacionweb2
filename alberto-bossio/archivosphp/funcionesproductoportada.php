@@ -97,6 +97,18 @@ $productos = array(
     ),
 );
 
+
+$productos = array(
+    array(
+        'id' => 0,
+        'zona' => 'interior',
+        'nombre' => 'Tierra Del Fuego',
+        'precio' => '$50000',
+        'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Consultar Incluye: Aéreos Buenos Aires/Tierra Del Fuego/Buenos Aires Traslados de llegada y salida Alojamiento según régimen seleccionado Coordinador. Menores de 2 años viajan sin cargo Equipaje: Incluye un equipaje en bodega',
+        'url' => './images/ushuaia.jpg'
+    ),
+);
+
 // json_encode($productos, true);
 // echo json_encode($productos, true);
 // echo "<pre>", print_r($productos, 1), "</pre>";

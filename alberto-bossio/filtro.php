@@ -39,7 +39,7 @@
                                         <?php
                                             if($opcion == 1){
                                         ?>
-                                                    <select  class="custom-select custom-select-lg" name="todo" onchange="this.form.submit()">
+                                                <select  class="custom-select custom-select-lg" name="todo" onchange="this.form.submit()">
                                                     <?php
                                                         foreach($productos as $lugar){
                                                     ?>
@@ -47,13 +47,13 @@
                                                     <?php
                                                         }
                                                     ?>
-                                                    </select>
+                                                </select>
                                         <?php
                                             }elseif($opcion == 2){
                                         ?>
                                                 <select  class="custom-select custom-select-lg" name="interior" onchange="this.form.submit()">
                                                     <?php
-                                                            foreach($productos as $lugar['zona'] => $zona['zona']){
+                                                            foreach($productos as $lugar){
                                                     ?>
 
                                                         <option><?php echo $opcion; ?></option>

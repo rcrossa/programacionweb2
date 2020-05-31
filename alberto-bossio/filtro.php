@@ -21,12 +21,14 @@
                                     <form action="" method="get">
                                         <?php
                                             $opcion = '1';
+                                            if(!empty($_GET['opcion']))
+                                            $opcion = $_GET['opcion'];
                                         ?>
 
-                                        <select  class="custom-select custom-select-lg">
-                                            <option value="1" <?php $opcion == '1'?> >Todo</option>
-                                            <option value="2" <?php $opcion == '2'?> >Interior</option>
-                                            <option value="3" <?php $opcion == '3'?> >Exterior</option>
+                                        <select  class="custom-select custom-select-lg" name="opcion" onchange="this.form.submit()">
+                                            <option value="1" <?php $opcion == 1 ?> >Todo</option>
+                                            <option value="2" <?php $opcion == 2 ?> >Interior</option>
+                                            <option value="3" <?php $opcion == 3 ?> >Exterior</option>
                                         </select>
 
                                     </form>
@@ -34,35 +36,47 @@
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <form action="" method="get">
-                                        <select  class="custom-select custom-select-lg">
-                                            <?php
-                                                if($opcion == '1'){
-                                                    ?>
-                                                        <option><?php echo (array_search('nombre',$productos)); ?></option>
+                                        <?php
+                                            if($opcion == 1){
+                                        ?>
+                                                    <select  class="custom-select custom-select-lg" name="todo" onchange="this.form.submit()">
                                                     <?php
-                                                }
-                                            ?>
+                                                        foreach($productos as $lugar){
+                                                    ?>
+                                                            <option><?php echo $lugar['nombre']; ?></option>
+                                                    <?php
+                                                        }
+                                                    ?>
+                                                    </select>
+                                        <?php
+                                            }elseif($opcion == 2){
+                                        ?>
+                                                <select  class="custom-select custom-select-lg" name="interior" onchange="this.form.submit()">
+                                                    <?php
+                                                            foreach($productos as $lugar['zona'] => $zona['zona']){
+                                                    ?>
 
-                                            <?php
-                                                if($opcion == '2'){
-                                                    foreach($productos as $zona => $interior){
+                                                        <option><?php echo $opcion; ?></option>
+
+                                                    <?php 
+                                                            }
                                                     ?>
-                                                        <option><?php echo (array_search('nombre',$productos)); ?></option>
-                                                    <?php      
-                                                    }
-                                                }
-                                            ?>
-                                                
-                                            <?php
-                                                if($opcion == '3'){
-                                                    foreach($productos as $zona => $exterior){
+                                                </select>
+                                        <?php
+                                            }elseif($opcion == 3){
+                                        ?>
+                                                <select  class="custom-select custom-select-lg" name="exterior" onchange="this.form.submit()">
+                                                    <?php
+                                                        foreach($productos as $lugar){
                                                     ?>
-                                                        <option><?php echo (array_search('nombre',$productos)); ?></option>
+                                                            <option><?php echo $opcion; ?></option>
                                                     <?php      
-                                                    }  
-                                                }
-                                            ?>
-                                        </select>
+                                                        } 
+                                                    ?>
+                                                </select>
+                                        <?php
+                                            }
+                                        ?>
                                     </form>
                                 </div>
                                         <div class="col-sm-12 col-lg-2 py-2">

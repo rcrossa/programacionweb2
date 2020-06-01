@@ -1,5 +1,5 @@
 <?php require_once "archivosdemo/funcionesproductoportadainternacional.php";?>
-<form action="prueba.php" method="post">
+<form action="filtrocopy.php" method="post">
 <div class="container pt-4 px-5">
     <div class="row justify-content-center">
 
@@ -21,7 +21,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
-                                    <select class="custom-select custom-select-lg">
+                                    <select id="status1" class="custom-select custom-select-lg" onChange="mostrar(this.value);">
 
                                         <!--                                      
                                         Se comenta codigo para muestra en reunion
@@ -29,15 +29,15 @@
                                         <option></option>
                                         <!-- $_SERVER["REQUEST_METHOD"] == "POST") -->
                                         <!-- codigo adicional para implementacion posterior a reunion -->
-                                       
+                                       <?php if (mostrar(this.value)=="exterior") { ?>
+                                           
                                                 <?php foreach ($productosinternacionales as $key => $value) : ?> 
                                                   <option value="<?php echo $key ?>">
                                                       <?php echo $productosinternacionales[$key]["nombre"]; ?>
                                                   </option>
                                                 <?php endforeach ?>
-                                           
-                                    
-                                    </select>
+                                            <?php } ?>
+                                     </select>
                                 </div>
 
                                 <div class="col-sm-12 col-lg-2 py-2">
@@ -59,7 +59,7 @@
 
 
 <div id="interior" class="element" style="display: none;">
-        <h2>Destinos Argentina...</h2>
+        <h2>Destinos Argentina</h2>
         <div class="container">
             <div class="row justify-content-center pb-4">
 
@@ -119,7 +119,7 @@ $x=$productosinternacionales;
         //         echo "\n\n".$data['nombre']."<br>";
         // }?>
     <div id="exterior" class="element" style="display: none;">
-        <h2>Destinos Internacionales...</h2>
+        <h2>Destinos Internacionales</h2>
         <div class="container">
             <div class="row justify-content-center pb-4">
 
@@ -166,7 +166,7 @@ $x=$productosinternacionales;
             $("#exterior").hide();
 
         }
-        if (id == "interior") {
+        if (id == "interior" && id =="status1") {
             $("#exterior").hide();
             $("#interior").show();
         }

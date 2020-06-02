@@ -1,33 +1,63 @@
 <?php
 require_once "funcionesproductoportadainternacional.php";
-//creo el json si no fue creado
-$file= 'archivo.json';
-//array de ejemplo recibido
-// $post =['java',"1"];
+require_once "funcionesproductoportada.php";
+
+
 $productosinternacionales;
+$produstosnacionales;
+
 //defino variable
 
 echo "----------------";
 echo "<br>";
 //recorro los elementos del array recibido
 foreach ($productosinternacionales as $key => $value) {
-    // echo "\n\nPais : " .$productosinternacionales[$key]["nombre"]."<br>" ;
-    // $a=$productosinternacionales[$key];
+    
 }
-// print_r($productosinternacionales);
-var_dump($productosinternacionales);
+foreach ($productosnacionales as $key => $value) {
+    
+}
+//devuelvo el ultimo elemento agregado
+var_dump(array_pop($productosinternacionales));
 echo "<br>";
 echo "----------------";
 echo "<br>";
-$json_string1=json_encode($productosinternacionales);
+var_dump(array_pop($productosnacionales));
+echo "<br>";
+echo "----------------";
+echo "<br>";
 
-$fp = fopen('archivo.json','r');
-$datosjson = fread($fp,filesize('archivo.json'));
-fclose($fp);
-$exterior=json_decode($datosjson,true);//con tru se transforma en array asociativo
+//creo el json si no fue creado
+$file= 'internacional.json';
+$file1= 'nacional.json';
+
+//codifico
+$json_string1=json_encode($productosinternacionales);
+$json_string2=json_encode($productosnacionales);
+//abro los archivos para escribir
+$fp = fopen('internacional.json','r');
+$fp1 = fopen('nacional.json','r');
+//escribo contenido
+file_put_contents($file,$json_string1.PHP_EOL);
+file_put_contents($file1,$json_string2.PHP_EOL);
+
+//leo el primer archivo
+$datosjson = fread($fp,filesize('internacional.json'));
+//decodifico
+$exterior=json_decode($datosjson,true);//con true se transforma en array asociativo
 foreach ($exterior as $data) {
-    echo "\n\n".$data['nombre']."<br>";
+    echo "\nInternacional:\n ".$data['nombre']."<br>";
 }
+//leo el segundo archivo
+$datosjson1 = fread($fp1,filesize('nacional.json'));
+//decodifico
+$nacionales=json_decode($datosjson1,true);//con true se transforma en array asociativo
+foreach ($nacionales as $data) {
+    echo "\n Nacional:\n".$data['nombre']."<br>";
+}
+//cierro los archivos
+fclose($fp);
+fclose($fp1);
 // var_dump($c);
 echo "<br>";
 echo "<br>";

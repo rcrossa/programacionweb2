@@ -1,6 +1,6 @@
 <?php
 
-$productos = array(
+$productosnacionales = array(
     array(
         "id" => 0,
         'nombre' => 'Ushuaia',
@@ -42,7 +42,8 @@ $productos = array(
         'precio' => '$36000',
         'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Jueves Incluye: Aéreos Buenos Aires/Mendoza/Buenos Aires Un equipaje de mano de hasta 8kg Traslados de llegada y de salida Alojamiento según régimen seleccionado.  No incluye: impuesto pais. Menores de 2 años sin cargo.',
         'url' => '../images/mendoza.jpg',
-    ),array(
+    ),
+    array(
         "id" => 6,
         'nombre' => 'Rio',
         'precio' => '$50000',
@@ -56,35 +57,7 @@ $productos = array(
         'descripcion' => 'Incluye: Ticket aéreo, Traslados, Alojamiento según régimen y Asistencia al viajero. alojamiento según régimen indicado. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
         'url' => '../images/cancum.jpg',
     ),
-    array(
-        'id' => 8,
-        'nombre' => 'Peru',
-        'precio' => '$60000',
-        'descripcion' => 'INCLUYE: GUÍA: Operado con guía en español e inglés. Pasaje (Latam Airlines).   ALOJAMIENTO: 3 noches de alojamiento en Lima. 1 noche de alojamiento en Paracas. 2 noches de alojamiento en Cusco. 1 noche de alojamiento en Aguas Calientes. ALIMENTACIÓN: Desayuno diario incluidos. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
-        'url' => '../images/peru.jpg',
-    ),
-    array(
-        'id' => 9,
-        'nombre' => 'España',
-        'precio' => '$45000',
-        'descripcion' => 'VISITANDO: MADRID, SANTIAGO DE COMPOSTELA -RINLO - CABO VIDIO - LA MANJOYA - COVADONGA - CUEVAS DEL SOPLAO - SANTANDER - BILBAO - SAN SEBASTIAN.',
-        'url' => '../images/spain.jpg',
-    ),
-    array(
-        'id' => 10,
-        'nombre' => 'Estados Unidos',
-        'precio' => '$20000',
-        'descripcion' => 'Visitando: Boston / Quebec / Montreal / Ottawa / Toronto / Niagara Falls - Incluye: boleto por American Airlines. Desayunos Americanos. ALIMENTACIÓN: Desayuno diario incluidos. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
-        'url' => '../images/estadosunidos.jpg',
-    ),
-    array(
-        'id' => 11,
-        'nombre' => 'Canada',
-        'precio' => '$36000',
-        'descripcion' => 'VISITANDO: Vancouver/ Hope / Kelowna / Revelstoke / Golden / Columbia Ice Field / Canmore /  Banff / Calgar. Incluye: vuelo por American Airlines (Clase turista).',
-        'url' => '../images/canada.jpg',
-    ),
-);
+  );
 
 // json_encode($productos, true);
 // echo json_encode($productos, true);

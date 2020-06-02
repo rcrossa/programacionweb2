@@ -25,33 +25,24 @@
     <?php 
      
      $x=$productosinternacionales;
-    //  $json_string1=json_decode($productosinternacionales,true);
+    //  $x2=$productos
     ?>
-    <!-- recorro el array que viene desde el archivo funcionesproductoportainternaciona.php o tambien puede ser el de 
-     un formulario via $_POST -->
-    <!-- <?php foreach ($x as $key => $value) :?>
-
-    <?php echo $x[$key]["nombre"]." ".$x[$key]["id"]; ?>
-
-    <?php endforeach ?> -->
-    <?php 
-        // condifico el array para meterlo en el json 
-         $fp = 'archivo.json';
-         $a=json_encode($x);
-         file_put_contents($fp,$a.PHP_EOL);
-         //abro el archivo json
-         $fp = fopen('archivo.json','r');
+   
+         <?php 
+         $fp = fopen('internacional.json','r');
          //leo y asigno a variable
-            $datosjson = fread($fp,filesize('archivo.json'));
+            $datosjson = fread($fp,filesize('internacional.json'));
+            //cierro conexion
             fclose($fp);
             //decodifico 
-            $exterior=json_decode($datosjson,true);//con tru se transforma en array asociativo
+            $exterior=json_decode($datosjson,true);//con true se transforma en array asociativo
         //     foreach ($exterior as $data) {
         //         echo "\n\n".$data['nombre']."<br>";
         // }?>
     <!-- tomo el array y lo imprimo dentro del select -->
     <!-- <Select> -->
         <!-- <option></option> -->
+        <!-- Recorro el array que viene de  -->
         <!-- <?php foreach ($exterior as $key => $value) : ?> -->
         <!-- <option id="04" value="<?php echo $key ?>"> -->
             <!-- <?php echo $exterior[$key]["nombre"]; ?> -->
@@ -73,8 +64,11 @@
     <form action="prueba.php" method="post">
         Estado actual:
         <select id="status" name="status" onChange="mostrar(this.value);">
-            <option value="interior">Interior</option>
-            <option value="exterior">Exterior</option>
+            <option value="interior">America Del Sur</option>
+            <option value="exterior">America del Norte</option>
+        </select>
+        <select id="status1" name="status" onChange="mostrar(this.value);">
+            <option value="interior">Argentina</option>
         </select>
     </form>
     </div>
@@ -87,21 +81,21 @@
                 <div class="col-12">
                     <div class="row">
 
-                        <?php foreach ($productos as $key => $value) : ?>
+                        <?php foreach ($productosnacionales as $key => $value) : ?>
 
                         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
                             <div class="card carta">
 
-                                <?php echo '<img src="' .  $productos[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
+                                <?php echo '<img src="' .  $productosnacionales[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
 
                                 <div class="card-body">
-                                    <h5 class="card-title1 font-weight-bold"><?php echo $productos[$key]["nombre"]; ?>
+                                    <h5 class="card-title1 font-weight-bold"><?php echo $productosnacionales[$key]["nombre"]; ?>
                                     </h5>
-                                    <p class="card-text"><?php echo $productos[$key]["descripcion"]; ?></p>
+                                    <p class="card-text"><?php echo $productosnacionales[$key]["descripcion"]; ?></p>
                                     <div class="row justify-content-center pt-1 pb-3">
                                         <h5>
                                             <span
-                                                class="card-text text-center badge badge-light"><?php echo $productos[$key]["precio"]; ?></span>
+                                                class="card-text text-center badge badge-light"><?php echo $productosnacionales[$key]["precio"]; ?></span>
                                         </h5>
                                     </div>
                                     <div class="container d-flex justify-content-around">

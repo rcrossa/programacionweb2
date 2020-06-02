@@ -15,8 +15,8 @@
                                         
                                         <!-- Se comenta codigo para muestra en reunion -->
                                         <option></option>
-                                        <option>Interior</option>
-                                        <option>Exterior</option>
+                                        <option>Argentina</option>
+                                        <option>Internacional</option>
                                         <?php foreach ($productosinternacionales as $key => $value) : ?>
                                             <option value="<?php echo $key ?>"><?php echo $productosinternacionales[$key]["nombre"]; ?></option>
                                         <?php endforeach ?>

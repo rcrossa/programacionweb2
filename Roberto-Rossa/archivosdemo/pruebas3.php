@@ -135,13 +135,21 @@ require_once "funcionesproductoportadainternacional.php";
     </div>
 
 
+    <?php
+                foreach ($exterior as $data) {
+           echo $prueba3=$data['nombre'];
+}
+       ?>
 
-
-
+    <script type="text/javascript" src="internacional.json"></script>
 
     <script>
+    
+    console.log(src="internacional.json");
     function cargarProvincias() {
-        var array = ["Cantabria", "Asturias", "Galicia", "Andalucia", "Extremadura"];
+        var array=[];       
+        // var array = ["Cantabria", "Asturias", "Galicia", "Andalucia", "Extremadura"];
+            
         array.sort();
         addOptions("provincia", array);
     }

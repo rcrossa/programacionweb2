@@ -144,7 +144,7 @@ require_once "funcionesproductoportadainternacional.php";
     <script type="text/javascript" src="internacional.json"></script>
 
     <script>
-    
+    var jsontexto= JSON.parse(src="internacional.json");
     console.log(src="internacional.json");
     function cargarProvincias() {
         var array=[];       

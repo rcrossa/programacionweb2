@@ -54,11 +54,13 @@
                                                 <select  class="custom-select custom-select-lg" name="interior" onchange="this.form.submit()">
                                                     <?php
                                                             foreach($productos as $lugar){
+                                                                if($lugar['id'] < 6){
                                                     ?>
 
-                                                        <option><?php echo $opcion; ?></option>
+                                                        <option><?php echo $lugar['nombre']; ?></option>
 
-                                                    <?php 
+                                                    <?php   
+                                                                }
                                                             }
                                                     ?>
                                                 </select>
@@ -68,9 +70,11 @@
                                                 <select  class="custom-select custom-select-lg" name="exterior" onchange="this.form.submit()">
                                                     <?php
                                                         foreach($productos as $lugar){
+                                                            if($lugar['id'] >= 6){
                                                     ?>
-                                                            <option><?php echo $opcion; ?></option>
+                                                            <option><?php echo $lugar['nombre']; ?></option>
                                                     <?php      
+                                                            }
                                                         } 
                                                     ?>
                                                 </select>
@@ -80,7 +84,8 @@
                                     </form>
                                 </div>
                                         <div class="col-sm-12 col-lg-2 py-2">
-                                                <input class="btn btn-danger btn-md btn-block px-4" type="submit">
+                                                <button class="btn btn-danger btn-md btn-block px-4" type="submit">Buscar</button>
+                                                <!-- <input class="btn btn-danger btn-md btn-block px-4" type="submit"> -->
                                         </div>
 
                                 <!--

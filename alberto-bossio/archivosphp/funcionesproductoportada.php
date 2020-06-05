@@ -97,6 +97,8 @@ $productos = array(
     ),
 );
 
+
+
 // json_encode($productos, true);
 // echo json_encode($productos, true);
 // echo "<pre>", print_r($productos, 1), "</pre>";

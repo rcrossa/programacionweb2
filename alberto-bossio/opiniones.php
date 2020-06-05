@@ -24,6 +24,17 @@
         </svg>
     </div>
 
+    <?php
+        $fp = fopen('archivosphp/productos.json','r');
+        $pArray = json_decode(fread($fp,filesize('archivosphp/productos.json')),true);
+        fclose($fp);
+        //foreach($pArray as $prod){
+        //    if($prod['id'] == $_GET['id']){
+        //        break;
+        //    }
+        //}
+    ?>
+
     <section>
         <div class="container shadow justify-content-around p-4">
             <div class="row justify-content-center text-center">
@@ -50,7 +61,7 @@
                     <div class="imagen3">
                         <div data-toggle="modal" data-target="#myModal2">
                             <a href="images/Untitled-4.png" data-fancybox="gallery" data-caption="Caption for single image">
-                                <img height="auto" width="100%" src="images/Untitled-4.png" alt="imagen de acantilado">
+                                <img height="auto" width="100%" src="images/<?php echo $prod['imagen']?>" alt="imagen de acantilado">
                             </a>
                         </div>
                     </div>
@@ -67,14 +78,10 @@
                     <h3 class="pb-3">
                         Incluye:
                     </h3>
-                    <ul>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                    </ul>
+
+                    <h4>
+                        <?php echo $pArray['descripcion']; ?>
+                    </h4>
                 </div>
             </div>
         </div>

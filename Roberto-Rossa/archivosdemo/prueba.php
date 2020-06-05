@@ -46,6 +46,67 @@
         // }
         ?>
    
+  
+    <div class="container pt-4 px-5">
+        <div class="row justify-content-center">
+
+            <div class="col-12">
+                <div class="filter-wrap py-4">
+                    <h3>Filtro</h3>
+                    <div class="filter-border p-4 border border-secondary">
+                        <div class="filter-inner">
+                            <div class="filtrolugar">
+                                <div class="row justify-content-center align-items-center">
+
+                                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                                    <form action="prueba.php" method="post">
+                                        <select id="status" name="status" class="custom-select custom-select-lg"
+                                            onChange="mostrar(this.value);">
+                                            <!-- Se comenta codigo para muestra en reunion -->
+                                            <option value="0"></option>
+                                            <option value="americadelnorte">americadelnorte</option> 
+                                            <option value="americadelsur">americadelsur</option> 
+                                            <option value="centroamerica">centroamerica</option> 
+                                            <option value="europa">europa</option> 
+                                        </select>
+                                    </div>
+                                    </form>
+                                    <div class="col-12 col-md-6 col-lg-4 py-2">
+                                    <form action="prueba.php" name="select1" method="post">
+                                        <select id="status1" name="select2"  class="custom-select custom-select-lg" onChange="mostrar1(this.value);">
+
+                                            <!--                                      
+                                        Se comenta codigo para muestra en reunion
+                                         -->
+                                            <option value="0"></option>
+                                            <option value="Argentina">Argentina</option>
+                                            <option value="Brasil">Brasil</option>
+                                            <option value="Peru">Peru</option>
+                                            <option value="España">España</option>
+                                            <option value="Mexico">Mexico</option>
+                                            <option value="EEUU">Estados Unidos</option>
+                                            <!-- $_SERVER["REQUEST_METHOD"] == "POST") -->
+                                            <!-- codigo adicional para implementacion posterior a reunion -->
+                                           
+
+                                            <!-- <?php foreach ($nacional as $key => $value) : ?>
+                                            <option value="<?php echo $key ?>">
+                                                <?php echo $nacional[$key]["nombre"]; ?>
+                                            </option>
+                                            <?php endforeach ?>  -->
+                                           
+                                        </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <form name="formulario" action="prueba.php" method="post">
         Estado actual:
@@ -60,24 +121,24 @@
         </select> -->
     </form>
 
-    <div id="interior" class="element" style="display: none;">
-        <h2>Promociones nacionales...</h2>
+    <div id="americadelnorte" class="element" style="display: none;">
+        <h2>America del Norte...</h2>
         <div class="container">
             <div class="row justify-content-center pb-4">
                 <div class="col-12">
                     <div class="row">
-                        <?php foreach ($nacional as $key => $value) : ?>
+                        <?php foreach ($$americadelnorte as $key => $value) : ?>
                         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
                             <div class="card carta">
-                                <?php echo '<img src="' .  $nacional[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
+                                <?php echo '<img src="' .  $$americadelnorte[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
                                 <div class="card-body">
                                     <h5 class="card-title1 font-weight-bold"><?php echo $nacional[$key]["nombre"]; ?>
                                     </h5>
-                                    <p class="card-text"><?php echo $nacional[$key]["descripcion"]; ?></p>
+                                    <p class="card-text"><?php echo $$americadelnorte[$key]["descripcion"]; ?></p>
                                     <div class="row justify-content-center pt-1 pb-3">
                                         <h5>
                                             <span
-                                                class="card-text text-center badge badge-light"><?php echo $nacional[$key]["precio"]; ?></span>
+                                                class="card-text text-center badge badge-light"><?php echo $$americadelnorte[$key]["precio"]; ?></span>
                                         </h5>
                                     </div>
                                     <div class="container d-flex justify-content-around">
@@ -95,20 +156,20 @@
             </div>
         </div>
     </div>
-    <div id="exterior" class="element" style="display: none;">
-        <h2>Promociones Internacionales...</h2>
+    <div id="americadelsur" class="element" style="display: none;">
+        <h2>America del sur...</h2>
         <div class="container">
             <div class="row justify-content-center pb-4">
                 <div class="col-12">
                     <div class="row">
-                        <?php foreach ($exterior as $key => $value) : ?>
+                        <?php foreach ($americadelnorte as $key => $value) : ?>
                         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
                             <div class="card carta">
-                                <?php echo '<img src="' .  $exterior[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
+                                <?php echo '<img src="' .  $americadelnorte[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
                                 <div class="card-body">
-                                    <h5 class="card-title1 font-weight-bold"><?php echo $exterior[$key]["nombre"]; ?>
+                                    <h5 class="card-title1 font-weight-bold"><?php echo $americadelnorte[$key]["nombre"]; ?>
                                     </h5>
-                                    <p class="card-text"><?php echo $exterior[$key]["descripcion"]; ?></p>
+                                    <p class="card-text"><?php echo $americadelnorte[$key]["descripcion"]; ?></p>
                                     <div class="row justify-content-center pt-1 pb-3">
                                         <h5>
                                             <span
@@ -130,25 +191,187 @@
             </div>
         </div>
     </div>
+    <div id="argentina" class="element" style="display: none;">
+        <h2>Argentina...</h2>
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-12">
+                    <div class="row">                      ?>
+                        <?php foreach ($argentina as $key => $value) : ?>
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
+                            <div class="card carta">
+                                <?php echo '<img src="' .  $argentina[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
+                                <div class="card-body">
+                                    <h5 class="card-title1 font-weight-bold"><?php echo $argentina[$key]["nombre"]; ?>
+                                    </h5>
+                                    <p class="card-text"><?php echo $argentina[$key]["descripcion"]; ?></p>
+                                    <div class="row justify-content-center pt-1 pb-3">
+                                        <h5>
+                                            <span
+                                                class="card-text text-center badge badge-light"><?php echo $nacional[$key]["precio"]; ?></span>
+                                        </h5>
+                                    </div>
+                                    <div class="container d-flex justify-content-around">
+                                        <a href="#" class="btn btn-success">Comprar</a>
+                                        <a href="opiniones.php" class="btn btn-outline-primary">Ver mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach ?>
+                    
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+    <div id="centroamerica" class="element" style="display: none;">
+        <h2>Centroamerica...</h2>
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-12">
+                    <div class="row">                       ?>
+                        <?php foreach ($centroamerica as $key => $value) : ?>
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
+                            <div class="card carta">
+                                <?php echo '<img src="' .  $centroamerica[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
+                                <div class="card-body">
+                                    <h5 class="card-title1 font-weight-bold"><?php echo $centroamerica[$key]["nombre"]; ?>
+                                    </h5>
+                                    <p class="card-text"><?php echo $centroamerica[$key]["descripcion"]; ?></p>
+                                    <div class="row justify-content-center pt-1 pb-3">
+                                        <h5>
+                                            <span
+                                                class="card-text text-center badge badge-light"><?php echo $nacional[$key]["precio"]; ?></span>
+                                        </h5>
+                                    </div>
+                                    <div class="container d-flex justify-content-around">
+                                        <a href="#" class="btn btn-success">Comprar</a>
+                                        <a href="opiniones.php" class="btn btn-outline-primary">Ver mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach ?>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="europa" class="element" style="display: none;">
+        <h2>Europa...</h2>
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-12">
+                    <div class="row">                       ?>
+                        <?php foreach ($europa as $key => $value) : ?>
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
+                            <div class="card carta">
+                                <?php echo '<img src="' .  $europa[$key]["url"] . '" class="card-img-top" alt="..." />' ?>
+                                <div class="card-body">
+                                    <h5 class="card-title1 font-weight-bold"><?php echo $europa[$key]["nombre"]; ?>
+                                    </h5>
+                                    <p class="card-text"><?php echo $europa[$key]["descripcion"]; ?></p>
+                                    <div class="row justify-content-center pt-1 pb-3">
+                                        <h5>
+                                            <span
+                                                class="card-text text-center badge badge-light"><?php echo $nacional[$key]["precio"]; ?></span>
+                                        </h5>
+                                    </div>
+                                    <div class="container d-flex justify-content-around">
+                                        <a href="#" class="btn btn-success">Comprar</a>
+                                        <a href="opiniones.php" class="btn btn-outline-primary">Ver mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach ?>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- $americadelnorte;
+    $americadelsur;
+    $argentina;
+    $centroamerica;
+    $europa; -->
 
     <script>
     function mostrar(id) {
         if (id == "0") {
-            $("#interior").hide();
-            $("#exterior").hide();
+            $("#americadelsur").hide();
+            $("#centroamerica").hide();
+            $("#europa").hide();
         }
 
-        if (id == "interior") {
-            $("#interior").show();
-            $("#exterior").hide();
+        if (id == "centroamerica") {
+            $("#americadelsur").hide();
+            $("#centroamerica").show();
+            $("#europa").hide();
+        }
+        if (id == "europa") {
+            $("#americadelsur").hide();
+            $("#centroamerica").hide();
+            $("#europa").show();
         }
 
-
-
-        if (id == "exterior") {
-            $("#exterior").show();
-            $("#interior").hide();
+    }
+ 
+    function mostrar1(id) {
+        if (id == "0") {
+            $("#Argentina").hide();
+            $("#Brasil").hide();
+            $("#Peru").hide();
+            $("#Espana").hide();
+            $("#Mexico").hide();
+            ("#EEUU").hide();
+        }
+        if (id== "Brasil") {
+            $("#Argentina").hide();
+            $("#Brasil").show();
+            $("#Peru").hide();
+            $("#Espana").hide();
+            $("#Mexico").hide();
+            ("#EEUU").hide();
+        }
+        if (id== "Peru") {
+            $("#Argentina").hide();
+            $("#Brasil").hide();
+            $("#Peru").show();
+            $("#Espana").hide();
+            $("#Mexico").hide();
+            ("#EEUU").hide();
+        }
+        if (id== "Espana") {
+            $("#Argentina").hide();
+            $("#Brasil").hide();
+            $("#Peru").hide();
+            $("#Espana").show();
+            $("#Mexico").hide();
+            ("#EEUU").hide();
+        }
+        if (id== "Mexico") {
+            $("#Argentina").hide();
+            $("#Brasil").hide();
+            $("#Peru").hide();
+            $("#Espana").hide();
+            $("#Mexico").show();
+            ("#EEUU").hide();
+        }
+        if (id== "EEUU") {
+            $("#Argentina").hide();
+            $("#Brasil").hide();
+            $("#Peru").hide();
+            $("#Espana").hide();
+            $("#Mexico").hide();
+            ("#EEUU").show();
         }
 
     }

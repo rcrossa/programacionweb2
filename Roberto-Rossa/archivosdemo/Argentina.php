@@ -1,6 +1,6 @@
 <?php
 
-$productosnacionales = array(
+$argentina = array(
     array(
         "id" => 0,
         'nombre' => 'Ushuaia',
@@ -42,20 +42,6 @@ $productosnacionales = array(
         'precio' => '$36000',
         'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Jueves Incluye: Aéreos Buenos Aires/Mendoza/Buenos Aires Un equipaje de mano de hasta 8kg Traslados de llegada y de salida Alojamiento según régimen seleccionado.  No incluye: impuesto pais. Menores de 2 años sin cargo.',
         'url' => '../images/mendoza.jpg',
-    ),
-    array(
-        "id" => 6,
-        'nombre' => 'Rio',
-        'precio' => '$50000',
-        'descripcion' => 'incluye: Vuelos operados por Gol con equipaje incluido y venta anticipada. 07 noches de alojamiento según régimen indicado. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
-        'url' => '../images/rio.jpg',
-    ),
-    array(
-        'id' => 7,
-        'nombre' => 'Cancun',
-        'precio' => '$45000',
-        'descripcion' => 'Incluye: Ticket aéreo, Traslados, Alojamiento según régimen y Asistencia al viajero. alojamiento según régimen indicado. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
-        'url' => '../images/cancum.jpg',
     ),
   );
 

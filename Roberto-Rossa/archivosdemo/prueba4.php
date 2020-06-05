@@ -55,7 +55,7 @@
         Estado actual:
         <select id="status" name="status" onChange="mostrar(this.value);">
             <option value="0"></option>
-            <option value="interior">America Del Sur</option>
+            <option  value="interior">America Del Sur</option>
             <option value="exterior">America del Norte</option>
         </select>
         <!-- <select id="1" name="status" onChange="mostrar(this.value);">
@@ -136,13 +136,20 @@
     </div> -->
     
   <!-- HTML -->
+  
 <a name="#ajax-getjson-example"></a>
 <div id="example-section38">    
-    <div>Car sale report</div>
+    <div></div>
+    
     <div id="div381"></div>
+   <select name="seleccion" id="">
+            <option value=""></option>
+            <option value="btn382">test</option>
+   </select>
     <button id="btn382" type="button">Cargar detalle)</button>    
-    &nbsp;<a href="/backend/data/car-sale.json" target="_blank">Original car sale report</a>
+    <!-- &nbsp;<a href="/backend/data/car-sale.json" target="_blank">Original car sale report</a> -->
 </div>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
         $(document).ready(function (){
@@ -150,12 +157,12 @@
                 /* set no cache */
                 $.ajaxSetup({ cache: false });
 
-                $.getJSON("http://localhost/programacionweb2/roberto-rossa/archivosdemo/internacional.json", function(data){ 
+                $.getJSON("internacional.json", function(data){ 
                     var html = [];
 
                     /* loop through array */
                     $.each(data, function(index, d){            
-                        html.push(" nombre : ", d.nombre, "<br>", 
+                        html.push("<div class=container-fluid",">"," nombre : ", d.nombre, "<br>", 
                                 " precio : ", d.precio,"<br>",
                                 " Descripcion : ", d.descripcion, "<br>",
                                 " <img src=",d.url," style:margin-left=10px width=auto", "height=200",">", "<br>",);

@@ -70,7 +70,7 @@
 
         </div>
     </div>
-
+</form>
     <div id="interior" class="element" style="display: none;">
         <h2>Promociones nacionales...</h2>
         <div class="container">

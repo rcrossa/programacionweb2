@@ -8,3 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 <link rel="stylesheet" href="css/fancybox/jquery.fancybox.min.css" />
+
+<?php
+echo date_default_timezone_set('America/Argentina/Buenos_Aires');
+?>

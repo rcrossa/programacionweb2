@@ -11,6 +11,25 @@
     <?php
     $page = 'productos';
     require_once "encabezado.php";
+
+    if(isset($_POST['submit'])){
+        $data = $_POST;
+        unset($data['submit']);
+        $data['fecha'] = date('d/m/Y H:i:s');
+        $fecha = new DateTime();
+        $indexComentario = $fecha->format('YmdHisu');
+        if(file_exists('archivosphp/comentarios.json')){
+            $comentarioJson = file_get_contents('archivosphp/comentarios.json');
+            $comentarioArray = json_decode($comentarioJson, true);
+        }else{
+            $comentarioArray = array();
+        }
+        $comentarioArray[$indexComentario] = $data;
+        $fp = fopen('archivosphp/comentarios.json','w');
+        fwrite($fp,json_encode($comentarioArray));
+        fclose($fp);
+        //var_dump($_POST);
+    }
     ?>
 
 
@@ -113,15 +132,37 @@
         </div>
     </div>
 
-    <div class="container mt-3">
-        <div class="media border p-3 shadow">
+            <?php
+                if(file_exists('archivosphp/comentarios.json')){
+                    $comentarioJson = file_get_contents('archivosphp/comentarios.json');
+                    $comentarioArray = json_decode($comentarioJson,true);
+                    krsort($comentarioArray);
+                    $cantidad = 0;
+                    foreach($comentarioArray as $comentario) {
+                        if($comentario['producto_id'] == $_GET['prod']){
+                            $cantidad++;
+                            if($cantidad == 11)break;
+                            ?>
+
+                            <div class="container mt-3">
+                                    <div class="media border p-3 shadow">
+                                    <h4>
+                                        <?php echo $comentario['email'].'('.$comentario['fecha'].'):'.$comentario['descripcion']; ?>
+                                    </h4>
+                                </div>
+                            </div>
+                        <?php
+                        }
+                    }
+                }	
+            ?>
+            <!--
             <img src="imagenes/puertomadryn.png" alt="imagen de avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
             <div class="media-body">
             <h4>Homero Simpson <small><i>Posted on April 29, 2020</i></small> ★★★</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
             </div>
-        </div>
-    </div>
+            -->
 
     <section class="py-5">
         <div class="container">
@@ -160,7 +201,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-md-10">
                                         <div class="form1">
-                                            <p class="clasificacion">
+                                            <p class="clasificacion" name="rankeo">
                                                 <input id="radio1" type="radio" name="estrellas" value="5">
                                                 <!--
                                                 --><label for="radio1">★</label>
@@ -183,7 +224,9 @@
                                             </p>
                                         </div>
                                     </div>
-
+                                    <!--
+                                    <input type="hidden" class="input-xlarge" name="producto_id" value="<?php echo $_GET['prod'] ?>"/>    
+                                    -->
                                     <div class="col-sm-6 col-md-2">
                                         <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Enviar" name="submit">
                                     </div>

@@ -4,7 +4,7 @@ $productos = array(
     0 => array(
         'id' => 0,
         'nombre' => 'Todo',
-        'parent_id' => 0
+        'parent_id' => ''
     ),
     1 => array(
         'id' => 1,

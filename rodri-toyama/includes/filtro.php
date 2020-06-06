@@ -61,9 +61,16 @@ $data = json_decode($str_data, true);
                         }
                     } else {
 
-                        if (value.parent_id == parent_id) {
+                        if (value.parent_id == parent_id && parent_id != 0) {
                             html_code += '<option value="' + value.id + '">' + value.nombre + '</option>';
                         }
+
+                        if (key > 6) {
+                            if (parent_id == '') {
+                                html_code += '<option value="' + value.id + '">' + value.nombre + '</option>';
+                            }
+                        }
+
                     }
                 });
                 $('#' + id).html(html_code);
@@ -76,7 +83,7 @@ $data = json_decode($str_data, true);
             if (continente_id != '') {
                 load_json_data('pais', continente_id);
             } else {
-                $('#pais').html('<option value="">Select pais</option>');
+                load_json_data('pais', continente_id);
             }
         });
 

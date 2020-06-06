@@ -15,7 +15,7 @@
           <?php if ($key < 7) continue; ?>
 
           <?php
-          // echo '<pre>' . print_r($json_string2) . '</pre>';
+          // echo '<pre>' . print_r($json_string) . '</pre>';
           // echo '<pre>' . print_r($arr, true) . '</pre>';
           // echo '<pre>' . print_r($ciudad) . '</pre>';
           // echo '<pre>' . print_r($value['id'], true) . '</pre>';

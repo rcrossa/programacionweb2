@@ -3,15 +3,24 @@
 
 <head>
     <?php require_once "./includes/head.php" ?>
-    <title>Document</title>
+    <title>Product Details</title>
 </head>
 
 <body>
     <?php $page = 'catalogo'; ?>
+    <?php require_once "functions/funcionesproductoportada.php"; ?>
     <?php require_once "./includes/encabezado.php"; ?>
 
+    <?php $id = $_GET['id']; ?>
+
     <div class="container text-center pt-5 pb-4">
-        <h1>Tierra del Fuego</h1>
+        <?php foreach ($productos as $key => $value)
+            if ($key == $id) {
+                $aux = $value;
+                echo '<h1>' . $value['nombre'] . '</h1>';
+            }
+
+        ?>
     </div>
 
     <div class="pb-5 text-center">
@@ -23,8 +32,6 @@
     <section>
         <div class="container shadow justify-content-around p-4">
             <div class="row justify-content-center text-center">
-
-                <!-- Acá va la imagen del producto -->
 
                 <div class="col-md-12 col-lg-4">
                     <div class="imagen1">
@@ -60,17 +67,40 @@
         <div class="container py-5 shadow">
             <div class="row justify-content-center">
                 <div class="col-sm-11 col-md-10 col-lg-10 incluye py-2">
-                    <h5 class="pb-3">
+                    <h3 class="pb-3">
                         Incluye:
-                    </h5>
-                    <ul>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
-                        <li> Acá va la descripción del producto. </li>
+                    </h3>
+                    <?php echo '<p>' . $aux['descripcion'] . '</p>' ?>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <ul class="descripcion_detalles">
+                        <?php foreach ($aux['descripcion_details'] as $key => $value) : ?>
+                            <li><?php echo $value; ?></li>
+                        <?php endforeach ?>
                     </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="home">
+                <div class="col-10">
+                    <h4>Detalles</h4>
+                    <table class="table">
+                        <tbody>
+                            <?php
+                            echo '<tr><td>Pais: </td><td>' . $aux['nombre'] . '</td></tr>';
+                            echo '<tr><td>Viaje: </td><td>' . $aux['continente'] . '</td></tr>';
+                            echo '<tr><td>Precio: </td><td> ' . $aux['precio'] . '</td></tr>';
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-11 col-md-10 col-lg-10 incluye py-2">
+                    <div class="container d-flex justify-content-around">
+                        <a href="#" class="btn btn-success">Comprar</a>
+                    </div>
                 </div>
             </div>
         </div>

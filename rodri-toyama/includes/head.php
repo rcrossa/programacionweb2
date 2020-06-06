@@ -8,3 +8,4 @@
 <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+<script src="./js/jquery-3.5.1.min.js"></script>

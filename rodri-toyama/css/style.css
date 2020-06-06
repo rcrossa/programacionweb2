@@ -303,6 +303,13 @@ footer {
   border-width: 5px;
 }
 
+/* ----- Detalles de Producto ----- */
+
+.descripcion_detalles {
+  margin-left: 2em;
+}
+
+
 /* ----- Comienza el codigo cs para las estrellas ----- */
 
 #form1 {

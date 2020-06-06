@@ -4,33 +4,13 @@
     <div class="col-12">
       <div class="row">
 
-        <?php
-
-        $continente = (isset($_GET["continente"]) ? $_GET['continente'] : null);
-        $pais = (isset($_GET["pais"]) ? $_GET['pais'] : null);
-
-        ?>
-
         <?php foreach ($productos as $key => $value) : ?>
-          <?php if ($key < 7) continue; ?>
+          <?php if ($key < 7) continue ?>
 
-          <?php
-          // echo '<pre>' . print_r($json_string2) . '</pre>';
-          // echo '<pre>' . print_r($arr, true) . '</pre>';
-          // echo '<pre>' . print_r($ciudad) . '</pre>';
-          // echo '<pre>' . print_r($value['id'], true) . '</pre>';
-          // TODO: ver filtrado por ciudad
+          <?php // echo '<pre>' . print_r($productos,true) . '<pre>'
           ?>
 
-          <?php
-
-          if (
-            ((empty($continente) || $continente == 0) && empty($pais)) || // No se aplica filtro 
-            (!empty($continente) && empty($pais) && $continente == $value['parent_id']) || // Se filtra por continente
-            (empty($continente) && !empty($pais) && $pais == $value['id']) || // Se filtra por pais
-            (!empty($continente) && !empty($pais) && $pais == $value['id'] && $continente == $value['parent_id']) // Se filtra por continente y pais
-          ) {
-          ?>
+          <?php if ($value['destacado']) : ?>
 
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
               <div class="card carta">
@@ -48,13 +28,13 @@
                   <div class="container d-flex justify-content-around">
                     <a href="#" class="btn btn-success">Comprar</a>
 
-                    <?php echo '<a href="product_details.php?id=' . $value["id"] . '"class="btn btn-outline-primary">Ver mas</a>' ?>
+                    <?php echo '<a href="opiniones.php?cod=' . $key . '"class="btn btn-outline-primary">Ver mas</a>' ?>
                   </div>
                 </div>
               </div>
             </div>
 
-          <?php } ?>
+          <?php endif ?>
         <?php endforeach ?>
 
       </div>

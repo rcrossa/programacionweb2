@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <?php require_once "./includes/head.php" ?>
+    <?php require_once "./includes/head.php"; ?>
     <title>Delfos Tour</title>
 </head>
 

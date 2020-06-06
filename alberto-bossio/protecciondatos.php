@@ -47,7 +47,7 @@
         <div class="row">
         
             <div class="col-12">
-                <img src="images/Proteccion_Datos_Personales.jpg" class="d-block w-50 img-fluid" alt="imagen de proteccion datos" height="550" width="361">
+                <img src="images/Proteccion_Datos_Personales.jpg" class="w-100 img-fluid shadow" alt="imagen de proteccion datos">
             </div>
         </div>
     </section>

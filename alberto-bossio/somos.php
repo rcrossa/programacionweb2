@@ -48,7 +48,7 @@
             </div>
 
             <div>
-                <img src="images/institucional.jpg" class="d-block w-100 img-fluid" alt="foto empleados de delfos" height="750" width="441">
+                <img src="images/institucional.jpg" class="w-100 img-fluid shadow" alt="foto empleados de delfos">
             </div>
 
         </div>

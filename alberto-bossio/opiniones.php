@@ -62,16 +62,16 @@
 
                 <div class="col-4">
                     <div class="imagen1">
-                        <a href="images/Untitled-3.png" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="images/Untitled-3.png" alt="">
+                        <a href="<?php echo $prod['url']; ?>" data-fancybox="gallery" data-caption="Caption for single image">
+                            <img height="auto" width="100%" src="<?php echo $prod['url']; ?>" alt="imagen del producto">
                         </a>
                     </div>
                 </div>
 
                 <div class="col-4">
                     <div class="imagen2 img-fluid">
-                        <a href="images/Untitled-2.png" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="images/Untitled-2.png" alt="imagen de acantilado">
+                        <a href="<?php echo $prod['url']; ?>" data-fancybox="gallery" data-caption="Caption for single image">
+                            <img height="auto" width="100%" src="<?php echo $prod['url']; ?>" alt="imagen del producto">
                         </a>
                     </div>
                 </div>
@@ -79,8 +79,8 @@
                 <div class="col-4">
                     <div class="imagen3">
                         <div data-toggle="modal" data-target="#myModal2">
-                            <a href="images/Untitled-4.png" data-fancybox="gallery" data-caption="Caption for single image">
-                                <img height="auto" width="100%" src="images/Untitled-4.png" alt="imagen de acantilado">
+                            <a href="<?php echo $prod['url']; ?>" data-fancybox="gallery" data-caption="Caption for single image">
+                                <img height="auto" width="100%" src="<?php echo $prod['url']; ?>" alt="imagen del producto">
                             </a>
                         </div>
                     </div>
@@ -99,7 +99,11 @@
                     </h3>
 
                     <h4>
-                        <?php echo $pArray['descripcion']; ?>
+                        <?php
+                        if($prod['id'] == $_GET['producto']){
+                            echo $prod['descripcion'];
+                        }
+                        ?>
                     </h4>
                 </div>
             </div>

@@ -54,10 +54,10 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
-        
             <div class="col-12">
-                <img src="images/Pago2.png" class="d-block w-50 img-fluid shadow" alt="imagen de formas de pago" height="550" width="361">
+                <img src="images/Pago2.png" class="w-100 img-fluid shadow" alt="imagen de formas de pago">
             </div>
         </div>
     </section>

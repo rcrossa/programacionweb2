@@ -56,34 +56,24 @@
 
     <section>
         <div class="container shadow justify-content-around p-4">
-            <div class="row justify-content-center text-center">
-
+            <div class="row"> <!--  justify-content-center text-center -->
+                
                 <!-- Acá va la imagen del producto -->
 
                 <div class="col-4">
                     <div class="imagen1">
                         <a href="<?php echo $prod['url']; ?>" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="<?php echo $prod['url']; ?>" alt="imagen del producto">
+                            <img height="auto" width="100%" src="<?php echo $prod['url']; ?>" alt="imagen de <?php echo $prod['nombre']; ?>">
                         </a>
                     </div>
                 </div>
 
-                <div class="col-4">
-                    <div class="imagen2 img-fluid">
-                        <a href="<?php echo $prod['url']; ?>" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="<?php echo $prod['url']; ?>" alt="imagen del producto">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="imagen3">
-                        <div data-toggle="modal" data-target="#myModal2">
-                            <a href="<?php echo $prod['url']; ?>" data-fancybox="gallery" data-caption="Caption for single image">
-                                <img height="auto" width="100%" src="<?php echo $prod['url']; ?>" alt="imagen del producto">
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-8">
+                    <h4> 
+                    <?php echo $prod['nombre']; ?> <br>
+                    <?php echo $prod['zona']; ?> <br>
+                    Precio: <?php echo $prod['precio']; ?> 
+                    </h4>
                 </div>
 
             </div>

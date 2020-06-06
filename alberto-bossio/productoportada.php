@@ -4,7 +4,9 @@
     <div class="col-12">
       <div class="row">
 
-        <?php foreach ($productos as $key => $value) : ?>
+        <?php
+
+         foreach ($productos as $key => $value) : ?>
 
           <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
             <div class="card carta">
@@ -21,7 +23,7 @@
                 </div>
                 <div class="container d-flex justify-content-around">
                   <a href="FormaDePago.php" class="btn btn-success">Comprar</a>
-                  <a href="opiniones.php" class="btn btn-outline-primary">Ver mas</a>
+                  <a href="opiniones.php?producto=<?php echo $productos[$key]['id']?>" class="btn btn-outline-primary">Ver mas</a>
                 </div>
               </div>
             </div>

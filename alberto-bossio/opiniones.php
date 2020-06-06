@@ -47,11 +47,11 @@
         $fp = fopen('archivosphp/productos.json','r');
         $pArray = json_decode(fread($fp,filesize('archivosphp/productos.json')),true);
         fclose($fp);
-        //foreach($pArray as $prod){
-        //    if($prod['id'] == $_GET['id']){
-        //        break;
-        //    }
-        //}
+        foreach($pArray as $prod){
+            if($prod['id'] == $_GET['producto']){
+                break;
+            }
+        }
     ?>
 
     <section>
@@ -80,7 +80,7 @@
                     <div class="imagen3">
                         <div data-toggle="modal" data-target="#myModal2">
                             <a href="images/Untitled-4.png" data-fancybox="gallery" data-caption="Caption for single image">
-                                <img height="auto" width="100%" src="images/<?php echo $prod['imagen']?>" alt="imagen de acantilado">
+                                <img height="auto" width="100%" src="images/Untitled-4.png" alt="imagen de acantilado">
                             </a>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
             </div>
         </div>
     </section>
-    
+    <!--
     <div class="container mt-3">
         <div class="media border p-3 shadow">
             <img src="imagenes/cerrocastor.png" alt="imagen de avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
@@ -131,7 +131,7 @@
             </div>
         </div>
     </div>
-
+    -->
             <?php
                 if(file_exists('archivosphp/comentarios.json')){
                     $comentarioJson = file_get_contents('archivosphp/comentarios.json');
@@ -139,16 +139,18 @@
                     krsort($comentarioArray);
                     $cantidad = 0;
                     foreach($comentarioArray as $comentario) {
-                        if($comentario['producto_id'] == $_GET['prod']){
+                        if($comentario['producto_id'] == $_GET['producto']){
                             $cantidad++;
                             if($cantidad == 11)break;
                             ?>
 
                             <div class="container mt-3">
-                                    <div class="media border p-3 shadow">
-                                    <h4>
-                                        <?php echo $comentario['email'].'('.$comentario['fecha'].'):'.$comentario['descripcion']; ?>
-                                    </h4>
+                                <div class="media border p-3 shadow">
+                                    <div class="media-body">
+                                    <h4> <?php echo $comentario['email']; ?> <small><i> <?php echo $comentario['fecha']; ?> </i></small> <?php echo $comentario['estrellas']; ?></h4>
+
+                                    <p> <?php echo $comentario['comentario']; ?> </p>  
+                                    </div>
                                 </div>
                             </div>
                         <?php
@@ -224,9 +226,9 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <!--
-                                    <input type="hidden" class="input-xlarge" name="producto_id" value="<?php echo $_GET['prod'] ?>"/>    
-                                    -->
+                                    
+                                    <input type="hidden" class="input-xlarge" name="producto_id" value="<?php echo $_GET['producto'] ?>"/>
+
                                     <div class="col-sm-6 col-md-2">
                                         <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Enviar" name="submit">
                                     </div>

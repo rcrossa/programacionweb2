@@ -10,5 +10,5 @@
 <link rel="stylesheet" href="css/fancybox/jquery.fancybox.min.css" />
 
 <?php
-echo date_default_timezone_set('America/Argentina/Buenos_Aires');
+    date_default_timezone_set('America/Argentina/Buenos_Aires');
 ?>

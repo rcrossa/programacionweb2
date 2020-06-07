@@ -7,8 +7,7 @@
         <?php foreach ($productos as $key => $value) : ?>
           <?php if ($key < 7) continue ?>
 
-          <?php // echo '<pre>' . print_r($productos,true) . '<pre>'
-          ?>
+          <?php // echo '<pre>' . print_r($productos,true) . '<pre>' ?>
 
           <?php if ($value['destacado']) : ?>
 
@@ -28,7 +27,7 @@
                   <div class="container d-flex justify-content-around">
                     <a href="#" class="btn btn-success">Comprar</a>
 
-                    <?php echo '<a href="opiniones.php?cod=' . $key . '"class="btn btn-outline-primary">Ver mas</a>' ?>
+                    <?php echo '<a href="product_details.php?id=' . $key . '"class="btn btn-outline-primary">Ver mas</a>' ?>
                   </div>
                 </div>
               </div>

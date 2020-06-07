@@ -3,16 +3,16 @@
 
 <head>
     <?php require_once "./includes/head.php"; ?>
-    
     <title>Delfos Tour</title>
 </head>
 
 <body>
     <?php
-    require_once "functions/funcionesproductoportada.php";
+    $str_data = file_get_contents("productos.json");
+    $productos = json_decode($str_data, true);
 
-    // archivos html
     $page = 'index';
+
     require_once "./includes/encabezado.php";
     require_once "./includes/carousel.php";
     ?>

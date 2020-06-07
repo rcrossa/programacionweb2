@@ -1,6 +1,4 @@
 <?php
-// $str_data = file_get_contents("productos.json");
-// $data = json_decode($str_data, true);
 $str_data = file_get_contents("productos.json");
 $data = json_decode($str_data, true);
 ?>

@@ -8,7 +8,8 @@
 
 <body>
     <?php
-    require_once "./functions/funcionesproductoportada.php";
+    $str_data = file_get_contents("productos.json");
+    $productos = json_decode($str_data, true);
 
     // archivos html
     $page = 'catalogo';

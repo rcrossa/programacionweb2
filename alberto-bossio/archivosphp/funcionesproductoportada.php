@@ -5,6 +5,7 @@ $productos = array(
         'zona' => 'interior',
         'nombre' => 'Tierra Del Fuego',
         'precio' => '$50000',
+        'destacado' => true,
         'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Consultar Incluye: Aéreos Buenos Aires/Tierra Del Fuego/Buenos Aires Traslados de llegada y salida Alojamiento según régimen seleccionado Coordinador. Menores de 2 años viajan sin cargo Equipaje: Incluye un equipaje en bodega',
         'url' => './images/ushuaia.jpg'
     ),
@@ -13,6 +14,7 @@ $productos = array(
         'zona' => 'interior',
         'nombre' => 'Calafate',
         'precio' => '$45000',
+        'destacado' => true,
         'descripcion' => 'Duración: 4 Días / 3 Noches Salidas - Consultar Incluye: Aéreos Buenos Aires/Calafate/Buenos Aires Un equipaje de mano de hasta 8kg Traslados de llegada y salida Alojamiento según régimen seleccionado. Menores de 2 años sin cargo. Incluye equipaje',
         'url' => './images/calafate.jpg'
     ),
@@ -21,6 +23,7 @@ $productos = array(
         'zona' => 'interior',
         'nombre' => 'La Rioja',
         'precio' => '$60000',
+        'destacado' => true,
         'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Jueves Incluye: Pasaje aéreo Buenos Aires/San Juan/Buenos Aires Un equipaje de mano de hasta 8kg Traslados de llegada y de salida Alojamiento según régimen seleccionado ( 2 nts en San Juan, 1 nt en Villa Union ).',
         'url' => './images/larioja.jpg'
     ),
@@ -29,6 +32,7 @@ $productos = array(
         'zona' => 'interior',
         'nombre' => 'Bariloche',
         'precio' => '$45000',
+        'destacado' => true,
         'descripcion' => 'Duración: 6 Días / 5 Noches Salidas: - Lunes Incluye: Aéreos Buenos Aires/Bariloche/Buenos Aires Traslados de llegada y de salida Alojamiento: Según régimen seleccionado. Coordinador. Menores: Los menores de 2 años viajan sin cargo y sin servicio.',
         'url' => './images/bariloche.jpg'
     ),
@@ -37,6 +41,7 @@ $productos = array(
         'zona' => 'interior',
         'nombre' => 'Misiones',
         'precio' => '$20000',
+        'destacado' => false,
         'descripcion' => 'Duración: 4 días / 3 noches Salidas: - A consultar Incluye: Pasaje aéreo Buenos Aires/Puerto Iguazu/Buenos Aires Incluye un equipaje de mano de hasta 8kg Traslados de llegada y salida Alojamiento según régimen seleccionado. No incluye: impuesto pais. Menores: Los menores de 2 años viajan sin cargo y sin servicio. Desc. a estudiantes.',
         'url' => './images/misiones.jpeg'
     ),
@@ -45,6 +50,7 @@ $productos = array(
         'zona' => 'interior',
         'nombre' => 'Mendoza',
         'precio' => '$36000',
+        'destacado' => true,
         'descripcion' => 'Duración: 4 Días / 3 Noches Salidas: - Jueves Incluye: Aéreos Buenos Aires/Mendoza/Buenos Aires Un equipaje de mano de hasta 8kg Traslados de llegada y de salida Alojamiento según régimen seleccionado.  No incluye: impuesto pais. Menores de 2 años sin cargo.',
         'url' => './images/mendoza.jpg'
     ),array(
@@ -52,6 +58,7 @@ $productos = array(
         'zona' => 'exterior',
         'nombre' => 'Rio',
         'precio' => '$50000',
+        'destacado' => false,
         'descripcion' => 'incluye: Vuelos operados por Gol con equipaje incluido y venta anticipada. 07 noches de alojamiento según régimen indicado. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
         'url' => './images/rio.jpg'
     ),
@@ -60,6 +67,7 @@ $productos = array(
         'zona' => 'exterior',
         'nombre' => 'Cancun',
         'precio' => '$45000',
+        'destacado' => true,
         'descripcion' => 'Incluye: Ticket aéreo, Traslados, Alojamiento según régimen y Asistencia al viajero. alojamiento según régimen indicado. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
         'url' => './images/cancum.jpg'
     ),
@@ -68,6 +76,7 @@ $productos = array(
         'zona' => 'exterior',
         'nombre' => 'Peru',
         'precio' => '$60000',
+        'destacado' => true,
         'descripcion' => 'INCLUYE: GUÍA: Operado con guía en español e inglés. Pasaje (Latam Airlines).   ALOJAMIENTO: 3 noches de alojamiento en Lima. 1 noche de alojamiento en Paracas. 2 noches de alojamiento en Cusco. 1 noche de alojamiento en Aguas Calientes. ALIMENTACIÓN: Desayuno diario incluidos. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
         'url' => './images/peru.jpg'
     ),
@@ -76,6 +85,7 @@ $productos = array(
         'zona' => 'exterior',
         'nombre' => 'España',
         'precio' => '$45000',
+        'destacado' => true,
         'descripcion' => 'VISITANDO: MADRID, SANTIAGO DE COMPOSTELA -RINLO - CABO VIDIO - LA MANJOYA - COVADONGA - CUEVAS DEL SOPLAO - SANTANDER - BILBAO - SAN SEBASTIAN.',
         'url' => './images/spain.jpg'
     ),
@@ -84,6 +94,7 @@ $productos = array(
         'zona' => 'exterior',
         'nombre' => 'Estados Unidos',
         'precio' => '$20000',
+        'destacado' => true,
         'descripcion' => 'Visitando: Boston / Quebec / Montreal / Ottawa / Toronto / Niagara Falls - Incluye: boleto por American Airlines. Desayunos Americanos. ALIMENTACIÓN: Desayuno diario incluidos. Opcional: asistencia CORIS con seguro de cancelación USD 36 por persona.',
         'url' => './images/estadosunidos.jpg'
     ),
@@ -92,6 +103,7 @@ $productos = array(
         'zona' => 'exterior',
         'nombre' => 'Canada',
         'precio' => '$36000',
+        'destacado' => true,
         'descripcion' => 'VISITANDO: Vancouver/ Hope / Kelowna / Revelstoke / Golden / Columbia Ice Field / Canmore /  Banff / Calgar. Incluye: vuelo por American Airlines (Clase turista).',
         'url' => './images/canada.jpg'
     ),

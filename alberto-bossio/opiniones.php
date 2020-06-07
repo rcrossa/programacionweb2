@@ -141,7 +141,20 @@
                             <div class="container mt-3">
                                 <div class="media border p-3 shadow">
                                     <div class="media-body">
-                                    <h4> <?php echo $comentario['email']; ?> <small><i> <?php echo $comentario['fecha']; ?> </i></small> <?php echo $comentario['estrellas']; ?></h4>
+                                    <h4> <?php echo $comentario['email']; ?> <small><i> <?php echo $comentario['fecha']; ?> </i></small> <?php 
+                                    if($comentario['estrellas'] == '1'){
+                                        echo '★';
+                                    }elseif($comentario['estrellas'] == '2'){
+                                        echo '★★';
+                                    }elseif($comentario['estrellas'] == '3'){
+                                        echo '★★★';
+                                    }elseif($comentario['estrellas'] == '4'){
+                                        echo '★★★★';
+                                    }elseif($comentario['estrellas'] == '5'){
+                                        echo '★★★★★';
+                                    }
+                                    //echo $comentario['estrellas']; 
+                                    ?></h4>
 
                                     <p> <?php echo $comentario['comentario']; ?> </p>  
                                     </div>

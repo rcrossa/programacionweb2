@@ -7,11 +7,15 @@
 </head>
 
 <body>
-    <?php $page = 'catalogo'; ?>
-    <?php require_once "functions/funcionesproductoportada.php"; ?>
-    <?php require_once "./includes/encabezado.php"; ?>
+    <?php
+    $page = 'catalogo';
+    $str_data = file_get_contents("productos.json");
+    $productos = json_decode($str_data, true);
 
-    <?php $id = $_GET['id']; ?>
+    require_once "./includes/encabezado.php";
+    $id = $_GET['id'];
+    ?>
+
 
     <div class="container text-center pt-5 pb-4">
         <?php foreach ($productos as $key => $value)
@@ -19,7 +23,6 @@
                 $aux = $value;
                 echo '<h1>' . $value['nombre'] . '</h1>';
             }
-
         ?>
     </div>
 

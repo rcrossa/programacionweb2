@@ -10,8 +10,9 @@
           }else{
               $correosArray = array();
           }
-          //$correosArray = $dato;
-          $correosArray[] = $dato;
+          //$correosArray[$indexCorreo] = $correosArray;
+          $indexCorreo = 0;
+          $correosArray[$indexCorreo] = $dato;
           $correos = fopen('archivosphp/correos.json','w');
           fwrite($correos,json_encode($correosArray));
           fclose($correos);

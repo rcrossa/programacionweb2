@@ -25,11 +25,22 @@
                                             $opcion = $_GET['opcion'];
                                         ?>
 
-                                        <select  class="custom-select custom-select-lg" name="opcion" onchange="this.form.submit()">
+                                        <select  class="custom-select custom-select-lg" name="opcion">
                                             <option value="1" <?php $opcion == 1 ?> >Todo</option>
                                             <option value="2" <?php $opcion == 2 ?> >Interior</option>
                                             <option value="3" <?php $opcion == 3 ?> >Exterior</option>
                                         </select>
+
+                                        <?php
+                                            $fz = fopen('archivosphp/zona.json','r');
+                                            $zonaArray = json_decode(fread($fz,filesize('archivosphp/zona.json')),true);
+                                            fclose($fz);
+                                            foreach($zonaArray as $zona){
+                                                if($zona['id'] == $opcion){
+                                                    break;
+                                                }
+                                            }
+                                        ?>
 
                                     </form>
                                 </div>
@@ -37,9 +48,9 @@
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <form action="" method="get">
                                         <?php
-                                            if($opcion == 1){
+                                            if($zona['id'] == 1){
                                         ?>
-                                                <select  class="custom-select custom-select-lg" name="todo" onchange="this.form.submit()">
+                                                <select  class="custom-select custom-select-lg" name="todo">
                                                     <?php
                                                         foreach($productos as $lugar){
                                                     ?>
@@ -49,9 +60,9 @@
                                                     ?>
                                                 </select>
                                         <?php
-                                            }elseif($opcion == 2){
+                                            }elseif($zona['id'] == 2){
                                         ?>
-                                                <select  class="custom-select custom-select-lg" name="interior" onchange="this.form.submit()">
+                                                <select  class="custom-select custom-select-lg" name="interior">
                                                     <?php
                                                             foreach($productos as $lugar){
                                                                 if($lugar['id'] < 6){
@@ -65,9 +76,9 @@
                                                     ?>
                                                 </select>
                                         <?php
-                                            }elseif($opcion == 3){
+                                            }elseif($zona['id'] == 3){
                                         ?>
-                                                <select  class="custom-select custom-select-lg" name="exterior" onchange="this.form.submit()">
+                                                <select  class="custom-select custom-select-lg" name="exterior">
                                                     <?php
                                                         foreach($productos as $lugar){
                                                             if($lugar['id'] >= 6){
@@ -84,8 +95,8 @@
                                     </form>
                                 </div>
                                         <div class="col-sm-12 col-lg-2 py-2">
-                                                <button class="btn btn-danger btn-md btn-block px-4" type="submit">Buscar</button>
-                                                <!-- <input class="btn btn-danger btn-md btn-block px-4" type="submit"> -->
+                                                <button class="btn btn-danger btn-md btn-block px-4" type="submit" name="submit">Buscar</button>
+                                                <!-- <input class="btn btn-danger btn-md btn-block px-4" type="submit" value="Buscar" name="submit"> -->
                                         </div>
 
                                 <!--

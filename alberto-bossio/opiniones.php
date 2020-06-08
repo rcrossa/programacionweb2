@@ -33,16 +33,6 @@
     ?>
 
 
-    <div class="container text-center pt-5 pb-4">
-        <h1>Tierra del Fuego</h1>
-    </div>
-
-    <div class="pb-5 text-center">
-        <svg width="60%" height="2">
-            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-        </svg>
-    </div>
-
     <?php
         $fp = fopen('archivosphp/productos.json','r');
         $pArray = json_decode(fread($fp,filesize('archivosphp/productos.json')),true);
@@ -53,6 +43,17 @@
             }
         }
     ?>
+
+    <div class="container text-center pt-5 pb-4">
+        <h1><?php echo $prod['nombre']; ?></h1>
+    </div>
+
+    <div class="pb-5 text-center">
+        <svg width="60%" height="2">
+            <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
+        </svg>
+    </div>
+
 
     <section>
         <div class="container shadow justify-content-around p-4">
@@ -100,79 +101,7 @@
         </div>
     </section>
 
-
-    <section class="py-5">
-        <div class="container">
-            <!--           <fieldset>-->
-            <div class="text-center pb-3">
-                <h2>Opiniones De Los Usuarios</h2>
-            </div>
-
-            <div class="pb-4 text-center">
-                <svg width="20%" height="2">
-                    <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
-                </svg>
-            </div>
-        </div>
-    </section>
-    <!--
-    <div class="container mt-3">
-        <div class="media border p-3 shadow">
-            <img src="imagenes/cerrocastor.png" alt="imagen de avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-            <div class="media-body">
-            <h4>Bart Simpson <small><i>Posted on April 29, 2020</i></small> ★★★★</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-            </div>
-        </div>
-    </div>
-    -->
-            <?php
-                if(file_exists('archivosphp/comentarios.json')){
-                    $comentarioJson = file_get_contents('archivosphp/comentarios.json');
-                    $comentarioArray = json_decode($comentarioJson,true);
-                    krsort($comentarioArray);
-                    $cantidad = 0;
-                    foreach($comentarioArray as $comentario) {
-                        if($comentario['producto_id'] == $_GET['producto']){
-                            $cantidad++;
-                            if($cantidad == 11)break;
-                            ?>
-
-                            <div class="container mt-3">
-                                <div class="media border p-3 shadow">
-                                    <div class="media-body">
-                                    <h4> <?php echo $comentario['email']; ?> <small><i> <?php echo $comentario['fecha']; ?> </i></small> <?php 
-                                    if($comentario['estrellas'] == '1'){
-                                        echo '★';
-                                    }elseif($comentario['estrellas'] == '2'){
-                                        echo '★★';
-                                    }elseif($comentario['estrellas'] == '3'){
-                                        echo '★★★';
-                                    }elseif($comentario['estrellas'] == '4'){
-                                        echo '★★★★';
-                                    }elseif($comentario['estrellas'] == '5'){
-                                        echo '★★★★★';
-                                    }
-                                    //echo $comentario['estrellas']; 
-                                    ?></h4>
-
-                                    <p> <?php echo $comentario['comentario']; ?> </p>  
-                                    </div>
-                                </div>
-                            </div>
-                        <?php
-                        }
-                    }
-                }	
-            ?>
-            <!--
-            <img src="imagenes/puertomadryn.png" alt="imagen de avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
-            <div class="media-body">
-            <h4>Homero Simpson <small><i>Posted on April 29, 2020</i></small> ★★★</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
-            </div>
-            -->
-
+    
     <section class="py-5">
         <div class="container">
             <!--           <fieldset>-->
@@ -250,7 +179,80 @@
         </div>
 
     </section>
-    <!-- Borrar -->
+
+
+    <section class="py-5">
+        <div class="container">
+            <!--           <fieldset>-->
+            <div class="text-center pb-3">
+                <h2>Opiniones De Los Usuarios</h2>
+            </div>
+
+            <div class="pb-4 text-center">
+                <svg width="20%" height="2">
+                    <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <!--
+    <div class="container mt-3">
+        <div class="media border p-3 shadow">
+            <img src="imagenes/cerrocastor.png" alt="imagen de avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+            <div class="media-body">
+            <h4>Bart Simpson <small><i>Posted on April 29, 2020</i></small> ★★★★</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+            </div>
+        </div>
+    </div>
+    -->
+            <?php
+                if(file_exists('archivosphp/comentarios.json')){
+                    $comentarioJson = file_get_contents('archivosphp/comentarios.json');
+                    $comentarioArray = json_decode($comentarioJson,true);
+                    krsort($comentarioArray);
+                    $cantidad = 0;
+                    foreach($comentarioArray as $comentario) {
+                        if($comentario['producto_id'] == $_GET['producto']){
+                            $cantidad++;
+                            if($cantidad == 11)break;
+                            ?>
+
+                            <div class="container mt-3">
+                                <div class="media border p-3 shadow">
+                                    <div class="media-body">
+                                    <h4> <?php echo $comentario['email']; ?> <small><i> <?php echo $comentario['fecha']; ?> </i></small> <?php 
+                                    if($comentario['estrellas'] == '1'){
+                                        echo '★';
+                                    }elseif($comentario['estrellas'] == '2'){
+                                        echo '★★';
+                                    }elseif($comentario['estrellas'] == '3'){
+                                        echo '★★★';
+                                    }elseif($comentario['estrellas'] == '4'){
+                                        echo '★★★★';
+                                    }elseif($comentario['estrellas'] == '5'){
+                                        echo '★★★★★';
+                                    }
+                                    //echo $comentario['estrellas']; 
+                                    ?></h4>
+
+                                    <p> <?php echo $comentario['comentario']; ?> </p>  
+                                    </div>
+                                </div>
+                            </div>
+                        <?php
+                        }
+                    }
+                }	
+            ?>
+            <!--
+            <img src="imagenes/puertomadryn.png" alt="imagen de avatar" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+            <div class="media-body">
+            <h4>Homero Simpson <small><i>Posted on April 29, 2020</i></small> ★★★</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+            </div>
+            -->
+
 
 
     <?php

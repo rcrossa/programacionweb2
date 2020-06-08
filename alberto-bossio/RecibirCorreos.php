@@ -11,8 +11,8 @@
               $correosArray = array();
           }
           //$correosArray[$indexCorreo] = $correosArray;
-          $indexCorreo = 0;
-          $correosArray[$indexCorreo] = $dato;
+          //$indexCorreo = 0;
+          $correosArray[] = $dato;
           $correos = fopen('archivosphp/correos.json','w');
           fwrite($correos,json_encode($correosArray));
           fclose($correos);

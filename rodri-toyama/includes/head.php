@@ -9,3 +9,7 @@
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
 <script src="./js/jquery-3.5.1.min.js"></script>
+
+<?php
+    date_default_timezone_set('America/Argentina/Buenos_Aires');
+?>

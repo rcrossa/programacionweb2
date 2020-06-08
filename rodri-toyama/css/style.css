@@ -291,7 +291,7 @@ footer {
 
 .incluye li {
   font-size: 1.1em;
-  padding-bottom: 1em;
+  padding-bottom: 0.8em;
 }
 
 .descripcion {
@@ -330,17 +330,14 @@ input[type="radio"] {
   display: none;
 }
 
-label {
-  color: grey;
-}
-
 .clasificacion {
   direction: rtl;
   unicode-bidi: bidi-override;
+  font-size: 30px;
 }
 
-label:hover,
-label:hover ~ label {
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
   color: orange;
 }
 

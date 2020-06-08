@@ -1,5 +1,5 @@
 <?php
-$str_data = file_get_contents("productos.json");
+$str_data = file_get_contents("./json/productos.json");
 $data = json_decode($str_data, true);
 ?>
 
@@ -17,12 +17,17 @@ $data = json_decode($str_data, true);
                                 <form action="catalogo.php" method="GET" class="form-inline navbar-search justify-content-around">
                                     <div class="col-12 col-md-6 col-lg-4 mx-2 form-group">
                                         <select name="continente" class="custom-select custom-select-lg" id="continente">
-                                            <option value="">Select continent</option>
+                                            <option value="">Select continente</option>
+                                            <?php foreach ($data as $key => $value) : ?>
+                                                <?php if ($key > 7) continue ?>
+                                                <option value="<?php echo $data[$key]['id']; ?>"><?php echo $data[$key]['nombre']; ?></option>
+                                            <?php endforeach ?>
                                         </select>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4 mx-2 form-group">
                                         <select name="pais" class="custom-select custom-select-lg" id="pais">
                                             <option value="">Select pais</option>
+                                            <option value="0">Todo</option>
                                             <?php foreach ($data as $key => $value) : ?>
                                                 <?php if ($key < 7) continue ?>
                                                 <option value="<?php echo $data[$key]['id']; ?>"><?php echo $data[$key]['nombre']; ?></option>
@@ -49,13 +54,18 @@ $data = json_decode($str_data, true);
 
         function load_json_data(id, parent_id) {
             var html_code = '';
-            $.getJSON('./productos.json', function(data) {
+            $.getJSON('./json/productos.json', function(data) {
 
                 html_code += '<option value="">Select ' + id + '</option>';
+                html_code += '<option value="0">Todo</option>';
                 $.each(data, function(key, value) {
                     if (id == 'continente') {
-                        if (value.parent_id == '0') {
-                            html_code += '<option value="' + value.id + '">' + value.nombre + '</option>';
+                        if (key > 0) {
+                            if (value.parent_id == '0') {
+                                html_code += '<option value="' + value.id + '">' + value.nombre + '</option>';
+                            } else if (value.parent_id == '') {
+                                html_code += '<option value="' + value.id + '">' + value.nombre + '</option>';
+                            }
                         }
                     } else {
 
@@ -64,7 +74,7 @@ $data = json_decode($str_data, true);
                         }
 
                         if (key > 6) {
-                            if (parent_id == '') {
+                            if (parent_id == 0) {
                                 html_code += '<option value="' + value.id + '">' + value.nombre + '</option>';
                             }
                         }

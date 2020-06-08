@@ -8,7 +8,7 @@
 
 <body>
     <?php
-    $str_data = file_get_contents("productos.json");
+    $str_data = file_get_contents("./json/productos.json");
     $productos = json_decode($str_data, true);
 
     $page = 'index';
@@ -28,7 +28,7 @@
     </div>
     
     <?php
-    require_once "./includes/destacados.php";
+    require_once "./includes/productoportada.php";
     require_once "./includes/newsletter.php";
     require_once "./includes/linkinteresesyherramientas.php";
     require_once "./includes/footer.php";

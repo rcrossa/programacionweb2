@@ -26,34 +26,35 @@
                                     $pArray = json_decode(fread($fp,filesize('archivosphp/productos.json')),true);
                                     fclose($fp);
                                 ?>
-                                <?php
-                                    //$opcion = '1';
-                                    //if(!empty($_GET['opcion']))
-                                    //$opcion = $_GET['opcion'];
-                                    
-                                    //$opcion = 'todo';
-                                    //if(!empty($_GET['zona']))
-                                    //$opcion = $_GET['zona'];
-                                ?>
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <form action="" method="get">
 
+                                    <?php
+                                    $opcion == 'todo';
+                                    if(!empty($_GET['zona']))
+                                    $opcion = $_GET['zona'];
+                                    ?> 
+
                                         <select  class="custom-select custom-select-lg" name="zona" onchange="this.form.submit()">
                                             <?php foreach($zonaArray as $zona){ ?>
-                                                <option><?php echo $zona['zona'] ?></option>
+                                                <option <?php echo ($opcion == $zona['zona'])?'selected="selected"':'' ?>><?php echo $zona['zona'] ?></option>
                                                 <!--
                                                 <option href="productos.php?zona=<?php echo $zona['id']?>"><?php echo $zona['zona'] ?></option>
                                                 -->
                                             <?php } ?>
                                         </select>
-
                                     </form>
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <form action="" method="get">
+                                        
+                                        <input type="hidden" name="zona" value="<?php echo isset($_GET['zona'])?$_GET['zona']:''?>">
                                         <?php
+                                        //$opcion2 = ' ';
+                                        //if(!empty($_GET['lugar']))
+                                        //$opcion2 = $_GET['lugar'];
                                         ?>
                                                 <select  class="custom-select custom-select-lg" name="lugar" onchange="this.form.submit()">
                                                     <?php
@@ -61,6 +62,9 @@
                                                             if($lugar['zona'] == $_GET['zona']){
                                                     ?>
                                                                 <option><?php echo $lugar['nombre']; ?></option>
+                                                                <!--
+                                                                <option <?php echo ($opcion2 == $lugar['lugar'])?'selected="selected"':'' ?>><?php echo $lugar['nombre']; ?></option>
+                                                                -->
                                                     <?php
                                                             }
                                                         }

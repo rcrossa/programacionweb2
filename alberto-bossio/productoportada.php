@@ -36,7 +36,7 @@
 
         <?php
           }elseif($page == 'productos'){
-            if($productos[$key]['zona'] == $_GET['zona'] OR $productos[$key]['nombre'] == $_GET['lugar']){
+            if($productos[$key]['zona'] == $_GET['zona']){
         ?>
 
             <!-- Acá va el filtro -->

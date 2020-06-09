@@ -36,9 +36,11 @@
 
         <?php
           }elseif($page == 'productos'){
+            if($productos[$key]['zona'] == $_GET['zona'] OR $productos[$key]['nombre'] == $_GET['lugar']){
         ?>
 
-
+            <!-- Acá va el filtro -->
+            <?php  ?>
           <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
             <div class="card carta">
 
@@ -61,6 +63,7 @@
           </div>
 
         <?php
+            }
           }
           endforeach 
         ?>

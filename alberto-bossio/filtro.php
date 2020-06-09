@@ -17,30 +17,36 @@
                         <div class="filtrolugar">
                             <div class="row justify-content-center align-items-center">
 
+                                <?php
+                                    $fz = fopen('archivosphp/zona.json','r');
+                                    $zonaArray = json_decode(fread($fz,filesize('archivosphp/zona.json')),true);
+                                    fclose($fz);
+                                    
+                                    $fp = fopen('archivosphp/productos.json','r');
+                                    $pArray = json_decode(fread($fp,filesize('archivosphp/productos.json')),true);
+                                    fclose($fp);
+                                ?>
+                                <?php
+                                    //$opcion = '1';
+                                    //if(!empty($_GET['opcion']))
+                                    //$opcion = $_GET['opcion'];
+                                    
+                                    //$opcion = 'todo';
+                                    //if(!empty($_GET['zona']))
+                                    //$opcion = $_GET['zona'];
+                                ?>
+
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <form action="" method="get">
-                                        <?php
-                                            $opcion = '1';
-                                            if(!empty($_GET['opcion']))
-                                            $opcion = $_GET['opcion'];
-                                        ?>
 
-                                        <select  class="custom-select custom-select-lg" name="opcion">
-                                            <option value="1" <?php $opcion == 1 ?> >Todo</option>
-                                            <option value="2" <?php $opcion == 2 ?> >Interior</option>
-                                            <option value="3" <?php $opcion == 3 ?> >Exterior</option>
+                                        <select  class="custom-select custom-select-lg" name="zona" onchange="this.form.submit()">
+                                            <?php foreach($zonaArray as $zona){ ?>
+                                                <option><?php echo $zona['zona'] ?></option>
+                                                <!--
+                                                <option href="productos.php?zona=<?php echo $zona['id']?>"><?php echo $zona['zona'] ?></option>
+                                                -->
+                                            <?php } ?>
                                         </select>
-
-                                        <?php
-                                            $fz = fopen('archivosphp/zona.json','r');
-                                            $zonaArray = json_decode(fread($fz,filesize('archivosphp/zona.json')),true);
-                                            fclose($fz);
-                                            foreach($zonaArray as $zona){
-                                                if($zona['id'] == $opcion){
-                                                    break;
-                                                }
-                                            }
-                                        ?>
 
                                     </form>
                                 </div>
@@ -48,49 +54,19 @@
                                 <div class="col-12 col-md-6 col-lg-4 py-2">
                                     <form action="" method="get">
                                         <?php
-                                            if($zona['id'] == 1){
                                         ?>
-                                                <select  class="custom-select custom-select-lg" name="todo">
+                                                <select  class="custom-select custom-select-lg" name="lugar" onchange="this.form.submit()">
                                                     <?php
-                                                        foreach($productos as $lugar){
+                                                        foreach($pArray as $lugar){
+                                                            if($lugar['zona'] == $_GET['zona']){
                                                     ?>
-                                                            <option><?php echo $lugar['nombre']; ?></option>
+                                                                <option><?php echo $lugar['nombre']; ?></option>
                                                     <?php
+                                                            }
                                                         }
                                                     ?>
                                                 </select>
                                         <?php
-                                            }elseif($zona['id'] == 2){
-                                        ?>
-                                                <select  class="custom-select custom-select-lg" name="interior">
-                                                    <?php
-                                                            foreach($productos as $lugar){
-                                                                if($lugar['id'] < 6){
-                                                    ?>
-
-                                                        <option><?php echo $lugar['nombre']; ?></option>
-
-                                                    <?php   
-                                                                }
-                                                            }
-                                                    ?>
-                                                </select>
-                                        <?php
-                                            }elseif($zona['id'] == 3){
-                                        ?>
-                                                <select  class="custom-select custom-select-lg" name="exterior">
-                                                    <?php
-                                                        foreach($productos as $lugar){
-                                                            if($lugar['id'] >= 6){
-                                                    ?>
-                                                            <option><?php echo $lugar['nombre']; ?></option>
-                                                    <?php      
-                                                            }
-                                                        } 
-                                                    ?>
-                                                </select>
-                                        <?php
-                                            }
                                         ?>
                                     </form>
                                 </div>

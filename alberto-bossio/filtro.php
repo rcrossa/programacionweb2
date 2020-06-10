@@ -31,9 +31,12 @@
                                     <form action="" method="get">
 
                                     <?php
-                                    $opcion == 'todo';
-                                    if(!empty($_GET['zona']))
-                                    $opcion = $_GET['zona'];
+                                    $opcion = 'todo';
+                                    if(!empty($_GET['zona'])){
+                                        $opcion = $_GET['zona'];
+                                    }else{
+                                        $opcion = "todo";
+                                    }
                                     ?> 
 
                                         <select  class="custom-select custom-select-lg" name="zona" onchange="this.form.submit()">

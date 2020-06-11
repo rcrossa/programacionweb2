@@ -9,8 +9,8 @@
 <body>
     <?php
     $page = 'catalogo';
-    $str_data = file_get_contents("./json/paises.json");
-    $paises = json_decode($str_data, true);
+    $str_data = file_get_contents("./json/productos.json");
+    $productos = json_decode($str_data, true);
 
     require_once "./includes/encabezado.php";
     $id = $_GET['id'];
@@ -37,10 +37,9 @@
 
 
     <div class="container text-center pt-5 pb-4">
-        <?php foreach ($paises as $key => $value) {
+        <?php foreach ($productos as $key => $value)
             if ($key == $id) break;
-        }
-        echo '<h1>' . $value['nombre'] . '</h1>';
+            echo '<h1>' . $value['nombre'] . '</h1>';
         ?>
     </div>
 
@@ -52,15 +51,15 @@
 
     <section>
         <div class="container shadow justify-content-around p-4">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-5">
+            <div class="row justify-content-center">
+                <div class="col-4">
                     <div class="imagen1">
                         <a href="<?php echo $value['url']; ?>" data-fancybox="gallery" data-caption="Caption for single image">
                             <img height="auto" width="100%" src="<?php echo $value['url']; ?>" alt="imagen de <?php echo $value['nombre']; ?>">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-7 incluye py-2">
+                <div class="col-lg-8 incluye py-2">
                     <h4 class="pl-3">
                         <?php echo $value['nombre']; ?> <br>
                         <?php echo $value['continente']; ?> <br>

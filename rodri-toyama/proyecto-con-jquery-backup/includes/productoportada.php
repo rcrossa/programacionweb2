@@ -10,19 +10,18 @@
         ?>
 
         <?php foreach ($productos as $key => $value) { ?>
-
+          <?php if ($key < 7) continue; ?>
           <?php if ($page == 'index' && $value['destacado']) { ?>
 
             <?php include('card_paises.php'); ?>
 
           <?php } elseif ($page == 'catalogo') { ?>
-
             <?php
             if (
-              ((empty($continente) || $continente == 'Todo') && empty($pais)) || // No se aplica filtro 
-              (empty($pais) && $continente == $value['continente']) || // Se filtra por continente
-              ((empty($continente) || $continente == 'Todo') && $pais == $value['nombre']) || // Se filtra por paises
-              ($pais == $value['nombre'] && $continente == $value['continente']) // Se filtra por continente y pais
+              ((empty($continente) || $continente == 0) && empty($pais)) || // No se aplica filtro 
+              (!empty($continente) && empty($pais) && $continente == $value['parent_id']) || // Se filtra por continente
+              (empty($continente) && !empty($pais) && $pais == $value['id']) || // Se filtra por pais
+              (!empty($continente) && !empty($pais) && $pais == $value['id'] && $continente == $value['parent_id']) // Se filtra por continente y pais
             ) {
             ?>
 

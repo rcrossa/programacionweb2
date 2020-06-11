@@ -1,23 +1,22 @@
 <section class="newsletter-area">
 
-    <?php
-        if(isset($_POST['submit'])){
-          $dato = $_POST;
-          unset($dato['submit']);
-          if(file_exists('./json/correos.json')){
-            $correosJson = file_get_contents('./json/correos.json');
-            $correosArray = json_decode($correosJson, true);
-          }else{
-              $correosArray = array();
-          }
-          //$correosArray = $dato;
-          $correosArray[] = $dato;
-          $correos = fopen('./json/correos.json','w');
-          fwrite($correos,json_encode($correosArray));
-          fclose($correos);
-          //var_dump($_POST);
-        }
-    ?>
+  <?php
+  if (isset($_POST['submit'])) {
+    $dato = $_POST;
+    unset($dato['submit']);
+    if (file_exists('./json/correos.json')) {
+      $correosJson = file_get_contents('./json/correos.json');
+      $correosArray = json_decode($correosJson, true);
+    } else {
+      $correosArray = array();
+    }
+
+    $correosArray[] = $dato;
+    $correos = fopen('./json/correos.json', 'w');
+    fwrite($correos, json_encode($correosArray));
+    fclose($correos);
+  }
+  ?>
 
   <div class="container">
     <div class="row justify-content-center">
@@ -34,18 +33,17 @@
             <div class="mail-form">
               <div class="no-gutters">
                 <div class="newsletter-campo">
-                    <form action="#" method="post">
-                      <fieldset>
-                        <div class="col-lg-9 col-md-8 p-2">
-                          <input type="email" id="email" name="email" class="form-control newsletter-input pr-lg-1" placeholder="Tu email">
-                        </div>
+                  <form action="#" method="post">
+                    <fieldset>
+                      <div class="col-lg-9 col-md-8 p-2">
+                        <input type="email" id="email" name="email" class="form-control newsletter-input pr-lg-1" placeholder="Ingrese email">
+                      </div>
 
-                        <div class="col-lg-3 col-md-4 p-2">
-                            <!-- <button class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" name="submit">Subscribite</button> -->
-                            <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Subscribite" name="submit">
-                        </div>
-                      </fieldset>
-                    </form>
+                      <div class="col-lg-3 col-md-4 p-2">
+                        <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Subscribite" name="submit">
+                      </div>
+                    </fieldset>
+                  </form>
                 </div>
               </div>
             </div>

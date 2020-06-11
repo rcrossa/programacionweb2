@@ -63,7 +63,7 @@
 
         <?php
           }elseif($page == 'productos'){
-            if($productos[$key]['zona'] == $_GET['zona'] && $_GET['lugar'] === null){
+            if(empty($_GET['zona']) || $_GET['zona'] == 'todo'){
         ?>
 
             <!-- Acá va el filtro -->
@@ -90,7 +90,7 @@
           </div>
 
         <?php
-            }elseif($productos[$key]['zona'] == $_GET['zona'] && $productos[$key]['nombre'] == $_GET['lugar']){ ?>
+            }elseif($productos[$key]['zona'] == $_GET['zona'] && empty($_GET['lugar'])){ ?>
               <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
                 <div class="card carta">
     
@@ -112,7 +112,7 @@
                 </div>
               </div>
         <?php
-            }elseif($_GET['zona'] === null || $_GET['zona'] == 'todo'){ ?>
+            }elseif($productos[$key]['zona'] == $_GET['zona'] && $productos[$key]['nombre'] == $_GET['lugar']){ ?>
               <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">
                 <div class="card carta">
     

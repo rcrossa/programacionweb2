@@ -12,7 +12,8 @@
           }
           //$correosArray[$indexCorreo] = $correosArray;
           //$indexCorreo = 0;
-          $correosArray[str_replace("@",'',$dato)] = $dato;
+          //$correosArray[str_replace("@",'',$dato)] = $dato;
+          $correosArray[] = $dato;
           
           //if($correosArray == $_POST){
           //  echo 'El mail ya ha sido utilizado';
@@ -43,7 +44,7 @@
                     <form action="#" method="post">
                       <fieldset>
                         <div class="col-lg-9 col-md-8 p-2">
-                          <input type="text" id="email" name="email" required class="form-control newsletter-input pr-lg-1" placeholder="Tu email">
+                          <input type="email" id="email" name="email" required class="form-control newsletter-input pr-lg-1" placeholder="Ingrese email">
                         </div>
 
                         <div class="col-lg-3 col-md-8 p-2">

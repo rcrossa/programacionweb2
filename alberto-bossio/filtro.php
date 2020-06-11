@@ -69,6 +69,10 @@
                                                                 <option <?php echo ($opcion2 == $lugar['lugar'])?'selected="selected"':'' ?>><?php echo $lugar['nombre']; ?></option>
                                                                 -->
                                                     <?php
+                                                            }if($_GET['zona'] === null || $_GET['zona'] == 'todo'){
+                                                                ?>
+                                                                <option><?php echo $lugar['nombre']; ?></option>
+                                                                <?php
                                                             }
                                                         }
                                                     ?>

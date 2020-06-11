@@ -11,6 +11,7 @@
         $page = 'contacto';
         require_once "encabezado.php";
         ?>
+
         <section class="formulario-contacto py-5">
             <div class="container pt-5 pb-3 shadow-sm">
                 <!--           <fieldset>-->
@@ -23,7 +24,6 @@
                         <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
                     </svg>
                 </div>
-
 
                 <div class="container">
                     <form action="#" method="post" class="py-4">
@@ -67,9 +67,17 @@
                                             <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Enviar" name="submit">
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
+                            
+                            <?php $para = 'nobody@example.com';
+                            $titulo = 'El titulo';
+                            $mensaje = 'El mensaje';
+                            $cabeceras = 'From: webmaster@example.com' . "\r\n" .
+                                'Reply-To: webmaster@example.com' . "\r\n" .
+                                'X-Mailer: PHP/' . phpversion();
+
+                            mail($para, $titulo, $mensaje, $cabeceras); ?>
 
                         </fieldset>
                     </form>

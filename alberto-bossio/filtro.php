@@ -55,19 +55,20 @@
                                         
                                         <input type="hidden" name="zona" value="<?php echo isset($_GET['zona'])?$_GET['zona']:''?>">
                                         <?php
-                                        //$opcion2 = ' ';
-                                        //if(!empty($_GET['lugar']))
-                                        //$opcion2 = $_GET['lugar'];
+                                        $opcion2 = 'Tierra Del Fuego';
+                                        if(!empty($_GET['lugar']))
+                                        $opcion2 = $_GET['lugar'];
                                         ?>
                                                 <select  class="custom-select custom-select-lg" name="lugar" onchange="this.form.submit()">
                                                     <?php
                                                         foreach($pArray as $lugar){
                                                             if($lugar['zona'] == $_GET['zona']){
                                                     ?>
-                                                                <option><?php echo $lugar['nombre']; ?></option>
                                                                 <!--
-                                                                <option <?php echo ($opcion2 == $lugar['lugar'])?'selected="selected"':'' ?>><?php echo $lugar['nombre']; ?></option>
+                                                                <option><?php echo $lugar['nombre']; ?></option>
                                                                 -->
+                                                                <option <?php echo ($opcion2 == $lugar['nombre'])?'selected="selected"':'' ?>><?php echo $lugar['nombre']; ?></option>
+                                                              
                                                     <?php
                                                             }if($_GET['zona'] === null || $_GET['zona'] == 'todo'){
                                                                 ?>

@@ -111,6 +111,7 @@
                   </div>
                 </div>
               </div>
+
         <?php
             }elseif($productos[$key]['zona'] == $_GET['zona'] && $productos[$key]['nombre'] == $_GET['lugar']){ ?>
               <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 my-3">

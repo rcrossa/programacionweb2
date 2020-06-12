@@ -2,15 +2,17 @@
 <html lang="en">
 
 <head>
-    <?php require_once "./includes/head.php" ?>
+    <?php require_once "./includes/head.php"; ?>
     <title>Document</title>
 </head>
 
 <body>
-    <?php $page = 'paquetes'; ?>
-    <?php require_once "./includes/encabezado.php"; ?>
 
-    <?php require_once "./includes/carousel.php" ?>
+    <?php 
+    $page = 'paquetes';
+    require_once "./includes/encabezado.php"; 
+    require_once "./includes/carousel.php" 
+    ?>
 
     <div class="container text-center pt-5 pb-4">
         <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
@@ -26,27 +28,27 @@
         <div class="container shadow justify-content-around p-4">
             <div class="row justify-content-center text-center">
 
-                <div class="col-md-12 col-lg-4">
+                <div class="col-4">
                     <div class="imagen1">
-                        <a href="./images/Untitled-3.png" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="./images/Untitled-3.png" alt="">
+                        <a href="images/Untitled-3.png" data-fancybox="gallery" data-caption="Caption for single image">
+                            <img height="auto" width="100%" src="images/Untitled-3.png" alt="">
                         </a>
                     </div>
                 </div>
 
-                <div class="col-md-12 col-lg-4">
+                <div class="col-4">
                     <div class="imagen2 img-fluid">
-                        <a href="./images/Untitled-2.png" data-fancybox="gallery" data-caption="Caption for single image">
-                            <img height="auto" width="100%" src="./images/Untitled-2.png" alt="imagen de acantilado">
+                        <a href="images/Untitled-2.png" data-fancybox="gallery" data-caption="Caption for single image">
+                            <img height="auto" width="100%" src="images/Untitled-2.png" alt="imagen de acantilado">
                         </a>
                     </div>
                 </div>
 
-                <div class="col-md-12 col-lg-4">
+                <div class="col-4">
                     <div class="imagen3">
                         <div data-toggle="modal" data-target="#myModal2">
-                            <a href="./images/Untitled-4.png" data-fancybox="gallery" data-caption="Caption for single image">
-                                <img height="auto" width="100%" src="./images/Untitled-4.png" alt="imagen de acantilado">
+                            <a href="images/Untitled-4.png" data-fancybox="gallery" data-caption="Caption for single image">
+                                <img height="auto" width="100%" src="images/Untitled-4.png" alt="imagen de acantilado">
                             </a>
                         </div>
                     </div>
@@ -91,6 +93,12 @@
     </section>
 
     <?php require_once "./includes/footer.php"; ?>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 

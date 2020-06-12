@@ -12,7 +12,6 @@
     require_once "filtro.php";
     require_once "productoportada.php";
     require_once "linkinteresesyherramientas.php";
-    require_once "footer0.php";
     require_once "footer.php";
     ?>
 

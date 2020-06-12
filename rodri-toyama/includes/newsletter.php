@@ -35,12 +35,14 @@
                 <div class="newsletter-campo">
                   <form action="#" method="post">
                     <fieldset>
-                      <div class="col-lg-9 col-md-8 p-2">
-                        <input type="email" id="email" name="email" class="form-control newsletter-input pr-lg-1" placeholder="Ingrese email">
-                      </div>
+                      <div class="row">
+                        <div class="col-lg-8 col-md-8 p-2">
+                          <input type="email" id="email" name="email" class="form-control newsletter-input pr-lg-1" placeholder="Ingrese email">
+                        </div>
 
-                      <div class="col-lg-3 col-md-4 p-2">
-                        <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Subscribite" name="submit">
+                        <div class="col-lg-3 col-md-4 p-2">
+                          <input class="text-white btn btn-md btn-block text-center newsletter-btn" type="submit" value="Subscribite" name="submit">
+                        </div>
                       </div>
                     </fieldset>
                   </form>

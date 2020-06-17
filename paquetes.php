@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <?php require_once "head.php"; ?>
+    <?php require_once "./includes/head.php"; ?>
     <title>Document</title>
 </head>
 
 <body>
 
-    <?php $page = 'paquetes'; ?>
-    <?php require_once "encabezado.php"; ?>
-
-    <?php require_once "carousel.php" ?>
+    <?php 
+    $page = 'paquetes';
+    require_once "includes/encabezado.php"; 
+    require_once "includes/carousel.php" 
+    ?>
 
     <div class="container text-center pt-5 pb-4">
         <h1>Conocer Croacia y Eslovenia con Serbia y Bosnia</h1>
@@ -91,7 +92,13 @@
         </div>
     </section>
 
-    <?php require_once "footer.php"; ?>
+    <?php require_once "./includes/footer.php"; ?>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/popper/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 

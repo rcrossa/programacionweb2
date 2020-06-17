@@ -1,21 +1,20 @@
     <!DOCTYPE html>
     <html lang="es">
 
-    <head>6
-        <?php require_once "head.php"; ?>
+    <head>
+        <?php require_once "./includes/head.php" ?>
         <title>Formulario De Contacto</title>
     </head>
 
     <body>
-        <?php
-        $page = 'contacto';
-        require_once "encabezado.php";
-        ?>
+        <?php $page = 'contacto'; ?>
+        <?php require_once "./includes/encabezado.php"; ?>
+
         <section class="formulario-contacto py-5">
             <div class="container pt-5 pb-3 shadow-sm">
-                <!--           <fieldset>-->
+
                 <div class="text-center pb-3">
-                    <h2>Formulario De Contacto</h2>
+                    <h2>Formulario De Contacto</h4>
                 </div>
 
                 <div class="pb-3 text-center">
@@ -23,7 +22,6 @@
                         <rect width="100%" height="100" style="fill:#F78014;stroke-width:0;stroke:rgb(0,0,0)" />
                     </svg>
                 </div>
-
 
                 <div class="container">
                     <form action="#" method="post" class="py-4">
@@ -71,11 +69,20 @@
                                 </div>
                             </div>
 
+                            <?php 
+                            $para = 'nobody@example.com';
+                            $titulo = 'El titulo';
+                            $mensaje = 'El mensaje';
+                            $cabeceras = 'From: webmaster@example.com' . "\r\n" .
+                                'Reply-To: webmaster@example.com' . "\r\n" .
+                                'X-Mailer: PHP/' . phpversion();
+
+                            mail($para, $titulo, $mensaje, $cabeceras); ?>
+
                         </fieldset>
                     </form>
                 </div>
 
-                <!--            </fieldset>-->
             </div>
         </section>
         <section class="py-4">
@@ -86,9 +93,9 @@
             </div>
         </section>
 
-        <?php require_once "linkinteresesyherramientas.php" ?>
+        <?php require_once "./includes/linkinteresesyherramientas.php" ?>
 
-        <?php require_once "footer.php"; ?>
+        <?php require_once "./includes/footer.php"; ?>
 
     </body>
 

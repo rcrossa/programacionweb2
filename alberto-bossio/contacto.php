@@ -69,6 +69,21 @@
                                     </div>
                                 </div>
                             </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- 
+                    acá falta generar un .json que contenga esta información
+                    para = el mail al que quiero mandarlo
+                    titulo... no tengo
+                    mensaje = lo que quiero mandar
+                    cabeceras = con el mail que lo quiero mandar
+                                al mail que le van a responder
+                                este no tengo idea
+
+                    supongo que esto es un rejunte para enviar el mail.
+                 -->
                             
                             <?php $para = 'nobody@example.com';
                             $titulo = 'El titulo';
@@ -78,10 +93,6 @@
                                 'X-Mailer: PHP/' . phpversion();
 
                             mail($para, $titulo, $mensaje, $cabeceras); ?>
-
-                        </fieldset>
-                    </form>
-                </div>
 
                 <!--            </fieldset>-->
             </div>

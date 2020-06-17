@@ -2,13 +2,16 @@
 <html lang="es">
 
 <head>
-    <?php require_once "./includes/head.php" ?>
+    <?php require_once "./includes/head.php"; ?>
     <title>Delfos Tour</title>
 </head>
 
 <body>
     <?php
-    require_once "./functions/funcionesproductoportada.php";
+    $str_data = file_get_contents("./json/paises.json");
+    $productos = json_decode($str_data, true);
+    require_once "./functions/cortar.php";
+
 
     // archivos html
     $page = 'catalogo';

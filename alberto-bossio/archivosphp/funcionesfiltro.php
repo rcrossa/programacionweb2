@@ -4,6 +4,7 @@
 
 <script>
 
+<<<<<<< HEAD
 filterSelection("Todo")
 function filterSelection(c) {
   var x, i;
@@ -16,6 +17,20 @@ function filterSelection(c) {
 }
 
 function w3AddClass(element, name) {
+=======
+filterSelection('Todo')
+function filterSelection($productos) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if ($productos == 'Todo') $productos = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf($productos) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+>>>>>>> Rodri-toyama
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -24,7 +39,11 @@ function w3AddClass(element, name) {
   }
 }
 
+<<<<<<< HEAD
 function w3RemoveClass(element, name) {
+=======
+function RemoveClass(element, name) {
+>>>>>>> Rodri-toyama
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -36,6 +55,7 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+<<<<<<< HEAD
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
@@ -51,4 +71,15 @@ for (var i = 0; i < btns.length; i++) {
 </script>
 
 </html>
+=======
+</script>
+
+</html>
+
+<script>
+document.getElementById("click").onclick = function(){
+  filter_list()
+}
+</script>
+>>>>>>> Rodri-toyama
 -->

@@ -8,13 +8,14 @@
 
     <body>
         <?php
+        $page = 'contacto';
         require_once "encabezado.php";
         ?>
         <section class="formulario-contacto py-5">
             <div class="container pt-5 pb-3 shadow-sm">
                 <!--           <fieldset>-->
                 <div class="text-center pb-3">
-                    <h2>Formulario De Contacto</h4>
+                    <h1>Formulario De Contacto</h1>
                 </div>
 
                 <div class="pb-3 text-center">

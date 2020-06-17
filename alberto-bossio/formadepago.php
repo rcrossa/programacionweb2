@@ -17,7 +17,10 @@
 
 <body>
 
-    <?php require_once "encabezado.php"; ?>
+    <?php 
+        $page = '';
+        require_once "encabezado.php"; 
+    ?>
 
     <section class="container">
 

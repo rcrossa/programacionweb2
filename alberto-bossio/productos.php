@@ -11,7 +11,7 @@
     require_once "archivosphp/funcionesproductoportada.php";
 
     // archivos html
-    $page = 'catalogo';
+    $page = 'productos';
     require_once "encabezado.php";
     require_once "filtro.php";
     require_once "productoportada.php";

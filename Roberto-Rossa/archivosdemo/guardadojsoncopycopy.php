@@ -10,6 +10,7 @@ require_once "canada.php";
 require_once "espana.php";
 require_once "mexico.php";
 require_once "peru.php";
+// require_once "paises.php";
 
 
 
@@ -24,6 +25,9 @@ $canada;
 $espana;
 $peru;
 $mexico;
+$paises;
+
+
 //defino variable
 
 echo "----------------";
@@ -74,6 +78,7 @@ $file8 ='canada.json';
 $file9 ='espana.json';
 $file10='mexico.json';
 $file11='peru.json';
+$file12='paises.json';
 //codifico
 $json_string1=json_encode($americadelnorte);
 $json_string2=json_encode($americadelsur);
@@ -86,6 +91,7 @@ $json_string8=json_encode($canada);
 $json_string9=json_encode($espana);
 $json_string10=json_encode($mexico);
 $json_string11=json_encode($peru);
+// $json_string12=json_encode($paises);
 //abro los archivos para escribir
 $fp1 = fopen('americadelnorte.json','r');
 $fp2 = fopen('americadelsur.json','r');
@@ -98,6 +104,7 @@ $fp8  =fopen('canada.json','r');
 $fp9  =fopen('espana.json','r');
 $fp10 =fopen('mexico.json','r');
 $fp11 =fopen('peru.json','r');
+// $fp12=fopen('paises.json','r');
 
 //escribo contenido
 file_put_contents($file1,$json_string1.PHP_EOL);
@@ -111,6 +118,7 @@ file_put_contents($file8,$json_string8.PHP_EOL);
 file_put_contents($file9,$json_string9.PHP_EOL);
 file_put_contents($file10,$json_string10.PHP_EOL);
 file_put_contents($file11,$json_string11.PHP_EOL);
+// file_put_contents($file12,$json_string12.PHP_EOL);
 //como decodificar y leer archivos:
 //leo el primer archivo
 $datosjson1= fread($fp1,filesize('americadelnorte.json'));
@@ -129,9 +137,19 @@ $americadelsur1=json_decode($datosjson2,true);//con true se transforma en array 
 foreach ($americadelsur1 as $data) {
     echo "\n America del sur:\n".$data['nombre']."<br>";
 }
+
 //cierro los archivos
 fclose($fp1);
 fclose($fp2);
+// fclose($fp3);
+// fclose($fp4);
+// fclose($fp5);
+// fclose($fp6);
+// fclose($fp7);
+// fclose($fp8);
+// fclose($fp9);
+// fclose($fp10);
+// fclose($fp11);
 // var_dump($c);
 echo "<br>";
 echo "<br>";

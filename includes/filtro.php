@@ -52,9 +52,9 @@ $dataPaises = json_decode($str_data_paises, true);
                                         </select>
                                     </form>
                                 </div>
-                                <div class="col-sm-12 col-lg-2 py-2">
+                                <!-- <div class="col-sm-12 col-lg-2 py-2">
                                     <button type="submit" class="btn btn-danger btn-md mx-3 px-4">Buscar</button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

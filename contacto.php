@@ -3,8 +3,7 @@
 
     <head>
         <?php require_once "includes/head.php" ?>
-        <?php require "PHPMailer-master/src/PHPMailer.php"
-        ?>
+       
         <title>Formulario De Contacto</title>
     </head>
 
@@ -70,36 +69,8 @@
 
                                 </div>
                             </div>
-                                <?php
-                                    //Create a new PHPMailer instance
-                                    $mail = new PHPMailer();
-                                    $mail->IsSMTP();
-                                    
-                                    //Configuracion servidor mail
-                                    $mail->From = "roberto.rossa@davinci.edu.ar"; //remitente
-                                    $mail->SMTPAuth = true;
-                                    $mail->SMTPSecure = 'tls'; //seguridad
-                                    $mail->Host = "smtp.gmail.com"; // servidor smtp
-                                    $mail->Port = 587; //puerto
-                                    $mail->Username ='roberto.rossa@davinci.edu.ar'; //nombre usuario
-                                    $mail->Password = 'Mercadolibre1'; //contraseña
-                                    //Agregar destinatario
-                                    $mail->AddAddress($_POST['email']);
-                                    $mail->Subject = $_POST['subject'];
-                                    $mail->Body = $_POST['comentario'];
-
-                                    ?>
-
-                            <!-- <?php 
-                            $para = 'nobody@example.com';
-                            $titulo = 'El titulo';
-                            $mensaje = 'El mensaje';
-                            $cabeceras = 'From: webmaster@example.com' . "\r\n" .
-                                'Reply-To: webmaster@example.com' . "\r\n" .
-                                'X-Mailer: PHP/' . phpversion();
-
-                            mail($para, $titulo, $mensaje, $cabeceras); ?> -->
-                            <!-- <?php
+                               
+                            <?php
                                 //Reseteamos variables a 0.
                                 $nombre = $email = $areadelaempresa = $phone = $mensaje = $para = $headers = $msjCorreo = NULL;
 
@@ -138,7 +109,7 @@
                                         </script>";
                                     }
                                 }
-?> -->
+?>
                         </fieldset>
                     </form>
                 </div>

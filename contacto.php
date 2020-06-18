@@ -2,13 +2,15 @@
     <html lang="es">
 
     <head>
-        <?php require_once "./includes/head.php" ?>
+        <?php require_once "includes/head.php" ?>
+        <?php require "PHPMailer-master/src/PHPMailer.php"
+        ?>
         <title>Formulario De Contacto</title>
     </head>
 
     <body>
         <?php $page = 'contacto'; ?>
-        <?php require_once "./includes/encabezado.php"; ?>
+        <?php require_once "includes/encabezado.php"; ?>
 
         <section class="formulario-contacto py-5">
             <div class="container pt-5 pb-3 shadow-sm">
@@ -24,7 +26,7 @@
                 </div>
 
                 <div class="container">
-                    <form action="#" method="post" class="py-4">
+                    <form action="#" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="py-4">
                         <fieldset>
 
                             <div class="row">
@@ -40,7 +42,7 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
                                             <label>Área de la empresa</label>
-                                            <input type="text" name="Área de la empresa" class="form-control">
+                                            <input type="text" name="areadelaempresa" class="form-control">
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
                                             <label for="phone">Teléfono</label>
@@ -68,8 +70,27 @@
 
                                 </div>
                             </div>
+                                <?php
+                                    //Create a new PHPMailer instance
+                                    $mail = new PHPMailer();
+                                    $mail->IsSMTP();
+                                    
+                                    //Configuracion servidor mail
+                                    $mail->From = "roberto.rossa@davinci.edu.ar"; //remitente
+                                    $mail->SMTPAuth = true;
+                                    $mail->SMTPSecure = 'tls'; //seguridad
+                                    $mail->Host = "smtp.gmail.com"; // servidor smtp
+                                    $mail->Port = 587; //puerto
+                                    $mail->Username ='roberto.rossa@davinci.edu.ar'; //nombre usuario
+                                    $mail->Password = 'Mercadolibre1'; //contraseña
+                                    //Agregar destinatario
+                                    $mail->AddAddress($_POST['email']);
+                                    $mail->Subject = $_POST['subject'];
+                                    $mail->Body = $_POST['comentario'];
 
-                            <?php 
+                                    ?>
+
+                            <!-- <?php 
                             $para = 'nobody@example.com';
                             $titulo = 'El titulo';
                             $mensaje = 'El mensaje';
@@ -77,8 +98,47 @@
                                 'Reply-To: webmaster@example.com' . "\r\n" .
                                 'X-Mailer: PHP/' . phpversion();
 
-                            mail($para, $titulo, $mensaje, $cabeceras); ?>
+                            mail($para, $titulo, $mensaje, $cabeceras); ?> -->
+                            <!-- <?php
+                                //Reseteamos variables a 0.
+                                $nombre = $email = $areadelaempresa = $phone = $mensaje = $para = $headers = $msjCorreo = NULL;
 
+                                if (isset($_POST['submit'])) {
+                                    //Obtenemos valores input formulario
+                                    $nombre = $_POST['nombre'];
+                                    $email = $_POST['email'];
+                                    $areadelaempresa = $_POST['areadelaempresa']; 
+                                    $phone = $_POST['phone'];
+                                    $mensaje = $_POST['comentario'];
+                                    $para = 'roberto.rossa@davinci.edu.ar';
+
+                                    //Creamos cabecera.
+                                    $headers = 'From' . " " . $email . "\r\n";
+                                    $headers .= "Content-type: text/html; charset=utf-8";
+
+                                    //Componemos cuerpo correo.
+                                    $msjCorreo = "Nombre: " . $nombre;
+                                    $msjCorreo .= "\r\n";
+                                    $msjCorreo .= "Email: " . $email;
+                                    $msjCorreo .= "\r\n";
+                                    $msjCorreo .= "areadelaempresa: " . $areadelaempresa;
+                                    $msjCorreo .= "\r\n";
+                                    $msjCorreo .= "phone" . $phone;
+                                    $msjCorreo .= "\r\n";
+                                    $msjCorreo .= "Mensaje: " . $mensaje;
+                                    $msjCorreo .= "\r\n";
+
+                                    if (mail($para, $areadelaempresa, $msjCorreo, $headers)) {
+                                        echo "<script language='javascript'>
+                                            alert('Mensaje enviado, muchas gracias.');
+                                        </script>";
+                                    } else {
+                                        echo "<script language='javascript'>
+                                            alert('fallado');
+                                        </script>";
+                                    }
+                                }
+?> -->
                         </fieldset>
                     </form>
                 </div>
@@ -93,9 +153,9 @@
             </div>
         </section>
 
-        <?php require_once "./includes/linkinteresesyherramientas.php" ?>
+        <?php require_once "includes/linkinteresesyherramientas.php" ?>
 
-        <?php require_once "./includes/footer.php"; ?>
+        <?php require_once "includes/footer.php"; ?>
 
     </body>
 

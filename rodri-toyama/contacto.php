@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
                                             <label>Área de la empresa</label>
-                                            <input type="text" name="Área de la empresa" class="form-control">
+                                            <input type="text" name="AreaDeLaEmpresa" required class="form-control">
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
                                             <label for="phone">Teléfono</label>

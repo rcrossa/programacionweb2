@@ -84,7 +84,7 @@
                                     $para = 'roberto.rossa@davinci.edu.ar';
 
                                     //Creamos cabecera.
-                                    $headers = 'From' . " " . $email . "\r\n";
+                                    $headers = 'From' . " " . $para . "\r\n";
                                     $headers .= "Content-type: text/html; charset=utf-8";
 
                                     //Componemos cuerpo correo.

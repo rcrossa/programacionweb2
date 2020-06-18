@@ -9,6 +9,7 @@
 <body>
 
     <?php
+    $page = '';
     require_once "encabezado.php";
     ?>
 

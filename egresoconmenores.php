@@ -2,28 +2,35 @@
 <html lang="es">
 
 <head>
-    <?php require_once "head.php"; ?>
+    <?php require_once "./includes/head.php"; ?>
     <title>Delfos Tour</title>
 </head>
 
 <body>
-    <?php $page = 'index'; ?>
-    <?php require_once "encabezado.php"; ?>
 
+    <?php 
+        $page = '';
+        require_once "includes/encabezado.php"; 
+    ?>
+    
     <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="container">
-                    <div>
-                        <h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Egreso Del País Con Menores</h1>
-                    </div>
-                </div>
+        <div class="container">
+            
+            <div class="col-12 text-center pt-5 pb-4">
+                <h1>Egreso Del País Con Menores</h1>
             </div>
+
+            <div class="pb-5 text-center">
+                <svg width="20%" height="2">
+                    <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
+                </svg>
+            </div>
+
             <div class="row">
                 <div class="container">
                     <div class="Menorinmigra">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="parrafo1">
+                        <div class="col-12">
+                            <div>
                                 <p>En virtud de las nuevas normas del Código Civil y Comercial de la Nación, y la Disposición 3328/2015 de la DNM que pone en sintonía las disposiciones relativas al ingreso y egreso de los menores de nuestro país, se debe tener presente:</p>
                                 <ul>
                                     <li>
@@ -92,7 +99,7 @@
                                             Por documentación requerida se refiere a la indicada en el presente cuadro así como los documentos de identidad de las personas que viajen, sea los requeridos para países limítrofes y/o miembros de Mercosur o estados asociados, o resto del mundo. </p>
                                     </li>
                                     <li>
-                                        <p>* El consentimiento de viaje podrá tramitarse ante escribano público (y su firma legalizada por Colegio de Escribanos de la misma jurisdicción que lo expide); Cónsul argentino o extranjero (legalizada por Ministerio del Relaciones Exteriores y Culto y con Apostilla de la Haya); juez competente (ver arts. 12 y 13 Disp. N° 3328/2015 DNM). Ese consentimiento podrá autorizar al menor a viajar a todos los países del mundo y hasta que el menor alcance la mayor de edad; o bien indicar de manera precisa el país de destino y/o la vigencia de la autorización. El consentimiento podrá ser otorgado ante autoridades del Registro Civil y Capacidad de las Personas; Jueces de Paz; otras autoridades administrativas y judiciales especialmente habilitadas al efecto; en ese caso, en el instrumento deberá constar la norma que habilita al funcionario a expedir la autorización con transcripción de la parte pertinente; y, finalmente, en el caso de consentimiento de viaje otorgado ante funcionarios de la D.N. de Migraciones en los lugares habilitados a tal fin, éste tendrá validez única de 30 días y para un único viaje. El costo de ese trámite es actualmente de $450.- </p>
+                                        <p> El consentimiento de viaje podrá tramitarse ante escribano público (y su firma legalizada por Colegio de Escribanos de la misma jurisdicción que lo expide); Cónsul argentino o extranjero (legalizada por Ministerio del Relaciones Exteriores y Culto y con Apostilla de la Haya); juez competente (ver arts. 12 y 13 Disp. N° 3328/2015 DNM). Ese consentimiento podrá autorizar al menor a viajar a todos los países del mundo y hasta que el menor alcance la mayor de edad; o bien indicar de manera precisa el país de destino y/o la vigencia de la autorización. El consentimiento podrá ser otorgado ante autoridades del Registro Civil y Capacidad de las Personas; Jueces de Paz; otras autoridades administrativas y judiciales especialmente habilitadas al efecto; en ese caso, en el instrumento deberá constar la norma que habilita al funcionario a expedir la autorización con transcripción de la parte pertinente; y, finalmente, en el caso de consentimiento de viaje otorgado ante funcionarios de la D.N. de Migraciones en los lugares habilitados a tal fin, éste tendrá validez única de 30 días y para un único viaje. El costo de ese trámite es actualmente de $450.- </p>
                                     </li>
                                 </ul>
                                 <p><strong>Atención: Consentimiento del menor adolescente (13 a 18 años):</strong> la autoridad migratoria considerará materializado el consentimiento del menor para salir del país, con la presentación del adolescente junto con sus padres, conforme dispone el art. art. 645 último párrafo CCyC.</p>
@@ -116,7 +123,7 @@
 
     </section>
 
-    <?php require_once "footer.php"; ?>
+    <?php require_once "includes/footer.php"; ?>
 
 </body>
 

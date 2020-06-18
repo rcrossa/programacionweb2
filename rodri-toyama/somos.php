@@ -9,25 +9,27 @@
 <body>
 
     <?php
+    $page = '';
     require_once "./includes/encabezado.php";
     ?>
 
     <section>
 
-        <div class="container-fluid">
-            <div>
-                <img src="images/institucional.jpg" class="d-block w-100 img-fluid" alt="foto empleados de delfos" height="750" width="441">
+        <div class="container">
+            
 
+            <div class="col-12 text-center pt-5 pb-4">
+                <h1>¿Quienes Somos?</h1>
+            </div>
+
+            <div class="pb-5 text-center">
+                <svg width="20%" height="2">
+                    <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
+                </svg>
             </div>
 
             <div class="row">
-                <div>
-                    <h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">¿Quienes Somos?</h1>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-12">
                     <div class="somosletra">
                         <p>Delfos Tour nació en el año 1998 ofreciendo a sus clientes
                             desde aquel primer momento productos y servicios
@@ -44,7 +46,14 @@
                     </div>
                 </div>
             </div>
+
+            <div>
+                <img src="images/institucional.jpg" class="w-100 img-fluid shadow" alt="foto empleados de delfos">
+            </div>
+
         </div>
+
+
         <div>
             <svg width="100%" height="10">
                 <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
@@ -56,11 +65,6 @@
     <?php
     require_once "./includes/footer.php";
     ?>
-
-    <!-- Scripts -->
-    <script src="js/jquery/jquery.min.js"></script>
-    <script src="js/popper/popper.min.js"></script>
-    <script src="js/bootstrap/bootstrap.min.js"></script>
 
 </body>
 

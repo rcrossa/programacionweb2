@@ -9,7 +9,11 @@
     require_once "archivosphp/funcionesproductoportada.php";
     // archivos html
     require_once "encabezado.php";
+<<<<<<< HEAD
     require_once "filtros.php";
+=======
+    require_once "filtro.php";
+>>>>>>> Rodri-toyama
     require_once "productoportada.php";
     require_once "linkinteresesyherramientas.php";
     require_once "footer0.php";

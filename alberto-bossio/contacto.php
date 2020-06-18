@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
                                             <label>Área de la empresa</label>
-                                            <input type="text" name="Área de la empresa" class="form-control">
+                                            <input type="text" name="AreaDeLaEmpresa" required class="form-control">
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
                                             <label for="phone">Teléfono</label>
@@ -69,30 +69,22 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <?php 
+                            if(!empty($_POST['AreaDeLaEmpresa'])){
+                                $para = $_POST['AreaDeLaEmpresa']. '@delfostour.com';
+                                $titulo = 'Consulta de '. $_POST['nombre'];
+                                $mensaje = $_POST['comentario'];
+                                $cabeceras = 'From: '. $_POST['email'] . "\r\n" .
+                                    'Reply-To: '. $_POST['email'] . "\r\n" .
+                                    'X-Mailer: PHP/' . phpversion();
+    
+                                mail($para, $titulo, $mensaje, $cabeceras); 
+                            }
+                            ?>
                         </fieldset>
                     </form>
                 </div>
-
-                <!-- 
-                    acá falta generar un .json que contenga esta información
-                    para = el mail al que quiero mandarlo
-                    titulo... no tengo
-                    mensaje = lo que quiero mandar
-                    cabeceras = con el mail que lo quiero mandar
-                                al mail que le van a responder
-                                este no tengo idea
-
-                    supongo que esto es un rejunte para enviar el mail.
-                 -->
-                            
-                            <?php $para = 'nobody@example.com';
-                            $titulo = 'El titulo';
-                            $mensaje = 'El mensaje';
-                            $cabeceras = 'From: webmaster@example.com' . "\r\n" .
-                                'Reply-To: webmaster@example.com' . "\r\n" .
-                                'X-Mailer: PHP/' . phpversion();
-
-                            mail($para, $titulo, $mensaje, $cabeceras); ?>
 
                 <!--            </fieldset>-->
             </div>

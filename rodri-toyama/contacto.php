@@ -72,14 +72,16 @@
                             </div>
 
                             <?php 
-                            //$para = 'nobody@example.com';
-                            //$titulo = 'El titulo';
-                            //$mensaje = 'El mensaje';
-                            //$cabeceras = 'From: webmaster@example.com' . "\r\n" .
-                            //    'Reply-To: webmaster@example.com' . "\r\n" .
-                            //    'X-Mailer: PHP/' . phpversion();
-
-                            //mail($para, $titulo, $mensaje, $cabeceras); 
+                            if(!empty($_POST['AreaDeLaEmpresa'])){
+                                $para = $_POST['AreaDeLaEmpresa']. '@delfostour.com';
+                                $titulo = 'Consulta de '. $_POST['nombre'];
+                                $mensaje = $_POST['comentario'];
+                                $cabeceras = 'From: '. $_POST['email'] . "\r\n" .
+                                    'Reply-To: '. $_POST['email'] . "\r\n" .
+                                    'X-Mailer: PHP/' . phpversion();
+    
+                                mail($para, $titulo, $mensaje, $cabeceras); 
+                            }
                             ?>
 
                         </fieldset>

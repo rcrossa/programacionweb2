@@ -41,7 +41,7 @@
                                             <input type="email" id="email" name="email" required class="form-control">
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
-                                            <label>Área de la empresa</label>
+                                            <label>Área de la empresa *</label>
                                             <input type="text" name="AreaDeLaEmpresa" required class="form-control">
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">

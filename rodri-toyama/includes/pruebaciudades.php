@@ -3,6 +3,6 @@
     <?php foreach ($productos as $producto) {
         foreach ($producto['ciudades'] as $key => $value) { ?>
             <option><?php echo $value; ?></option>
-        <?php } ?>
-    <?php } ?>
+        <?php } 
+     } ?>
 </select>

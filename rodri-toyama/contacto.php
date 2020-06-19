@@ -7,14 +7,16 @@
     </head>
 
     <body>
-        <?php $page = 'contacto'; ?>
-        <?php require_once "./includes/encabezado.php"; ?>
+        <?php 
+        $page = 'contacto';
+        require_once "./includes/encabezado.php"; 
+        ?>
 
         <section class="formulario-contacto py-5">
             <div class="container pt-5 pb-3 shadow-sm">
 
                 <div class="text-center pb-3">
-                    <h2>Formulario De Contacto</h4>
+                    <h1>Formulario De Contacto</h1>
                 </div>
 
                 <div class="pb-3 text-center">
@@ -39,8 +41,8 @@
                                             <input type="email" id="email" name="email" required class="form-control">
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
-                                            <label>Área de la empresa</label>
-                                            <input type="text" name="Área de la empresa" class="form-control">
+                                            <label>Área de la empresa *</label>
+                                            <input type="text" name="AreaDeLaEmpresa" required class="form-control">
                                         </div>
                                         <div class="col-sm-12 col-md-6 py-2">
                                             <label for="phone">Teléfono</label>
@@ -70,14 +72,17 @@
                             </div>
 
                             <?php 
-                            $para = 'nobody@example.com';
-                            $titulo = 'El titulo';
-                            $mensaje = 'El mensaje';
-                            $cabeceras = 'From: webmaster@example.com' . "\r\n" .
-                                'Reply-To: webmaster@example.com' . "\r\n" .
-                                'X-Mailer: PHP/' . phpversion();
-
-                            mail($para, $titulo, $mensaje, $cabeceras); ?>
+                            if(!empty($_POST['AreaDeLaEmpresa'])){
+                                $para = $_POST['AreaDeLaEmpresa']. '@delfostour.com';
+                                $titulo = 'Consulta de '. $_POST['nombre'];
+                                $mensaje = $_POST['comentario'];
+                                $cabeceras = 'From: '. $_POST['email'] . "\r\n" .
+                                    'Reply-To: '. $_POST['email'] . "\r\n" .
+                                    'X-Mailer: PHP/' . phpversion();
+    
+                                mail($para, $titulo, $mensaje, $cabeceras); 
+                            }
+                            ?>
 
                         </fieldset>
                     </form>
@@ -93,9 +98,10 @@
             </div>
         </section>
 
-        <?php require_once "./includes/linkinteresesyherramientas.php" ?>
-
-        <?php require_once "./includes/footer.php"; ?>
+        <?php 
+        require_once "./includes/linkinteresesyherramientas.php";
+        require_once "./includes/footer.php"; 
+        ?>
 
     </body>
 

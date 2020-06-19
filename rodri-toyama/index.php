@@ -19,7 +19,7 @@
     ?>
 
     <div class="container text-center my-5 destinos-populares">
-        <h2>Destinos populares</h2>
+        <h1>Destinos populares</h1>
     </div>
 
     <div class="pb-4 text-center">

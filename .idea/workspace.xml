@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73a40a68-e679-48c9-83c3-3cbc6a97ee89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/rodri-toyama/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/functions/funcionesproductoportada.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/Untitled-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/Untitled-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/Untitled-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/Untitled-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/imagencarrusel1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/imagencarrusel2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/imagencarrusel3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/test1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/test2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/test3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/tp1a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/images/tp1a1test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/includes/destacados.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/includes/encabezado.php" beforeDir="false" afterPath="$PROJECT_DIR$/rodri-toyama/includes/encabezado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/rodri-toyama/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/includes/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/rodri-toyama/includes/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/includes/linkinteresesyherramientas.php" beforeDir="false" afterPath="$PROJECT_DIR$/rodri-toyama/includes/linkinteresesyherramientas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/includes/newsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/rodri-toyama/includes/newsletter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/json/comentarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/rodri-toyama/json/comentarios.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/json/productos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rodri-toyama/product_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/rodri-toyama/product_details.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dE8fWDRcd7DkJRgb07zbXz2doE" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73a40a68-e679-48c9-83c3-3cbc6a97ee89" name="Default Changelist" comment="" />
+      <created>1591978999988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591978999988</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

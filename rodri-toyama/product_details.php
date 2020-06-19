@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <?php require_once "./includes/head.php" ?>
@@ -37,7 +37,8 @@
 
 
     <div class="container text-center pt-5 pb-4">
-        <?php foreach ($paises as $key => $value) {
+        <?php 
+        foreach ($paises as $key => $value) {
             if ($key == $id) break;
         }
         echo '<h1>' . $value['nombre'] . '</h1>';
@@ -67,7 +68,7 @@
                     <h5 class="pl-3">
                         <?php echo $value['continente']; ?> <br>
                         Precio: <?php echo $value['precio']; ?>
-                    </h3>
+                    </h5>
                     <?php echo '<p class="col-9 pt-4">' . $value['descripcion'] . '</p>' ?>
                 </div>
             </div>
@@ -196,7 +197,7 @@
     <div class="testimonial_area">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
+                <div class="col-12 text-center">
                     <?php
                     if (file_exists('./json/comentarios.json')) {
                         $comentarioJson = file_get_contents('./json/comentarios.json');

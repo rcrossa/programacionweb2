@@ -37,7 +37,8 @@
 
 
     <div class="container text-center pt-5 pb-4">
-        <?php foreach ($paises as $key => $value) {
+        <?php 
+        foreach ($paises as $key => $value) {
             if ($key == $id) break;
         }
         echo '<h1>' . $value['nombre'] . '</h1>';
@@ -67,7 +68,7 @@
                     <h5 class="pl-3">
                         <?php echo $value['continente']; ?> <br>
                         Precio: <?php echo $value['precio']; ?>
-                    </h3>
+                    </h5>
                     <?php echo '<p class="col-9 pt-4">' . $value['descripcion'] . '</p>' ?>
                 </div>
             </div>

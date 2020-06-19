@@ -12,8 +12,6 @@
     $productos = json_decode($str_data, true);
     require_once "./functions/cortar.php";
 
-
-    // archivos html
     $page = 'catalogo';
     require_once "./includes/encabezado.php";
     require_once "./includes/filtro.php";

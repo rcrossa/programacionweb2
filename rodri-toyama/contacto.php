@@ -16,7 +16,7 @@
             <div class="container pt-5 pb-3 shadow-sm">
 
                 <div class="text-center pb-3">
-                    <h2>Formulario De Contacto</h4>
+                    <h1>Formulario De Contacto</h1>
                 </div>
 
                 <div class="pb-3 text-center">

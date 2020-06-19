@@ -9,13 +9,13 @@
         $pais = (isset($_GET["pais"]) ? $_GET['pais'] : null);
         
 
-         foreach ($productos as $key => $value) { 
+        foreach ($productos as $key => $value) { 
 
-           if ($page == 'index' && $value['destacado']) { 
+          if ($page == 'index' && $value['destacado']) { 
 
              include('card_paises.php'); 
 
-           } elseif ($page == 'catalogo') { 
+          } elseif ($page == 'catalogo') { 
 
             
             if (
@@ -23,14 +23,16 @@
               (empty($pais) && $continente == $value['continente']) || // Se filtra por continente
               ((empty($continente) || $continente == 'Todo') && $pais == $value['nombre']) || // Se filtra por paises
               ($pais == $value['nombre'] && $continente == $value['continente']) // Se filtra por continente y pais
-            ) {
+            ) 
+            {
             
 
-               include('card_paises.php');
+              include('card_paises.php');
 
-             } 
-           }
-         } ?>
+            } 
+          }
+        } 
+        ?>
 
       </div>
     </div>

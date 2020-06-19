@@ -2,14 +2,14 @@
     <html lang="es">
 
     <head>
-        <?php require_once "./includes/head.php" ?>
+        <?php require_once "includes/head.php" ?>
         <title>Formulario De Contacto</title>
     </head>
 
     <body>
         <?php 
         $page = 'contacto';
-        require_once "./includes/encabezado.php"; 
+        require_once "includes/encabezado.php"; 
         ?>
 
         <section class="formulario-contacto py-5">
@@ -99,8 +99,8 @@
         </section>
 
         <?php 
-        require_once "./includes/linkinteresesyherramientas.php";
-        require_once "./includes/footer.php"; 
+        require_once "includes/linkinteresesyherramientas.php";
+        require_once "includes/footer.php"; 
         ?>
 
     </body>

@@ -32,5 +32,5 @@ $continenteArr = array(
 );
 
 $contienenteJSON = json_encode($continenteArr, true);
-$file = '../json/continentes.json';
+$file = './json/continentes.json';
 file_put_contents($file, $contienenteJSON);

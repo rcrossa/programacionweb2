@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <?php require_once "./includes/head.php"; ?>
+    <?php require_once "includes/head.php"; ?>
     <title>Document</title>
 </head>
 
@@ -10,8 +10,8 @@
 
     <?php 
     $page = 'paquetes';
-    require_once "./includes/encabezado.php"; 
-    require_once "./includes/carousel.php" 
+    require_once "includes/encabezado.php"; 
+    require_once "includes/carousel.php" 
     ?>
 
     <div class="container text-center pt-5 pb-4">
@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <?php require_once "./includes/footer.php"; ?>
+    <?php require_once "includes/footer.php"; ?>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

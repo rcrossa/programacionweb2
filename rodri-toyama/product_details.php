@@ -2,17 +2,17 @@
 <html lang="es">
 
 <head>
-    <?php require_once "./includes/head.php" ?>
+    <?php require_once "includes/head.php" ?>
     <title>Product Details</title>
 </head>
 
 <body>
     <?php
     $page = 'catalogo';
-    $str_data = file_get_contents("./json/paises.json");
+    $str_data = file_get_contents("json/paises.json");
     $paises = json_decode($str_data, true);
 
-    require_once "./includes/encabezado.php";
+    require_once "includes/encabezado.php";
     $id = $_GET['id'];
 
     // Si $_POST submit esta setteado, guarda los datos del comentario en comentarios.json
@@ -22,14 +22,14 @@
         $data['fecha'] = date('d/m/Y H:i:s');
         $fecha = new DateTime();
         $indexComentario = $fecha->format('YmdHisu');
-        if (file_exists('./json/comentarios.json')) {
-            $comentarioJson = file_get_contents('./json/comentarios.json');
+        if (file_exists('json/comentarios.json')) {
+            $comentarioJson = file_get_contents('json/comentarios.json');
             $comentarioArray = json_decode($comentarioJson, true);
         } else {
             $comentarioArray = array();
         }
         $comentarioArray[$indexComentario] = $data;
-        $fp = fopen('./json/comentarios.json', 'w');
+        $fp = fopen('json/comentarios.json', 'w');
         fwrite($fp, json_encode($comentarioArray));
         fclose($fp);
     }
@@ -199,8 +199,8 @@
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
                     <?php
-                    if (file_exists('./json/comentarios.json')) {
-                        $comentarioJson = file_get_contents('./json/comentarios.json');
+                    if (file_exists('json/comentarios.json')) {
+                        $comentarioJson = file_get_contents('json/comentarios.json');
                         $comentarioArray = json_decode($comentarioJson, true);
                         krsort($comentarioArray);
                         $cantidad = 0;
@@ -251,8 +251,8 @@
     </div>
 
     <?php
-    require_once "./includes/linkinteresesyherramientas.php";
-    require_once "./includes/footer.php";
+    require_once "includes/linkinteresesyherramientas.php";
+    require_once "includes/footer.php";
     ?>
 </body>
 

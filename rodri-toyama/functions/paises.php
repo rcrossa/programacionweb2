@@ -144,5 +144,5 @@ $paisesArr = array(
 );
 
 $paisesJSON = json_encode($paisesArr, true);
-$file = '../json/paises.json';
+$file = './json/paises.json';
 file_put_contents($file, $paisesJSON);

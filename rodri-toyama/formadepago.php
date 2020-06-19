@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <?php require_once "./includes/head.php"; ?>
+    <?php require_once "includes/head.php"; ?>
     <title>Delfos Tour</title>
 </head>
 
@@ -10,7 +10,7 @@
 
     <?php 
         $page = '';
-        require_once "./includes/encabezado.php"; 
+        require_once "includes/encabezado.php"; 
     ?>
 
     <section class="container">
@@ -60,7 +60,7 @@
         </div>
 
     <?php
-    require_once "./includes/footer.php";
+    require_once "includes/footer.php";
     ?>
 
 </body>

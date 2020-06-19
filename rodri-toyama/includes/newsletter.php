@@ -4,15 +4,15 @@
   if (isset($_POST['submit'])) {
     $dato = $_POST;
     unset($dato['submit']);
-    if (file_exists('./json/correos.json')) {
-      $correosJson = file_get_contents('./json/correos.json');
+    if (file_exists('json/correos.json')) {
+      $correosJson = file_get_contents('json/correos.json');
       $correosArray = json_decode($correosJson, true);
     } else {
       $correosArray = array();
     }
 
     $correosArray[] = $dato;
-    $correos = fopen('./json/correos.json', 'w');
+    $correos = fopen('json/correos.json', 'w');
     fwrite($correos, json_encode($correosArray));
     fclose($correos);
   }

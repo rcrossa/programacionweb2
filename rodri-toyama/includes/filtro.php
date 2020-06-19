@@ -1,6 +1,6 @@
 <?php
-$str_data_continentes = file_get_contents("./json/continentes.json");
-$str_data_paises = file_get_contents("./json/paises.json");
+$str_data_continentes = file_get_contents("json/continentes.json");
+$str_data_paises = file_get_contents("json/paises.json");
 
 $dataContinentes = json_decode($str_data_continentes, true);
 $dataPaises = json_decode($str_data_paises, true);

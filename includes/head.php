@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="./css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@400,400i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Rubik:wght@400,400i,600&display=swap" rel="stylesheet"> -->
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />

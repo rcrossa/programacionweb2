@@ -217,14 +217,6 @@ input[type="radio"]:checked ~ label {
   height: 100% !important;
 }
 
-/*
-col <576pxs
-col-sm ≥576px
-col-md ≥768px
-col-lg ≥992px
-col-xl ≥1200px
-*/
-
 /* ----- Carousel -----*/
 
 #main-slider {
@@ -268,15 +260,15 @@ col-xl ≥1200px
 }
 
 .carousel-imagen1 {
-  background-image: url("../../images/carousel-img1.jpeg");
+  background-image: url("../images/carousel-img1.jpeg");
 }
 
 .carousel-imagen2 {
-  background-image: url("../../images/carousel-img2.jpg");
+  background-image: url("../images/carousel-img2.jpg");
 }
 
 .carousel-imagen3 {
-  background-image: url("../../images/carousel-img3.jpeg");
+  background-image: url("../images/carousel-img3.jpeg");
 }
 
 #main-slider .item.active {

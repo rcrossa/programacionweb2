@@ -30,7 +30,7 @@
     
     <?php
     require_once "includes/productoportada.php";
-    require_once "includes/newsletter.php";
+    // require_once "includes/newsletter.php";
     require_once "includes/linkinteresesyherramientas.php";
     require_once "includes/footer.php";
     ?>

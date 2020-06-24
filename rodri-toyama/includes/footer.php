@@ -1,8 +1,24 @@
+<div class="container-fluid" id="tab-content-1">
+
+    <div class="row text-center">
+        <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <div class="tab-0a"><a class="text-light" href="somos.php">Quienes Somos</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-4 col-lg-4">
+            <div class="tab-0a"><a class="text-light" href="formadepago.php">Forma De Pago</a></div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="tab-0a"><a class="text-light" href="protecciondatos.php">Protección Datos Personales</a></div>
+        </div>
+    </div>
+
+</div>
+
 <footer>
     <div class="container-fluid text-white">
 
         <div class="row justify-content-center align-items-center">
-            <div class="col-2 py-3">
+            <div class="col-6 col-sm-4 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center">
                     <div class="px-2">
                         <img src="images/logo_delfos.png" id="logo" alt="logo delfos" width="72" height="84">
@@ -15,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="col-2 py-3">
+            <div class="col-6 col-sm-4 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center">
                     <div class="px-2">
                         <img src="images/Phone-icon.png" class="phoneicon" alt="icono de telefono" width="128" height="128">
@@ -24,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="col-2 py-3">
+            <div class="col-6 col-sm-4 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center">
                     <a href="mailto:info@delfos.tur.ar"> <img src="images/email-2-icon.png" class="emailicon mx-2" alt="icono de correo"></a>
 
@@ -34,7 +50,7 @@
             </div>
 
 
-            <div class="col-2 py-3">
+            <div class="col-6 col-sm-6 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 text-center">
                         <div class="locationicon px-2">
@@ -51,23 +67,21 @@
                 </div>
             </div>
 
-            <div class="col-2 py-3">
+            <div class="col-xs-12 col-sm-6 col-md-2 py-3">
                 <div class="row justify-content-center align-items-center flex-column">
                     <div>Mapa del sitio</div>
                     <div><a href="index.php">Home</a></div>
-                    <div><a href="catalogo.php">Catálogo</a></div>
                     <div><a href="paquetes.php">Paquetes</a></div>
                     <div><a href="contacto.php">Contacto</a></div>
                 </div>
             </div>
         </div>
 
-
-
     </div>
 </footer>
 
 <!-- Scripts -->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery/jquery-3.4.1.slim.min.js"></script>
+<script src="js/popper/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/fancybox/jquery.fancybox.min.js"></script>

@@ -2,32 +2,28 @@
 <html lang="es">
 
 <head>
-    <?php require_once "includes/head.php"; ?>
+    <?php require_once "head.php"; ?>
     <title>Delfos Tour</title>
 </head>
 
 <body>
 
-    <?php 
-        $page = '';
-        require_once "includes/encabezado.php"; 
+    <?php
+    $page = 'index';
+    require_once "encabezado.php";
     ?>
 
-    <section class="container">
+    <section class="container-fluid">
 
-        <div class="col-12 text-center pt-5 pb-4">
-        <h1>Formas De Pago</h1>
-        </div>
-
-        <div class="pb-5 text-center">
-            <svg width="20%" height="2">
-                <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
-            </svg>
+        <div class="row">
+            <div>
+                <h1 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Forma De Pago</h1>
+            </div>
         </div>
 
         <div class="row">
-            <div class="col-12">
-                <div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="parrafo1">
                     <ul>
                         <li>Transferencia Bancaria Inmediata.</li>
                         <li> Tarjeta de crédito en 3 – 6 – 9 - 12 cuotas fijas. Para ciertos programas podrían aplicar las siguientes promociones, por favor no deje de consultarnos al respecto:</li>
@@ -46,21 +42,16 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <img src="images/Pago2.png" class="w-100 img-fluid shadow" alt="imagen de formas de pago">
-            </div>
-        </div>
-    </section>
-
         <div>
             <svg width="100%" height="10">
                 <rect width="100%" height="100" style="fill:rgb(255,165,0);stroke-width:0;stroke:rgb(0,0,0)" />
             </svg>
         </div>
 
+    </section>
+
     <?php
-    require_once "includes/footer.php";
+    require_once "footer.php";
     ?>
 
 </body>

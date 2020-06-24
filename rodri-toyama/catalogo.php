@@ -2,22 +2,21 @@
 <html lang="es">
 
 <head>
-    <?php require_once "includes/head.php"; ?>
+    <?php require_once "head.php"; ?>
     <title>Delfos Tour</title>
 </head>
 
 <body>
     <?php
-    $str_data = file_get_contents("json/paises.json");
-    $productos = json_decode($str_data, true);
-    require_once "functions/cortar.php";
+    require_once "archivosphp/funcionesproductoportada.php";
 
+    // archivos html
     $page = 'catalogo';
-    require_once "includes/encabezado.php";
-    require_once "includes/filtro.php";
-    require_once "includes/productoportada.php";
-    require_once "includes/linkinteresesyherramientas.php";
-    require_once "includes/footer.php";
+    require_once "encabezado.php";
+    require_once "filtro.php";
+    require_once "productoportada.php";
+    require_once "linkinteresesyherramientas.php";
+    require_once "footer.php";
     ?>
 
 </body>

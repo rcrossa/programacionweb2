@@ -36,16 +36,19 @@ $dataPaises = json_decode($str_data_paises, true);
 
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <form action="" method="GET" class="">
+                                        <?php !empty($_GET['pais']) ? $opcion=$_GET['pais']: $opcion= "" ?>
                                         <input type="hidden" name="continente" value="<?php echo isset($_GET['continente']) ? $_GET['continente'] : '' ?>">
                                         <select name="pais" class="custom-select custom-select-lg" id="pais" onchange="this.form.submit()">
                                             <option>Seleccionar Pais</option>
                                             <?php foreach ($dataPaises as $paises) : ?>
                                                 <?php if ($paises['continente'] == $_GET['continente']) : ?>
-                                                    <option><?php echo $paises['nombre']; ?></option>
+                                                    <option <?php echo ($opcion == $paises['nombre']) ? 'selected="selected"' : ''?>>
+                                                    <?php echo $paises['nombre'];?> </option>
                                                 <?php endif ?>
 
                                                 <?php if ($_GET['continente'] == null || $_GET['continente'] == 'Todo') : ?>
-                                                    <option><?php echo $paises['nombre']; ?></option>
+                                                    <option <?php echo ($opcion == $paises['nombre']) ? 'selected="selected"' : ''?>>
+                                                    <?php echo $paises['nombre'];?> </option>
                                                 <?php endif ?>
 
                                             <?php endforeach ?>
